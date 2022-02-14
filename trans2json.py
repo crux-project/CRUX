@@ -3,10 +3,12 @@ import pandas as pd
 import json
 
 
-def xml2json(xmlfile, output):
+def xml2json(xmlfile):
     f = open(xmlfile, mode='r', encoding='utf-8')
     xpars = xmltodict.parse(f.read())
+    output = xmlfile[:-6] + '.json'
     save2json(output, xpars)
+    return output
 
 
 # def csv2json(input, output):
@@ -40,8 +42,7 @@ def save2json(output, dic):
 
 def main():
     xmlfile = "./test/input/MnO2_Unmilled_Air_25to1100øC_1.XRDML"
-    xml_output = "./test/output/MnO2_Unmilled_Air_xml.json"
-    xml2json(xmlfile, xml_output)
+    xml2json(xmlfile)
 
     # xlsefile = "./test/input/ExcelCompilation_KNN-M.xlsx"
     # xlse_output = "./test/output/KNN-M_xlsx.json"
