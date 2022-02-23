@@ -14,22 +14,22 @@ instrument = 'NC_Empyrean.prm'
 refined_output = 'pkfit.txt'
 auto_output = 'pkauto.txt'
 datadir = "./test/peaklist"
-PathWrap = lambda fil: os.path.join(datadir, fil)
 tthetas = [29, 37, 57, 60]
+PathWrap = lambda fil: os.path.join(datadir, fil)
 
 # Peak fitting by auto search
 json_file = trans.xml2json(PathWrap(dataset))
 f = open(json_file)
-res=f.read()
+res = f.read()
 f.close()
 dic = json.loads(res)
-# todo search key/value in json tree
+# todo: search key/value in json tree
 dp = dic["xrdMeasurements"]["xrdMeasurement"]["scan"]["dataPoints"]
 y = dp["intensities"]["#text"]
 y = list(map(int, y.split()))
 sp = float(dp["positions"][0]["startPosition"])
 ep = float(dp["positions"][0]["endPosition"])
-x = np.arange(sp, ep, (ep - sp)/len(y))
+x = np.arange(sp, ep, (ep - sp) / len(y))
 peaks, _ = find_peaks(y)
 f = open(PathWrap(auto_output), 'w')
 for peak in peaks:
