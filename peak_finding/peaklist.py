@@ -11,11 +11,11 @@ project = 'pkfit.gpx'
 instrument = 'NC_Empyrean.prm'
 refined_output = 'pkfit.txt'
 tthetas = [29, 37, 57, 60]
-datadir = "../data/peaklist"
+datadir = "../data"
 PathWrap = lambda fil: os.path.join(datadir, fil)
 
 
-# Peak fitting by auto search
+# auto search by Scipy
 def auto_finding(dic, output):
     # todo: search key/value in json tree
     dp = dic["xrdMeasurements"]["xrdMeasurement"]["scan"]["dataPoints"]
@@ -41,6 +41,7 @@ def auto_finding(dic, output):
     return peak_position, peak_intensity
 
 
+# Validate peaklist with GSAS-II
 def val_with_gsas2(gsas2_peak_file, our_pos, our_int):
     f = open(gsas2_peak_file)
     line = f.readline()
@@ -70,7 +71,8 @@ def val_with_gsas2(gsas2_peak_file, our_pos, our_int):
                 count += 1
                 break
 
-    print("GSAS-II got %d peaks, we detected %d peaks, %d of them are overlap. (Allowed error in position: %.2f)"
+    print("GSAS-II got %d peaks, we detected %d peaks, %d of them are overlap. "
+          "(Allowed error in position: %.2f)"
           %(len(peak_position), len(our_pos), count, err))
 
 
