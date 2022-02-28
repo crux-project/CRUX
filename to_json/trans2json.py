@@ -1,38 +1,24 @@
 import xmltodict
-import pandas as pd
 import json
+import os
+import sys
+sys.path.append('../peak_finding/')
+import peaklist
+
+datadir = "../data/peaklist"
+PathWrap = lambda fil: os.path.join(datadir, fil)
+
+xrdml_file = PathWrap("MnO2_Unmilled_Air_InitialScan.xrdml")
+output = PathWrap('pkauto.txt')
+p_gsas2 = PathWrap('p_gsas2.txt')
 
 
-def xml2json(xmlfile):
-    f = open(xmlfile, mode='r', encoding='utf-8')
+def xml2json(xrdml_file):
+    f = open(xrdml_file, mode='r', encoding='utf-8')
     xpars = xmltodict.parse(f.read())
-    output = xmlfile[:-6] + '.json'
+    output = xrdml_file[:-6] + '.json'
     save2json(output, xpars)
     return output
-
-
-# def csv2json(input, output):
-#     # TODO CSV
-#
-#
-# def asc2json(input, output):
-#     # TODO ASC
-#
-#
-# def xy2json(input, output):
-#     # TODO XY
-#
-#
-# def txt2json(input, output):
-#     # TODO TXT
-
-
-def xlsx2json(xlsefile, output):
-    df = pd.read_excel(xlsefile, sheet_name='Heating to 650 KNN-M')
-    df.drop(df.columns[[0]], axis=1, inplace=True)
-    df.set_index('Angles', inplace=True)
-    dic = df.to_dict()
-    save2json(output, dic)
 
 
 def save2json(output, dic):
@@ -40,13 +26,31 @@ def save2json(output, dic):
         json.dump(dic, outfile, indent=4)
 
 
-def main():
-    xmlfile = "./test/input/MnO2_Unmilled_Air_25to1100øC_1.XRDML"
-    xml2json(xmlfile)
+def json2dic(json_file):
+    f = open(json_file)
+    res = f.read()
+    f.close()
+    dic = json.loads(res)
 
-    # xlsefile = "./test/input/ExcelCompilation_KNN-M.xlsx"
-    # xlse_output = "./test/output/KNN-M_xlsx.json"
-    # xlsx2json(xlsefile, xlse_output)
+    return dic
+
+
+def main():
+    # Transfer xrdml to json and get peak list
+    json_file = xml2json(xrdml_file)
+    json_dic = json2dic(json_file)
+    peak_pos_sp, peak_int_sp = peaklist.auto_finding(json_dic, output)
+
+    # Add peak list to JSON
+    dic_peak = {"xrdMeasurements": {"peaks": {"positions": peak_pos_sp, "intensities": peak_int_sp}}}
+    newdic = dict(dic_peak, **json_dic)
+    for key in newdic.keys():
+        if key in dic_peak:
+            newdic[key] = dict(newdic[key], **dic_peak[key])
+    save2json(xrdml_file[:-6] + '.json', newdic)
+
+    # Validate with GSAS-II
+    peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
 
 if __name__ == "__main__":
