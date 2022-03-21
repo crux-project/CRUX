@@ -61,7 +61,7 @@ def main():
     # Add peak list to JSON
     add_peak(peak_pos_sp, peak_int_sp, json_dic)
 
-    # Validate with GSAS-II
+    # Validate peaks with GSAS-II
     peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
 

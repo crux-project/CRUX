@@ -102,4 +102,3 @@ def GSAS2(xrdml_file, instrument, output):
 
     # Save GSAS-II project
     gpx.save()
-
