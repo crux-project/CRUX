@@ -1,0 +1,180 @@
+<h2>Processing Techniques and Parameters</h2>
+
+<p>Please enter Technique and upto 3 Parameters</p>
+
+<form  [formGroup]="myForm">
+<div>
+  <div  class="container">
+    <div id = "st-box">
+    <input autocomplete="off" formControlName="technique" id="technique" type="text" class="form-control" placeholder="Technique" (change)="onchangetechnique()" #box1>
+     <div *ngIf="f['technique'].touched && f['technique'].invalid" class="alert alert-danger">
+      <div *ngIf="f['technique'].errors && f['technique'].errors['required']">Technique is required.</div>
+    </div>
+  </div>
+  <!-- <mat-form-field>
+    <input type="text" placeholder="Enter Location" matInput formControlName="technique" [matAutocomplete]="auto">
+       <mat-autocomplete #auto="matAutocomplete">
+         <mat-option *ngFor="let option of technique" [value]="option">
+           {{option}}
+        </mat-option>
+    </mat-autocomplete>
+ </mat-form-field>
+ <div *ngIf="f['technique'].touched && f['technique'].invalid" class="alert alert-danger">
+  <div *ngIf="f['technique'].errors && f['technique'].errors['required']">Technique is required.</div>
+  </div> -->
+</div>
+
+
+  <!-- PAREMETER 1 -->
+  <div class="container">
+    <div id = "st-box">
+      <input autocomplete="off" formControlName="parameter1" id="parameter1" type="text" class="form-control" placeholder="Parameter 1" (change)="onchangeparameter(1)" #box2>
+      <div *ngIf="f['parameter1'].touched && f['parameter1'].invalid" class="alert alert-danger">
+        <div *ngIf="f['parameter1'].errors && f['parameter1'].errors['required']">Parameter is required.</div>
+      </div>
+    </div>
+    <div id = "nd-box">
+      <input autocomplete="off" formControlName="value1" id="value1" type="text" class="form-control" placeholder="Value">
+    </div>
+    <div id = "rd-box">
+      <select class="custom-select" (change)="changeUnit1($event)" formControlName="unit1">
+        <option value="">Select Unit</option>
+        <option *ngFor="let unit of units" [value]="unit">{{unit}}</option>
+      </select>
+  
+      <!-- error block -->
+      <div *ngIf="f['unit1'].touched && f['unit1'].invalid" class="alert alert-danger">
+        <div *ngIf="f['unit1'].errors && f['unit1'].errors['required']">Select Unit</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- END   -->
+
+
+  <!-- <div class=" autocomplete1">
+    <div class="row">
+    <div class = "form-group col-md-6"> 
+      <input autocomplete="off" formControlName="parameter3" id="parameter3" type="text" class="form-control" placeholder="Parameter 1" (change)="onchangeparameter(1)" #box2>
+      <div *ngIf="f['parameter3'].touched && f['parameter3'].invalid" class="alert alert-danger">
+        <div *ngIf="f['parameter3'].errors && f['parameter3'].errors['required']">Parameter is required.</div>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <input autocomplete="off" formControlName="value1" id="value1" type="text" class="form-control" placeholder="Value">
+    </div>
+  </div>  
+  </div> -->
+  <!-- <div class="container">
+    <div class="row">
+        <div class="form-group name1 col-md-4">
+          <input autocomplete="off" formControlName="parameter3" id="parameter3" type="text" class="form-control" placeholder="Parameter 1" (change)="onchangeparameter(1)" #box2>
+          <div *ngIf="f['parameter3'].touched && f['parameter3'].invalid" class="alert alert-danger">
+            <div *ngIf="f['parameter3'].errors && f['parameter3'].errors['required']">Parameter is required.</div>
+          </div>
+        </div>
+        <div class="form-group name2 col-md-4">
+          <input autocomplete="off" formControlName="value1" id="value1" type="text" class="form-control" placeholder="Value">
+        </div>
+        <div class="form-group name3 col-md-4">
+          <select class="custom-select" (change)="changeUnit1($event)" formControlName="unit1">
+            <option value="">Select Unit</option>
+            <option *ngFor="let unit of units" [value]="unit">{{unit}}</option>
+          </select> -->
+      
+          <!-- error block -->
+          <!-- <div *ngIf="f['unit1'].touched && f['unit1'].invalid" class="alert alert-danger">
+            <div *ngIf="f['unit1'].errors && f['unit1'].errors['required']">Select Unit</div>
+          </div>
+        </div>  
+    </div>
+  </div> -->
+
+
+<!-- PARAMETER 2 -->
+
+<div class="container">
+  <div id = "st-box">
+    <input autocomplete="off" formControlName="parameter2" id="parameter2" type="text" class="form-control" placeholder="Parameter 2" (change)="onchangeparameter(2)" #box3>
+    <div *ngIf="f['parameter2'].touched && f['parameter2'].invalid" class="alert alert-danger">
+    </div>
+  </div>
+
+  <div id = "nd-box">
+    <input autocomplete="off" formControlName="value2" id="value2" type="text" class="form-control" placeholder="Value">
+  </div>
+  <div id = "rd-box">
+    <select class="custom-select" (change)="changeUnit2($event)" formControlName="unit2">
+      <option value="">Select Unit</option>
+      <option *ngFor="let unit of units" [value]="unit">{{unit}}</option>
+    </select>
+
+
+    <div *ngIf="f['unit2'].touched && f['unit2'].invalid" class="alert alert-danger">
+      <div *ngIf="f['unit2'].errors && f['unit2'].errors['required']">Select Unit</div>
+    </div>
+  </div>
+
+</div>
+<!-- END  -->
+
+<!-- PARAMETER 3 -->
+<div class="container">
+  <div id = "st-box">
+    <input autocomplete="off" formControlName="parameter3" id="parameter3" type="text" class="form-control" placeholder="Parameter 3" (change)="onchangeparameter(3)" #box4>
+    <div *ngIf="f['parameter3'].touched && f['parameter3'].invalid" class="alert alert-danger">
+    </div>
+  </div>
+
+  <div id = "nd-box">
+    <input autocomplete="off" formControlName="value3" id="value3" type="text" class="form-control" placeholder="Value">
+  </div>
+  <div id = "rd-box">
+    <select class="custom-select" (change)="changeUnit3($event)" formControlName="unit3">
+      <option value="">Select Unit</option>
+      <option *ngFor="let unit of units" [value]="unit">{{unit}}</option>
+    </select>
+
+    
+    <div *ngIf="f['unit3'].touched && f['unit3'].invalid" class="alert alert-danger">
+      <div *ngIf="f['unit3'].errors && f['unit3'].errors['required']">Select Unit</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- END -->
+
+
+  <!-- <div class="form-group autocomplete">
+    <input autocomplete="off" formControlName="parameter3" id="parameter3" type="text" class="form-control" placeholder="Parameter 2" (change)="onchangeparameter(2)" #box3>
+    <div *ngIf="f['parameter3'].touched && f['parameter3'].invalid" class="alert alert-danger">
+    </div>
+  </div>
+
+  <div class="form-group autocomplete">
+    <input autocomplete="off" formControlName="parameter3" id="parameter3" type="text" class="form-control" placeholder="Parameter 3" (change)="onchangeparameter(3)" #box4>
+    <div *ngIf="f['parameter3'].touched && f['parameter3'].invalid" class="alert alert-danger">
+    </div>
+  </div> -->
+
+  <div class="container">
+    <input formControlName="file" id="file" type="file" class="form-control" (change)="onFileChange($event)">
+    <div *ngIf="f['file'].touched && f['file'].invalid" class="alert alert-danger">
+      <div *ngIf="f['file'].errors && f['file'].errors['required']">File is required.</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="btn btn-primary" [disabled]="!myForm.valid" (click) = "submit()" >Upload</button>
+    <!-- <input type="button" class="btn btn-primary" [disabled]="!myForm.valid" value="Upload" (click) = "submit()"> -->
+  </div>
+</div>
+
+
+
+<!-- <button class="btn btn-primary" [disabled]="isUploadDisabled">Upload</button> -->
+
+</form>
+
