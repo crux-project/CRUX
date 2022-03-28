@@ -820,7 +820,7 @@
         <Class IRI="#training_data"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#upload_time"/>
     </Declaration>
     <Declaration>
         <Class IRI="#usedWavelength"/>
@@ -2855,7 +2855,7 @@
         <Class IRI="#ModelCard"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#upload_time"/>
         <Class IRI="#data_context"/>
     </SubClassOf>
     <SubClassOf>
@@ -2938,7 +2938,7 @@
         <Class IRI="#data_id"/>
         <Class IRI="#data_loc"/>
         <Class IRI="#instrument"/>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#upload_time"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#data_id"/>

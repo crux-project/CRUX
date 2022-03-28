@@ -2,6 +2,7 @@ import xmltodict
 import json
 import os
 import sys
+import xml.etree.ElementTree as ET
 
 sys.path.append('../peak_finding/')
 import peaklist
@@ -50,20 +51,40 @@ def add_peak(pos, int, json_dic):
     save2json(xrdml_file[:-6] + '.json', newdic)
 
 
-def main():
-    # Transfer XRDML to JSON
-    json_file = xml2json(xrdml_file)
+# Output specified item(s)/tag&values in xrdml to txt
+# Data Card -> data_loc -> xrdml file -> get data -> output to .txt
+def find_in_xml(xrdml_file, items, output_file=PathWrap("result.txt")):
+    result = {}
+    tree = ET.parse(xrdml_file)
+    root = tree.getroot()
 
-    # Get peak list
-    json_dic = json2dic(json_file)
-    peak_pos_sp, peak_int_sp = peaklist.auto_finding(json_dic, output)
+    for item in items:
+        XPath = ".//{*}" + item
+        result[item] = root.find(XPath).text
 
-    # Add peak list to JSON
-    add_peak(peak_pos_sp, peak_int_sp, json_dic)
+    f = open(output_file, 'w')
+    for key, value in result.items():
+        f.write('{key} :{value}\n'.format(key=key, value=value))
+    f.close()
 
-    # Validate peaks with GSAS-II
-    peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
+# def main():
+    # # Transfer XRDML to JSON
+    # json_file = xml2json(xrdml_file)
+    #
+    # # Get peak list
+    # json_dic = json2dic(json_file)
+    # peak_pos_sp, peak_int_sp = peaklist.auto_finding(json_dic, output)
+    #
+    # # Add peak list to JSON
+    # add_peak(peak_pos_sp, peak_int_sp, json_dic)
+    #
+    # # Validate peaks with GSAS-II
+    # peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
-if __name__ == "__main__":
-    main()
+    # Output specified item(s) in xrdml file
+#     find_in_xml(xrdml_file, ["radius", "intensities"])
+#
+#
+# if __name__ == "__main__":
+#     main()
