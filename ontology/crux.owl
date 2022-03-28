@@ -367,6 +367,9 @@
         <Class IRI="#Czochralski_Method"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DataCard"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Direct_Metal_Deposition"/>
     </Declaration>
     <Declaration>
@@ -469,223 +472,7 @@
         <Class IRI="#Magnetron_Sputtering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_07d8f31f_246a_45da_b031_fb9a5d791f79"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_0adc28b7_0e39_412f_ad0f_37399d45f608"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_1121aa5e_644a_462a_a898_177f2d5e9ed2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_13361dbd_0178_45cc_a013_144d9af1bf06"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_135dfe31_c25a_4576_8002_6151eff00c81"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_138288cb_77dd_45c6_a9a1_1fb584951b2a"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_13d50ab9_13b8_411f_ba18_3e9f90b05c64"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_13fbc7e7_bc6d_4061_afca_e38a30837541"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_1492ab83_bba5_470a_b0ab_46917e6cc2a6"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_1b4df76b_b09f_4083_a165_b43db2e6df7b"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_30156882_41bc_4cd4_a1da_d5c7dfaba03b"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_3927adb7_1460_4cc6_9fdd_2ded605fbf8e"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_3cc11790_3a05_4f79_bcaa_21b60ff1dd0e"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_4c8ab6ef_89ac_4b0d_ab76_4833e0ad6ceb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_4f057b7a_5dbb_4b48_8bb9_6208b39b3a6c"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_4fd327e3_edf0_4f0e_be95_2b83e3b65125"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_527ba863_36b1_47b2_993c_4856f260a248"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_52ad5b29_1314_416b_b590_8a5e0f5f2d25"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_53eff24d_55f9_4b42_bc51_6432e1dc1611"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6000930c_c5d7_4fb3_83ad_2fd21cfc6339"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_66ac5eef_9b8f_4e9c_915f_74fecbc2e638"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6e1d34c1_ba0b_4e85_bcd0_b128260d7676"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6e9b7628_9ff2_436f_884e_7a7b1a221fc6"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6ecd5163_6230_477e_8899_e493dcf4ce05"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6edee468_c33c_48c9_8545_2e1f4e8296ba"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_796a592d_69b6_4579_a5a4_8b3c061c24b3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_7ab48b9e_6fae_4cc4_a455_b81560ce0167"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_82d948fc_5331_40ec_b156_435fc813fa4d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_8a769c1f_30c8_4d77_800c_e36b9d8423ac"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_8ac2f659_7579_4615_a9e7_e430d716423b"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_8e587e68_9f8d_4d99_8293_b8231b064d88"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_96f52b94_98f4_48d6_b08c_9815e7821da7"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_9d804139_7597_4095_aa41_17e7d6e67913"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_9e551b7b_c4a9_43e8_b8c8_13755032e163"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_a2558ba5_dd09_47a5_a65b_72c3d3839f3e"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_bf614217_131c_4d5b_93b0_c8756037098c"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_cdb8454d_9a7e_445f_aaa7_de95b775118f"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_d22a02e3_5587_4ce9_9e5e_0b6f4ef67403"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_d99ced75_b790_4e2b_b28c_309347a74a5d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_de44a238_665e_459a_abc7_5f7f23594f6b"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e0001ca9_b50f_41ff_8cd1_45d6d757afe5"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e624c998_42c1_471c_8314_d654d94b69be"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_eb6deda8_cb79_41d2_8c30_b03cc8d79567"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_fe927c77_2095_4585_a197_e27acd5fc5a0"/>
+        <Class IRI="#ModelCard"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Overlap"/>
@@ -790,6 +577,9 @@
         <Class IRI="#Tape_Type"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TaskCard"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Tension"/>
     </Declaration>
     <Declaration>
@@ -839,6 +629,210 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Wire_Feed_Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#affiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#applicationSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#caveats_and_recommendations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#citation_details"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contact_info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contributors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data_loc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endTimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#epoch_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ethical_considerations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#evaluation_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fairness_constraints"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#header"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hyper-parameters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instrumentControlSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instrument_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intended_tasks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intended_use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intended_users"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#learning_rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#limitations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_loc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_version"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#models"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#out_of_scope_uses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paper_or_resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#preprocessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sampleMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sampleOffset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#startTimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#summary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#task_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#task_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#task_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tasks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#threshold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#training_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uploadTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#usedWavelength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#users"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#version"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gas/Metal_Ratio"/>
@@ -1983,346 +1977,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_07d8f31f_246a_45da_b031_fb9a5d791f79"/>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_07d8f31f_246a_45da_b031_fb9a5d791f79"/>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_0adc28b7_0e39_412f_ad0f_37399d45f608"/>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_0adc28b7_0e39_412f_ad0f_37399d45f608"/>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_1121aa5e_644a_462a_a898_177f2d5e9ed2"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_13361dbd_0178_45cc_a013_144d9af1bf06"/>
-        <Class IRI="#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_135dfe31_c25a_4576_8002_6151eff00c81"/>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_135dfe31_c25a_4576_8002_6151eff00c81"/>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_138288cb_77dd_45c6_a9a1_1fb584951b2a"/>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_13d50ab9_13b8_411f_ba18_3e9f90b05c64"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_13fbc7e7_bc6d_4061_afca_e38a30837541"/>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_1492ab83_bba5_470a_b0ab_46917e6cc2a6"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_1b4df76b_b09f_4083_a165_b43db2e6df7b"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548"/>
-        <Class IRI="#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548"/>
-        <Class IRI="#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
-        <Class IRI="#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
-        <Class IRI="#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
-        <Class IRI="#OWLClass_e0001ca9_b50f_41ff_8cd1_45d6d757afe5"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_30156882_41bc_4cd4_a1da_d5c7dfaba03b"/>
-        <Class IRI="#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f"/>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_3927adb7_1460_4cc6_9fdd_2ded605fbf8e"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_3cc11790_3a05_4f79_bcaa_21b60ff1dd0e"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0"/>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09"/>
-        <Class IRI="#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4c8ab6ef_89ac_4b0d_ab76_4833e0ad6ceb"/>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d"/>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4f057b7a_5dbb_4b48_8bb9_6208b39b3a6c"/>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4fd327e3_edf0_4f0e_be95_2b83e3b65125"/>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_527ba863_36b1_47b2_993c_4856f260a248"/>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_52ad5b29_1314_416b_b590_8a5e0f5f2d25"/>
-        <Class IRI="#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_53eff24d_55f9_4b42_bc51_6432e1dc1611"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6000930c_c5d7_4fb3_83ad_2fd21cfc6339"/>
-        <Class IRI="#OWLClass_1b4df76b_b09f_4083_a165_b43db2e6df7b"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_66ac5eef_9b8f_4e9c_915f_74fecbc2e638"/>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
-        <Class IRI="#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6e1d34c1_ba0b_4e85_bcd0_b128260d7676"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6e9b7628_9ff2_436f_884e_7a7b1a221fc6"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6ecd5163_6230_477e_8899_e493dcf4ce05"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6edee468_c33c_48c9_8545_2e1f4e8296ba"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b"/>
-        <Class IRI="#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_796a592d_69b6_4579_a5a4_8b3c061c24b3"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_7ab48b9e_6fae_4cc4_a455_b81560ce0167"/>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_82d948fc_5331_40ec_b156_435fc813fa4d"/>
-        <Class IRI="#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_82d948fc_5331_40ec_b156_435fc813fa4d"/>
-        <Class IRI="#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_8a769c1f_30c8_4d77_800c_e36b9d8423ac"/>
-        <Class IRI="#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_8ac2f659_7579_4615_a9e7_e430d716423b"/>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_8e587e68_9f8d_4d99_8293_b8231b064d88"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-        <Class IRI="#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124"/>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_96f52b94_98f4_48d6_b08c_9815e7821da7"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_9d804139_7597_4095_aa41_17e7d6e67913"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_9e551b7b_c4a9_43e8_b8c8_13755032e163"/>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_a2558ba5_dd09_47a5_a65b_72c3d3839f3e"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3"/>
-        <Class IRI="#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be"/>
-        <Class IRI="#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_bf614217_131c_4d5b_93b0_c8756037098c"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-        <Class IRI="#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_cdb8454d_9a7e_445f_aaa7_de95b775118f"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_d22a02e3_5587_4ce9_9e5e_0b6f4ef67403"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3"/>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_d99ced75_b790_4e2b_b28c_309347a74a5d"/>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_de44a238_665e_459a_abc7_5f7f23594f6b"/>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e0001ca9_b50f_41ff_8cd1_45d6d757afe5"/>
-        <Class IRI="#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef"/>
-        <Class IRI="#OWLClass_4c8ab6ef_89ac_4b0d_ab76_4833e0ad6ceb"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef"/>
-        <Class IRI="#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef"/>
-        <Class IRI="#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e624c998_42c1_471c_8314_d654d94b69be"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_eb6deda8_cb79_41d2_8c30_b03cc8d79567"/>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583"/>
-        <Class IRI="#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_fe927c77_2095_4585_a197_e27acd5fc5a0"/>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Overlap"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -2905,133 +2559,422 @@
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#affiliation"/>
+        <Class IRI="#contributors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#analysis"/>
+        <Class IRI="#DataCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#applicationSoftware"/>
+        <Class IRI="#source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#author"/>
+        <Class IRI="#header"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capabilities"/>
+        <Class IRI="#model_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#caveats_and_recommendations"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#citation_details"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contact_info"/>
+        <Class IRI="#contributors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contributors"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contributors"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_content"/>
+        <Class IRI="#DataCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_context"/>
+        <Class IRI="#DataCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_id"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_id"/>
+        <Class IRI="#evaluation_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_id"/>
+        <Class IRI="#training_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data_loc"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endTimeStamp"/>
+        <Class IRI="#header"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#epoch_number"/>
+        <Class IRI="#hyper-parameters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ethical_considerations"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#evaluation_data"/>
+        <Class IRI="#test_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#factors"/>
+        <Class IRI="#test_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fairness_constraints"/>
+        <Class IRI="#model_description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#header"/>
+        <Class IRI="#data_content"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hyper-parameters"/>
+        <Class IRI="#model_description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#input"/>
+        <Class IRI="#model_description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrument"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrumentControlSoftware"/>
+        <Class IRI="#source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrument_id"/>
+        <Class IRI="#instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intended_tasks"/>
+        <Class IRI="#intended_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intended_use"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intended_users"/>
+        <Class IRI="#intended_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#learning_rate"/>
+        <Class IRI="#hyper-parameters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#license"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#limitations"/>
+        <Class IRI="#model_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#measures"/>
+        <Class IRI="#metrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metrics"/>
+        <Class IRI="#test_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_1"/>
+        <Class IRI="#models"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_architecture"/>
+        <Class IRI="#model_description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_context"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_date"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_description"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_id"/>
+        <Class IRI="#model_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_id"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_loc"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_type"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_version"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#models"/>
+        <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motivation"/>
+        <Class IRI="#evaluation_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motivation"/>
+        <Class IRI="#training_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#name"/>
+        <Class IRI="#applicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#name"/>
+        <Class IRI="#author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#name"/>
+        <Class IRI="#instrumentControlSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#out_of_scope_uses"/>
+        <Class IRI="#intended_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#output"/>
+        <Class IRI="#model_description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paper_or_resource"/>
+        <Class IRI="#model_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#performance"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preprocessing"/>
+        <Class IRI="#evaluation_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#preprocessing"/>
+        <Class IRI="#training_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleMode"/>
+        <Class IRI="#data_content"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleOffset"/>
+        <Class IRI="#data_content"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <Class IRI="#header"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#startTimeStamp"/>
+        <Class IRI="#header"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#status"/>
+        <Class IRI="#data_content"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#summary"/>
+        <Class IRI="#performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_1"/>
+        <Class IRI="#analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_id"/>
+        <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_id"/>
+        <Class IRI="#intended_tasks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_id"/>
+        <Class IRI="#task_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_name"/>
+        <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_name"/>
+        <Class IRI="#intended_tasks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tasks"/>
+        <Class IRI="#out_of_scope_uses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test_1"/>
+        <Class IRI="#performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#threshold"/>
+        <Class IRI="#metrics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#training_data"/>
+        <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uploadTime"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#usedWavelength"/>
+        <Class IRI="#data_content"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#username"/>
+        <Class IRI="#contributors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#users"/>
+        <Class IRI="#out_of_scope_uses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#version"/>
+        <Class IRI="#applicationSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#version"/>
+        <Class IRI="#instrumentControlSoftware"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gas/Metal_Ratio"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#ActualKnowledge"/>
-        <Class IRI="#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d"/>
-        <Class IRI="#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c"/>
-        <Class IRI="#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823"/>
+        <Class IRI="#DataCard"/>
+        <Class IRI="#ModelCard"/>
+        <Class IRI="#TaskCard"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_07d8f31f_246a_45da_b031_fb9a5d791f79"/>
-        <Class IRI="#OWLClass_0adc28b7_0e39_412f_ad0f_37399d45f608"/>
-        <Class IRI="#OWLClass_135dfe31_c25a_4576_8002_6151eff00c81"/>
+        <Class IRI="#affiliation"/>
+        <Class IRI="#contact_info"/>
+        <Class IRI="#username"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_1121aa5e_644a_462a_a898_177f2d5e9ed2"/>
-        <Class IRI="#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56"/>
-        <Class IRI="#OWLClass_96f52b94_98f4_48d6_b08c_9815e7821da7"/>
-        <Class IRI="#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-        <Class IRI="#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088"/>
-        <Class IRI="#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469"/>
+        <Class IRI="#analysis"/>
+        <Class IRI="#data_content"/>
+        <Class IRI="#data_context"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_13361dbd_0178_45cc_a013_144d9af1bf06"/>
-        <Class IRI="#OWLClass_8a769c1f_30c8_4d77_800c_e36b9d8423ac"/>
+        <Class IRI="#applicationSoftware"/>
+        <Class IRI="#instrumentControlSoftware"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_138288cb_77dd_45c6_a9a1_1fb584951b2a"/>
-        <Class IRI="#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0"/>
-        <Class IRI="#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a"/>
+        <Class IRI="#author"/>
+        <Class IRI="#endTimeStamp"/>
+        <Class IRI="#source"/>
+        <Class IRI="#startTimeStamp"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_13d50ab9_13b8_411f_ba18_3e9f90b05c64"/>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606"/>
-        <Class IRI="#OWLClass_6e9b7628_9ff2_436f_884e_7a7b1a221fc6"/>
-        <Class IRI="#OWLClass_8e587e68_9f8d_4d99_8293_b8231b064d88"/>
-        <Class IRI="#OWLClass_cdb8454d_9a7e_445f_aaa7_de95b775118f"/>
+        <Class IRI="#capabilities"/>
+        <Class IRI="#limitations"/>
+        <Class IRI="#model_id"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_13fbc7e7_bc6d_4061_afca_e38a30837541"/>
-        <Class IRI="#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3"/>
-        <Class IRI="#OWLClass_fe927c77_2095_4585_a197_e27acd5fc5a0"/>
+        <Class IRI="#caveats_and_recommendations"/>
+        <Class IRI="#ethical_considerations"/>
+        <Class IRI="#intended_use"/>
+        <Class IRI="#model_context"/>
+        <Class IRI="#model_description"/>
+        <Class IRI="#performance"/>
+        <Class IRI="#training_data"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_1492ab83_bba5_470a_b0ab_46917e6cc2a6"/>
-        <Class IRI="#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715"/>
-        <Class IRI="#OWLClass_3927adb7_1460_4cc6_9fdd_2ded605fbf8e"/>
-        <Class IRI="#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09"/>
-        <Class IRI="#OWLClass_53eff24d_55f9_4b42_bc51_6432e1dc1611"/>
-        <Class IRI="#OWLClass_9e551b7b_c4a9_43e8_b8c8_13755032e163"/>
+        <Class IRI="#citation_details"/>
+        <Class IRI="#contributors"/>
+        <Class IRI="#license"/>
+        <Class IRI="#model_date"/>
+        <Class IRI="#model_id"/>
+        <Class IRI="#model_loc"/>
+        <Class IRI="#model_type"/>
+        <Class IRI="#model_version"/>
+        <Class IRI="#paper_or_resource"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_1b4df76b_b09f_4083_a165_b43db2e6df7b"/>
-        <Class IRI="#OWLClass_3cc11790_3a05_4f79_bcaa_21b60ff1dd0e"/>
-        <Class IRI="#OWLClass_6e1d34c1_ba0b_4e85_bcd0_b128260d7676"/>
-        <Class IRI="#OWLClass_6ecd5163_6230_477e_8899_e493dcf4ce05"/>
-        <Class IRI="#OWLClass_6edee468_c33c_48c9_8545_2e1f4e8296ba"/>
-        <Class IRI="#OWLClass_796a592d_69b6_4579_a5a4_8b3c061c24b3"/>
-        <Class IRI="#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d"/>
-        <Class IRI="#OWLClass_9d804139_7597_4095_aa41_17e7d6e67913"/>
-        <Class IRI="#OWLClass_a2558ba5_dd09_47a5_a65b_72c3d3839f3e"/>
-        <Class IRI="#OWLClass_bf614217_131c_4d5b_93b0_c8756037098c"/>
-        <Class IRI="#OWLClass_d22a02e3_5587_4ce9_9e5e_0b6f4ef67403"/>
-        <Class IRI="#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3"/>
-        <Class IRI="#OWLClass_e624c998_42c1_471c_8314_d654d94b69be"/>
+        <Class IRI="#contributors"/>
+        <Class IRI="#data_id"/>
+        <Class IRI="#data_loc"/>
+        <Class IRI="#instrument"/>
+        <Class IRI="#uploadTime"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548"/>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
+        <Class IRI="#data_id"/>
+        <Class IRI="#motivation"/>
+        <Class IRI="#preprocessing"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548"/>
-        <Class IRI="#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27"/>
-        <Class IRI="#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b"/>
+        <Class IRI="#evaluation_data"/>
+        <Class IRI="#factors"/>
+        <Class IRI="#metrics"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_4f057b7a_5dbb_4b48_8bb9_6208b39b3a6c"/>
-        <Class IRI="#OWLClass_527ba863_36b1_47b2_993c_4856f260a248"/>
+        <Class IRI="#intended_tasks"/>
+        <Class IRI="#intended_users"/>
+        <Class IRI="#out_of_scope_uses"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0"/>
+        <Class IRI="#measures"/>
+        <Class IRI="#threshold"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9"/>
-        <Class IRI="#OWLClass_7ab48b9e_6fae_4cc4_a455_b81560ce0167"/>
-        <Class IRI="#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4"/>
+        <Class IRI="#models"/>
+        <Class IRI="#task_id"/>
+        <Class IRI="#task_name"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_30156882_41bc_4cd4_a1da_d5c7dfaba03b"/>
-        <Class IRI="#OWLClass_52ad5b29_1314_416b_b590_8a5e0f5f2d25"/>
+        <Class IRI="#name"/>
+        <Class IRI="#version"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f"/>
-        <Class IRI="#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d"/>
-        <Class IRI="#OWLClass_66ac5eef_9b8f_4e9c_915f_74fecbc2e638"/>
+        <Class IRI="#task_id"/>
+        <Class IRI="#task_name"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09"/>
-        <Class IRI="#OWLClass_e0001ca9_b50f_41ff_8cd1_45d6d757afe5"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_4c8ab6ef_89ac_4b0d_ab76_4833e0ad6ceb"/>
-        <Class IRI="#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124"/>
-        <Class IRI="#OWLClass_d99ced75_b790_4e2b_b28c_309347a74a5d"/>
-        <Class IRI="#OWLClass_de44a238_665e_459a_abc7_5f7f23594f6b"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_4fd327e3_edf0_4f0e_be95_2b83e3b65125"/>
-        <Class IRI="#OWLClass_8ac2f659_7579_4615_a9e7_e430d716423b"/>
-        <Class IRI="#OWLClass_eb6deda8_cb79_41d2_8c30_b03cc8d79567"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_82d948fc_5331_40ec_b156_435fc813fa4d"/>
-        <Class IRI="#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1"/>
-        <Class IRI="#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3"/>
-        <Class IRI="#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be"/>
-        <Class IRI="#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583"/>
+        <Class IRI="#tasks"/>
+        <Class IRI="#users"/>
     </DisjointClasses>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasParameter"/>
@@ -3551,371 +3494,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/RxKsY4CMnJe22oUDOkHgiB</IRI>
         <Literal>torr</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_07d8f31f_246a_45da_b031_fb9a5d791f79</IRI>
-        <Literal xml:lang="en">motivation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_0adc28b7_0e39_412f_ad0f_37399d45f608</IRI>
-        <Literal xml:lang="en">data_id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_1121aa5e_644a_462a_a898_177f2d5e9ed2</IRI>
-        <Literal xml:lang="en">ethical_considerations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_11b92511_f627_4728_9977_7698ccf4d37d</IRI>
-        <Literal xml:lang="en">ModelCard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_13361dbd_0178_45cc_a013_144d9af1bf06</IRI>
-        <Literal xml:lang="en">users</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_135dfe31_c25a_4576_8002_6151eff00c81</IRI>
-        <Literal xml:lang="en">preprocessing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_138288cb_77dd_45c6_a9a1_1fb584951b2a</IRI>
-        <Literal xml:lang="en">factors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_13d50ab9_13b8_411f_ba18_3e9f90b05c64</IRI>
-        <Literal xml:lang="en">output</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_13fbc7e7_bc6d_4061_afca_e38a30837541</IRI>
-        <Literal xml:lang="en">capabilities</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_1492ab83_bba5_470a_b0ab_46917e6cc2a6</IRI>
-        <Literal xml:lang="en">sampleOffset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_1b4df76b_b09f_4083_a165_b43db2e6df7b</IRI>
-        <Literal xml:lang="en">instrument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_221015d6_5b8c_4678_af40_016fba5d4715</IRI>
-        <Literal xml:lang="en">header</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_27906caa_a8a2_40b7_a0b4_6bb1fd2dcf56</IRI>
-        <Literal xml:lang="en">performance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_2c42ef07_c176_45f1_89c9_0e3daff60548</IRI>
-        <Literal xml:lang="en">task_name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_2efb4a21_01aa_4514_9f25_a4c6c0c97f27</IRI>
-        <Literal xml:lang="en">task_id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_2f8c205f_ccb8_4f21_899b_106cbaff4cf9</IRI>
-        <Literal xml:lang="en">……</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_30156882_41bc_4cd4_a1da_d5c7dfaba03b</IRI>
-        <Literal xml:lang="en">threshold</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_3583eb68_ee91_460e_806b_01a885b4eb7f</IRI>
-        <Literal xml:lang="en">out_of_scope_uses</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_3927adb7_1460_4cc6_9fdd_2ded605fbf8e</IRI>
-        <Literal xml:lang="en">usedWavelength</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_3b3be55a_dfde_4741_9dff_a11f251f9c5c</IRI>
-        <Literal xml:lang="en">TaskCard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_3cc11790_3a05_4f79_bcaa_21b60ff1dd0e</IRI>
-        <Literal xml:lang="en">data_id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_3d6a6708_89ca_4648_a186_7084f5ac81f0</IRI>
-        <Literal xml:lang="en">metrics</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_48d50163_6722_4927_9c36_8c0ded3cfb09</IRI>
-        <Literal xml:lang="en">......</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_4c8ab6ef_89ac_4b0d_ab76_4833e0ad6ceb</IRI>
-        <Literal xml:lang="en">author</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_4e6be2ee_9eba_4120_bb28_2ac909ba325d</IRI>
-        <Literal xml:lang="en">intended_tasks</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_4f057b7a_5dbb_4b48_8bb9_6208b39b3a6c</IRI>
-        <Literal xml:lang="en">epoch_number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_4fd327e3_edf0_4f0e_be95_2b83e3b65125</IRI>
-        <Literal xml:lang="en">contact_info</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_527ba863_36b1_47b2_993c_4856f260a248</IRI>
-        <Literal xml:lang="en">learning_rate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_52ad5b29_1314_416b_b590_8a5e0f5f2d25</IRI>
-        <Literal xml:lang="en">measures</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_53eff24d_55f9_4b42_bc51_6432e1dc1611</IRI>
-        <Literal xml:lang="en">status</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_56666fb3_0c83_4384_82df_b4a0555de606</IRI>
-        <Literal xml:lang="en">hyper-parameters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6000930c_c5d7_4fb3_83ad_2fd21cfc6339</IRI>
-        <Literal xml:lang="en">instrument_id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_66ac5eef_9b8f_4e9c_915f_74fecbc2e638</IRI>
-        <Literal xml:lang="en">intended_users</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6d332af4_9577_43a8_8818_603d536d25d0</IRI>
-        <Literal xml:lang="en">model_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6e1d34c1_ba0b_4e85_bcd0_b128260d7676</IRI>
-        <Literal xml:lang="en">data_loc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6e9b7628_9ff2_436f_884e_7a7b1a221fc6</IRI>
-        <Literal xml:lang="en">model_architecture</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6ecd5163_6230_477e_8899_e493dcf4ce05</IRI>
-        <Literal xml:lang="en">model_date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6edee468_c33c_48c9_8545_2e1f4e8296ba</IRI>
-        <Literal xml:lang="en">model_type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_7073e196_6feb_42db_a546_38e6fc13570b</IRI>
-        <Literal xml:lang="en">models</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_796a592d_69b6_4579_a5a4_8b3c061c24b3</IRI>
-        <Literal xml:lang="en">license</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_7ab48b9e_6fae_4cc4_a455_b81560ce0167</IRI>
-        <Literal xml:lang="en">summary</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_82d948fc_5331_40ec_b156_435fc813fa4d</IRI>
-        <Literal xml:lang="en">version</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_8a769c1f_30c8_4d77_800c_e36b9d8423ac</IRI>
-        <Literal xml:lang="en">tasks</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_8ac2f659_7579_4615_a9e7_e430d716423b</IRI>
-        <Literal xml:lang="en">username</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_8e587e68_9f8d_4d99_8293_b8231b064d88</IRI>
-        <Literal xml:lang="en">fairness_constraints</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_90bf7fff_b692_4605_b6ac_c94d2f605dc1</IRI>
-        <Literal xml:lang="en">content</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_912d6b4f_c9f9_46f7_a088_1b78bf885124</IRI>
-        <Literal xml:lang="en">source</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_96f52b94_98f4_48d6_b08c_9815e7821da7</IRI>
-        <Literal xml:lang="en">caveats_and_recommendations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_9b50a889_9873_4417_946f_1b4bf975a76d</IRI>
-        <Literal xml:lang="en">contributors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_9d804139_7597_4095_aa41_17e7d6e67913</IRI>
-        <Literal xml:lang="en">model_loc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_9e551b7b_c4a9_43e8_b8c8_13755032e163</IRI>
-        <Literal xml:lang="en">sampleMode</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_a2558ba5_dd09_47a5_a65b_72c3d3839f3e</IRI>
-        <Literal xml:lang="en">paper_or_resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_ac4ea570_5a30_4a06_82df_153d29bb1907</IRI>
-        <Literal xml:lang="en">training_data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_b306da57_2aa7_4a4a_9e8a_f3598d58a8a3</IRI>
-        <Literal xml:lang="en">analysis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_ba410452_d8bf_48a5_a952_f0717ddc21be</IRI>
-        <Literal xml:lang="en">instrumentControlSoftware</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_bf614217_131c_4d5b_93b0_c8756037098c</IRI>
-        <Literal xml:lang="en">model_version</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_c0a05d5d_d12f_40e5_a50f_d32ca89b76a4</IRI>
-        <Literal xml:lang="en">test_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_c4590b73_e55e_450b_a905_07e256d9b44d</IRI>
-        <Literal xml:lang="en">context</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_cdb8454d_9a7e_445f_aaa7_de95b775118f</IRI>
-        <Literal xml:lang="en">input</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_d22a02e3_5587_4ce9_9e5e_0b6f4ef67403</IRI>
-        <Literal xml:lang="en">uploadTime</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_d8e5fce5_34e3_4479_aac2_69a947d2d3d3</IRI>
-        <Literal xml:lang="en">model_id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_d99ced75_b790_4e2b_b28c_309347a74a5d</IRI>
-        <Literal xml:lang="en">startTimeStamp</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_d9f1a7fd_a924_4dc2_9896_7e0656592823</IRI>
-        <Literal xml:lang="en">DataCard</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_de44a238_665e_459a_abc7_5f7f23594f6b</IRI>
-        <Literal xml:lang="en">endTimeStamp</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e0001ca9_b50f_41ff_8cd1_45d6d757afe5</IRI>
-        <Literal xml:lang="en">task_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e08c6a87_4930_4694_9afa_22dfb785cfef</IRI>
-        <Literal xml:lang="en">name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e624c998_42c1_471c_8314_d654d94b69be</IRI>
-        <Literal xml:lang="en">citation details</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e8d1d04a_b39f_4857_9bb8_0d207620db3a</IRI>
-        <Literal xml:lang="en">evaluation_data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_eb22c8b1_3250_42a1_81af_bee5b9d6e088</IRI>
-        <Literal xml:lang="en">model_description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_eb6deda8_cb79_41d2_8c30_b03cc8d79567</IRI>
-        <Literal xml:lang="en">affiliation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_ec703879_6e20_4a50_bc0a_8ed8f69c1583</IRI>
-        <Literal xml:lang="en">applicationSoftware</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_fa4602d9_d167_498c_89a0_2800c5285469</IRI>
-        <Literal xml:lang="en">intended_use</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_fe927c77_2095_4585_a197_e27acd5fc5a0</IRI>
-        <Literal xml:lang="en">limitations</Literal>
     </AnnotationAssertion>
 </Ontology>
 
