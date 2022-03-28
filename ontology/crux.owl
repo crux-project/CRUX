@@ -583,6 +583,9 @@
         <Class IRI="#Tension"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TestCard"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Thermal_Atomic_Layer_Deposition"/>
     </Declaration>
     <Declaration>
@@ -640,13 +643,25 @@
         <Class IRI="#applicationSoftware"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#atmosphere"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#author"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#capabilities"/>
+        <Class IRI="#caveats_and_recommendations"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#caveats_and_recommendations"/>
+        <Class IRI="#center"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#center_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#center_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemical_elements"/>
     </Declaration>
     <Declaration>
         <Class IRI="#citation_details"/>
@@ -670,6 +685,9 @@
         <Class IRI="#data_loc"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#electric_field"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#endTimeStamp"/>
     </Declaration>
     <Declaration>
@@ -677,12 +695,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ethical_considerations"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#evaluation_data"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#factors"/>
     </Declaration>
     <Declaration>
         <Class IRI="#fairness_constraints"/>
@@ -694,7 +706,7 @@
         <Class IRI="#hyper-parameters"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#input"/>
+        <Class IRI="#input_format"/>
     </Declaration>
     <Declaration>
         <Class IRI="#instrument"/>
@@ -704,6 +716,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#instrument_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instrument_type"/>
     </Declaration>
     <Declaration>
         <Class IRI="#intended_tasks"/>
@@ -721,16 +736,10 @@
         <Class IRI="#license"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#limitations"/>
+        <Class IRI="#measurement_condition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#measures"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#metrics"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#model_1"/>
+        <Class IRI="#measurements"/>
     </Declaration>
     <Declaration>
         <Class IRI="#model_architecture"/>
@@ -757,19 +766,13 @@
         <Class IRI="#model_version"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#models"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#motivation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#name"/>
     </Declaration>
     <Declaration>
         <Class IRI="#out_of_scope_uses"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#output"/>
+        <Class IRI="#output_format"/>
     </Declaration>
     <Declaration>
         <Class IRI="#paper_or_resource"/>
@@ -778,7 +781,13 @@
         <Class IRI="#performance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#preprocessing"/>
+        <Class IRI="#prefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#processing_parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#processing_technique"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sampleMode"/>
@@ -796,9 +805,6 @@
         <Class IRI="#status"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#summary"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#task_1"/>
     </Declaration>
     <Declaration>
@@ -811,13 +817,16 @@
         <Class IRI="#tasks"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#test_1"/>
+        <Class IRI="#temperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#threshold"/>
+        <Class IRI="#test_id"/>
     </Declaration>
     <Declaration>
         <Class IRI="#training_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#units"/>
     </Declaration>
     <Declaration>
         <Class IRI="#upload_time"/>
@@ -830,6 +839,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#users"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#value"/>
     </Declaration>
     <Declaration>
         <Class IRI="#version"/>
@@ -2571,16 +2583,32 @@
         <Class IRI="#source"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#atmosphere"/>
+        <Class IRI="#measurement_condition"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#author"/>
         <Class IRI="#header"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#capabilities"/>
-        <Class IRI="#model_1"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#caveats_and_recommendations"/>
         <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#center"/>
+        <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#center_id"/>
+        <Class IRI="#center"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#center_name"/>
+        <Class IRI="#center"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chemical_elements"/>
+        <Class IRI="#data_content"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#citation_details"/>
@@ -2608,11 +2636,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#data_id"/>
-        <Class IRI="#data_context"/>
+        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#data_id"/>
-        <Class IRI="#evaluation_data"/>
+        <Class IRI="#data_context"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#data_id"/>
@@ -2621,6 +2649,10 @@
     <SubClassOf>
         <Class IRI="#data_loc"/>
         <Class IRI="#data_context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_field"/>
+        <Class IRI="#measurement_condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#endTimeStamp"/>
@@ -2635,14 +2667,6 @@
         <Class IRI="#ModelCard"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#evaluation_data"/>
-        <Class IRI="#test_1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#factors"/>
-        <Class IRI="#test_1"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#fairness_constraints"/>
         <Class IRI="#model_description"/>
     </SubClassOf>
@@ -2655,12 +2679,16 @@
         <Class IRI="#model_description"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#input"/>
+        <Class IRI="#input_format"/>
+        <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#input_format"/>
         <Class IRI="#model_description"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#instrument"/>
-        <Class IRI="#data_context"/>
+        <Class IRI="#center"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#instrumentControlSoftware"/>
@@ -2668,6 +2696,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#instrument_id"/>
+        <Class IRI="#instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrument_type"/>
         <Class IRI="#instrument"/>
     </SubClassOf>
     <SubClassOf>
@@ -2691,20 +2723,12 @@
         <Class IRI="#model_context"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#limitations"/>
-        <Class IRI="#model_1"/>
+        <Class IRI="#measurement_condition"/>
+        <Class IRI="#instrument"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#measures"/>
-        <Class IRI="#metrics"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#metrics"/>
-        <Class IRI="#test_1"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#model_1"/>
-        <Class IRI="#models"/>
+        <Class IRI="#measurements"/>
+        <Class IRI="#performance"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#model_architecture"/>
@@ -2724,7 +2748,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#model_id"/>
-        <Class IRI="#model_1"/>
+        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#model_id"/>
@@ -2743,18 +2767,6 @@
         <Class IRI="#model_context"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#models"/>
-        <Class IRI="#TaskCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#motivation"/>
-        <Class IRI="#evaluation_data"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#motivation"/>
-        <Class IRI="#training_data"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#name"/>
         <Class IRI="#applicationSoftware"/>
     </SubClassOf>
@@ -2771,7 +2783,11 @@
         <Class IRI="#intended_use"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#output"/>
+        <Class IRI="#output_format"/>
+        <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#output_format"/>
         <Class IRI="#model_description"/>
     </SubClassOf>
     <SubClassOf>
@@ -2780,15 +2796,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#performance"/>
-        <Class IRI="#ModelCard"/>
+        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#preprocessing"/>
-        <Class IRI="#evaluation_data"/>
+        <Class IRI="#prefix"/>
+        <Class IRI="#processing_parameter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#preprocessing"/>
-        <Class IRI="#training_data"/>
+        <Class IRI="#processing_parameter"/>
+        <Class IRI="#processing_technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#processing_technique"/>
+        <Class IRI="#data_content"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sampleMode"/>
@@ -2811,16 +2831,16 @@
         <Class IRI="#data_content"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#summary"/>
-        <Class IRI="#performance"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#task_1"/>
         <Class IRI="#analysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#task_id"/>
         <Class IRI="#TaskCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#task_id"/>
+        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#task_id"/>
@@ -2843,16 +2863,20 @@
         <Class IRI="#out_of_scope_uses"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#test_1"/>
-        <Class IRI="#performance"/>
+        <Class IRI="#temperature"/>
+        <Class IRI="#measurement_condition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#threshold"/>
-        <Class IRI="#metrics"/>
+        <Class IRI="#test_id"/>
+        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#training_data"/>
         <Class IRI="#ModelCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#units"/>
+        <Class IRI="#processing_parameter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#upload_time"/>
@@ -2871,6 +2895,10 @@
         <Class IRI="#out_of_scope_uses"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#value"/>
+        <Class IRI="#processing_parameter"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#version"/>
         <Class IRI="#applicationSoftware"/>
     </SubClassOf>
@@ -2887,6 +2915,7 @@
         <Class IRI="#DataCard"/>
         <Class IRI="#ModelCard"/>
         <Class IRI="#TaskCard"/>
+        <Class IRI="#TestCard"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#affiliation"/>
@@ -2909,18 +2938,24 @@
         <Class IRI="#startTimeStamp"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#capabilities"/>
-        <Class IRI="#limitations"/>
-        <Class IRI="#model_id"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#caveats_and_recommendations"/>
         <Class IRI="#ethical_considerations"/>
         <Class IRI="#intended_use"/>
         <Class IRI="#model_context"/>
         <Class IRI="#model_description"/>
-        <Class IRI="#performance"/>
         <Class IRI="#training_data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#center"/>
+        <Class IRI="#contributors"/>
+        <Class IRI="#data_id"/>
+        <Class IRI="#data_loc"/>
+        <Class IRI="#upload_time"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#center_id"/>
+        <Class IRI="#center_name"/>
+        <Class IRI="#instrument"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#citation_details"/>
@@ -2934,21 +2969,22 @@
         <Class IRI="#paper_or_resource"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#contributors"/>
         <Class IRI="#data_id"/>
-        <Class IRI="#data_loc"/>
-        <Class IRI="#instrument"/>
-        <Class IRI="#upload_time"/>
+        <Class IRI="#model_id"/>
+        <Class IRI="#performance"/>
+        <Class IRI="#task_id"/>
+        <Class IRI="#test_id"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#data_id"/>
-        <Class IRI="#motivation"/>
-        <Class IRI="#preprocessing"/>
+        <Class IRI="#input_format"/>
+        <Class IRI="#output_format"/>
+        <Class IRI="#task_id"/>
+        <Class IRI="#task_name"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#evaluation_data"/>
-        <Class IRI="#factors"/>
-        <Class IRI="#metrics"/>
+        <Class IRI="#instrument_id"/>
+        <Class IRI="#instrument_type"/>
+        <Class IRI="#measurement_condition"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#intended_tasks"/>
@@ -2956,17 +2992,13 @@
         <Class IRI="#out_of_scope_uses"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#measures"/>
-        <Class IRI="#threshold"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#models"/>
-        <Class IRI="#task_id"/>
-        <Class IRI="#task_name"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#name"/>
         <Class IRI="#version"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#prefix"/>
+        <Class IRI="#units"/>
+        <Class IRI="#value"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#task_id"/>

@@ -64,11 +64,14 @@ def find_in_xml(xrdml_file, items, output_file=PathWrap("result.txt")):
 
     f = open(output_file, 'w')
     for key, value in result.items():
-        f.write('{key} :{value}\n'.format(key=key, value=value))
+        f.write('{k} :{v}\n'.format(k=key, v=value))
     f.close()
 
 
-# def main():
+def main():
+    # Output specified item(s) in xrdml file
+    find_in_xml(xrdml_file, ["commonPosition", "intensities"])
+
     # # Transfer XRDML to JSON
     # json_file = xml2json(xrdml_file)
     #
@@ -82,9 +85,6 @@ def find_in_xml(xrdml_file, items, output_file=PathWrap("result.txt")):
     # # Validate peaks with GSAS-II
     # peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
-    # Output specified item(s) in xrdml file
-#     find_in_xml(xrdml_file, ["radius", "intensities"])
-#
-#
-# if __name__ == "__main__":
-#     main()
+
+if __name__ == "__main__":
+    main()
