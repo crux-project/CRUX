@@ -1,0 +1,90 @@
+{
+    "dataContext": {
+        "dataID": null,
+        "uploadTime": null,
+        "contributors": {
+            "username": null,
+            "affiliation": null,
+            "contactInfo": null,
+            "dataLocation": "../data/xrdml/UNSW/A Basic Calibration BBHD Program-3_1.xrdml"
+        },
+        "dataLocation": null,
+        "center": {
+            "centerID": null,
+            "centerName": "UNSW",
+            "instrument": {
+                "instrumentID": null,
+                "instrumentType": null,
+                "measurementCondition": {
+                    "temperature": null,
+                    "atmosphere": null,
+                    "electricField": null
+                }
+            }
+        }
+    },
+    "dataContent": {
+        "header": {
+            "startTimeStamp": "2022-01-21T12:56:01+11:00",
+            "endTimeStamp": "2022-01-21T13:02:04+11:00",
+            "author": {
+                "name": "MPD"
+            },
+            "source": {
+                "applicationSoftware": {
+                    "@version": "2.2d",
+                    "#text": "X'Pert Data Collector"
+                },
+                "instrumentControlSoftware": {
+                    "@version": "2.2 ",
+                    "#text": "XPERT-PRO"
+                }
+            }
+        },
+        "status": "Completed",
+        "sampleMode": "Reflection",
+        "sampleOffset": {
+            "position": [
+                {
+                    "@axis": "2Theta",
+                    "@unit": "deg",
+                    "#text": "0.000"
+                },
+                {
+                    "@axis": "Omega",
+                    "@unit": "deg",
+                    "#text": "0.000"
+                }
+            ]
+        },
+        "usedWavelength": {
+            "@intended": "K-Alpha",
+            "kAlpha1": {
+                "@unit": "Angstrom",
+                "#text": "1.5405980"
+            },
+            "kAlpha2": {
+                "@unit": "Angstrom",
+                "#text": "1.5444260"
+            },
+            "kBeta": {
+                "@unit": "Angstrom",
+                "#text": "1.3922500"
+            },
+            "ratioKAlpha2KAlpha1": "0.5000"
+        },
+        "processingTechnique": {
+            "processingParameter": {
+                "prefix": null,
+                "units": null,
+                "value": null
+            }
+        },
+        "chemicalElements": null
+    },
+    "analysis": {
+        "task_1": {
+            "taskID": null
+        }
+    }
+}

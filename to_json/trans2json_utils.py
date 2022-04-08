@@ -7,12 +7,11 @@ import xml.etree.ElementTree as ET
 sys.path.append('../peak_finding/')
 import peaklist
 
-datadir = "../data"
+datadir = "../data/test"
 PathWrap = lambda fil: os.path.join(datadir, fil)
 xrdml_file = PathWrap("MnO2_Unmilled_Air_InitialScan.xrdml")
 output = PathWrap("pkauto.txt")
 p_gsas2 = PathWrap("p_gsas2.txt")
-data_card = "../ontology/schemas/data_card.json"
 
 
 def xml2json(xrdml_file):
@@ -69,23 +68,20 @@ def find_in_xml(xrdml_file, items, output_file=PathWrap("result.txt")):
     f.close()
 
 
-def xrdml2card(schema):
-    dic = json2dic(schema)
-    scan_dict(dic)
-
-
-def scan_dict(dic):
+def scan_dict(dic, path="", paths=[]):
     for key in dic:
-        print(key)
+        p = path + "/" + key
+        paths.append(p)
         if type(dic[key]) == dict:
-            scan_dict(dic[key])
+            scan_dict(dic[key], p, paths)
+    return paths
 
 
-def main():
+# def main():
     # Output specified item(s) in xrdml file
     # find_in_xml(xrdml_file, ["commonPosition", "intensities"])
 
-    # # Transfer XRDML to JSON
+    # Transfer XRDML to JSON
     # json_file = xml2json(xrdml_file)
 
     # # Get peak list
@@ -98,9 +94,6 @@ def main():
     # # Validate peaks with GSAS-II
     # peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
 
-    # test
-    xrdml2card(data_card)
 
-
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
