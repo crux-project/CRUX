@@ -1,0 +1,43 @@
+{
+    "context": {
+        "data_id": null,
+	    "upload_time": null,
+	    "contributors": {
+            "username": null,
+            "affiliation": null,
+            "contact_info": null
+        },
+        "data_loc": null,
+        "instrument": {
+            "instrument_id": null
+        }
+    },
+    "content": {
+        "header": {
+            "start_time_stamp": null,
+            "end_time_stamp": null,
+            "author": {
+                "name": null
+            },
+            "source": {
+                "application_software": {
+                    "version": null,
+                    "name": null
+                },
+                "instrument_control_software": {
+                    "version": null,
+                    "name": null
+                }
+            }
+        },
+        "status": null,
+        "sample_mode": null,
+        "sample_offset": null,
+        "used_wavelength": null
+    },
+    "analysis": {
+        "task_1": {
+            "task_id": null
+        }
+    }
+}

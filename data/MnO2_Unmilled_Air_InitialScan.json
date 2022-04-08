@@ -21,9 +21,9 @@
             "preparedBy": null
         },
         "xrdMeasurement": {
-            "@measurementType": "Scan",
-            "@status": "Completed",
-            "@sampleMode": "Reflection",
+            "measurementType": "Scan",
+            "status": "Completed",
+            "sampleMode": "Reflection",
             "comment": {
                 "entry": null
             },
