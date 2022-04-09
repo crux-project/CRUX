@@ -43,7 +43,7 @@ def get_path(folder):
 
     for root, dirs, files in os.walk(folder):
         for file in files:
-            if file == '.DS_Store':
+            if file[-5:] != 'xrdml' or 'XRDML':
                 continue
             paths.append(os.path.join(root, file))
 
