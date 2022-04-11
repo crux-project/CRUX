@@ -3,6 +3,8 @@ import json
 import os
 import sys
 import xml.etree.ElementTree as ET
+import json
+import pymongo
 
 sys.path.append('../peak_finding/')
 import peaklist
@@ -75,6 +77,22 @@ def scan_dict(dic, path="", paths=[]):
         if type(dic[key]) == dict:
             scan_dict(dic[key], p, paths)
     return paths
+
+
+def import_json_to_mongodb(file):
+    client = pymongo.MongoClient('localhost')
+    db = client['crux']
+    collection = db['datacard']
+
+    with open(file) as f:
+        data = json.load(f)
+
+    if isinstance(data, list):
+        collection.insert_many(data)
+    else:
+        collection.insert_one(data)
+
+    client.close()
 
 
 # def main():

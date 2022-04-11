@@ -43,7 +43,7 @@ def get_path(folder):
 
     for root, dirs, files in os.walk(folder):
         for file in files:
-            if file[-5:] != 'xrdml' or 'XRDML':
+            if file == '.DS_Store':
                 continue
             paths.append(os.path.join(root, file))
 
@@ -70,11 +70,16 @@ def batch_processing(folder, schema):
         data_card(schema, file, output)
 
 
-def main():
-    schema = "../ontology/schemas/data_card.json"
-    data = "../data/xrdml/"
+def main(datacard=None):
+    # schema = "../ontology/schemas/data_card.json"
+    # data = "../data/xrdml/"
+    # 
+    # batch_processing(data, schema)
 
-    batch_processing(data, schema)
+    files = get_path('../data/data_cards/')
+
+    for file in files:
+        utils.import_json_to_mongodb(file)
 
 
 if __name__ == "__main__":
