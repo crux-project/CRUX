@@ -69,13 +69,14 @@ def find_in_xml(xrdml_file, items, output_file=PathWrap("result.txt")):
     f.close()
 
 
-def scan_dict(dic, path="", paths=[]):
+def scan_dict(dic, path="", keys=[], paths=[]):
     for key in dic:
         p = path + "/" + key
+        keys.append(key)
         paths.append(p)
         if type(dic[key]) == dict:
-            scan_dict(dic[key], p, paths)
-    return paths
+            scan_dict(dic[key], p, keys, paths)
+    return keys, paths
 
 
 def import_json_to_mongodb(file, collection):

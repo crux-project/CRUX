@@ -1,6 +1,6 @@
 {
     "modelContext": {
-        "modelName": null,
+        "modelName": "peakfinding_scipy",
         "contributors": {
             "username": null,
             "affiliation": null,
@@ -12,7 +12,7 @@
         "paperOrResource": null,
         "citationDetails": null,
         "license": null,
-        "modelLocation": null
+        "modelLocation": "../data/model/peakfinding_scipy.py"
     },
     "intendedUse": {
         "intendedTasks": {
