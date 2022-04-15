@@ -17,7 +17,6 @@ PathWrap = lambda fil: os.path.join(datadir, fil)
 
 # auto search by Scipy
 def auto_finding(dic, output):
-    # todo: search key/value in json tree
     dp = dic["xrdMeasurements"]["xrdMeasurement"]["scan"]["dataPoints"]
     y = dp["intensities"]["#text"]
     y = list(map(int, y.split()))
