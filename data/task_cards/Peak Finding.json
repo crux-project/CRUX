@@ -1,0 +1,12 @@
+{
+    "taskName": "Peak Finding",
+    "inputFormat": "xrdml",
+    "outputFormat": "txt",
+    "inputParameters": [
+        "positions",
+        "intensities"
+    ],
+    "outputParameters": [
+        "peaklist"
+    ]
+}

@@ -33,7 +33,7 @@ def data_card(schema, input, output):
     utils.save2json(output, card)
 
 
-def xrdml2json_batch(inputs, outputs, schema):
+def data_card_batch(inputs, outputs, schema):
     """
     Batch convert XRDML files to JSON files.
     :param inputs: path of the folder for XRDML files.
@@ -58,11 +58,11 @@ def main():
     data = "../data/xrdml/"
     datacards = "../data/data_cards/"
 
-    # Convert XRDML data to JSON (Done)
+    # Convert XRDML data to JSON (Done for 289)
     schema = "../ontology/schemas/data_card.json"
-    xrdml2json_batch(data, datacards, schema)
+    data_card_batch(data, datacards, schema)
 
-    # Import JSON files to MongoDB (Done)
+    # Import JSON files to MongoDB (Done for 289)
     collection = "datacard"
     utils.import2mongodb_batch(datacards, collection)
 
