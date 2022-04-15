@@ -1,5 +1,4 @@
 import xmltodict
-import json
 import os
 import sys
 import xml.etree.ElementTree as ET
@@ -11,9 +10,9 @@ import peaklist
 
 datadir = "../data/test"
 PathWrap = lambda fil: os.path.join(datadir, fil)
-xrdml_file = PathWrap("MnO2_Unmilled_Air_InitialScan.xrdml")
-output = PathWrap("pkauto.txt")
-p_gsas2 = PathWrap("p_gsas2.txt")
+# xrdml_file = PathWrap("MnO2_Unmilled_Air_InitialScan.xrdml")
+# output = PathWrap("pkauto.txt")
+# p_gsas2 = PathWrap("p_gsas2.txt")
 
 
 def xml2json(xrdml_file):
@@ -79,10 +78,10 @@ def scan_dict(dic, path="", paths=[]):
     return paths
 
 
-def import_json_to_mongodb(file):
+def import_json_to_mongodb(file, collection):
     client = pymongo.MongoClient('localhost')
     db = client['crux']
-    collection = db['datacard']
+    collection = db[collection]
 
     with open(file) as f:
         data = json.load(f)
@@ -93,6 +92,30 @@ def import_json_to_mongodb(file):
         collection.insert_one(data)
 
     client.close()
+
+
+def get_path(folder):
+    """
+    Get paths of all XRDML files in folder.
+    :param folder: path of the input folder.
+    :return: a list of paths.
+    """
+    paths = []
+
+    for root, dirs, files in os.walk(folder):
+        for file in files:
+            if file == '.DS_Store':
+                continue
+            paths.append(os.path.join(root, file))
+
+    return paths
+
+
+def import2mongodb_batch(folder, collection):
+    cards = get_path(folder)
+
+    for card in cards:
+        import_json_to_mongodb(card, collection)
 
 
 # def main():

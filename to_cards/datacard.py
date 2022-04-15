@@ -1,4 +1,4 @@
-import trans2json_utils as utils
+import utils
 import xmltodict
 import os
 
@@ -33,53 +33,38 @@ def data_card(schema, input, output):
     utils.save2json(output, card)
 
 
-def get_path(folder):
-    """
-    Get paths of all XRDML files in folder.
-    :param folder: path of the input folder.
-    :return: a list of paths.
-    """
-    paths = []
-
-    for root, dirs, files in os.walk(folder):
-        for file in files:
-            if file == '.DS_Store':
-                continue
-            paths.append(os.path.join(root, file))
-
-    return paths
-
-
-def batch_processing(folder, schema):
+def xrdml2json_batch(inputs, outputs, schema):
     """
     Batch convert XRDML files to JSON files.
-    :param folder: path of the input folder.
-    :param schema: path of JSON schema.
+    :param inputs: path of the folder for XRDML files.
+    :param outputs: path of the folder for JSON files(datacards).
+    :param schema: path of JSON(card) schema.
     :return:
     """
-    files = get_path(folder)
+    files = utils.get_path(inputs)
 
-    for file in files:
-        output = file[:-5] + "json"
-        output = output.replace("xrdml", "data_cards", 1)
+    for input in files:
+        output = input[:-5] + "json"
+        output = output.replace(inputs, outputs, 1)
 
         index = output.rfind("/") + 1
         if not os.path.exists(output[:index]):
             os.makedirs(output[:index])
 
-        data_card(schema, file, output)
+        data_card(schema, input, output)
 
 
-def main(datacard=None):
-    # schema = "../ontology/schemas/data_card.json"
-    # data = "../data/xrdml/"
-    # 
-    # batch_processing(data, schema)
+def main():
+    data = "../data/xrdml/"
+    datacards = "../data/data_cards/"
 
-    files = get_path('../data/data_cards/')
+    # Convert XRDML data to JSON (Done)
+    schema = "../ontology/schemas/data_card.json"
+    xrdml2json_batch(data, datacards, schema)
 
-    for file in files:
-        utils.import_json_to_mongodb(file)
+    # Import JSON files to MongoDB (Done)
+    collection = "datacard"
+    utils.import2mongodb_batch(datacards, collection)
 
 
 if __name__ == "__main__":
