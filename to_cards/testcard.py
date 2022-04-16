@@ -19,11 +19,11 @@ def test_card(schema, task_name):
             card["dataID"] = datacard["_id"]
             card["modelID"] = modelcard["_id"]
 
-            data = datacard["dataContext"]["dataLocation"]
-            model = modelcard["modelContext"]["modelLocation"]
-            command = "python3 " + model + " \"" + data + "\""
-            print(str(num) + ". " + data)
-            os.system(command)
+            # data = datacard["dataContext"]["dataLocation"]
+            # model = modelcard["modelContext"]["modelLocation"]
+            # command = "python3 " + model + " \"" + data + "\""
+            # print(str(num) + ". " + data)
+            # os.system(command)
 
             cards.append(card)
 
@@ -33,7 +33,7 @@ def test_card(schema, task_name):
 def main():
     # Generate a test card.
     schema = "../ontology/schemas/test_card.json"
-    testcards = test_card(schema, "Peak Finding")
+    testcards = test_card(schema, "peak_finding")
 
     # Import the generated test card to MongoDB.
     collection = "testcard"

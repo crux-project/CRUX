@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#python3 taskcard.py "Peak Finding" --input_format xrdml\
-#                                   --output_format txt\
-#                                   --input_parameters positions intensities\
-#                                   --ouput_parameters peaklist
+python3 taskcard.py peak_finding --input_format xrdml\
+                                   --output_format txt\
+                                   --input_parameters positions intensities\
+                                   --output_parameters peaklist
 
 
 python3 modelcard.py --modelName peakfinding_scipy\
@@ -12,6 +12,6 @@ python3 modelcard.py --modelName peakfinding_scipy\
                      --outputFormat txt\
                      --inputParameters positions intensities\
                      --outputParameters peaklist\
-                     --taskName "Peak Finding"
+                     --taskName peak_finding
 
 
