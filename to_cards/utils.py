@@ -79,13 +79,33 @@ def scan_dict(dic, path="", keys=[], paths=[]):
     return keys, paths
 
 
-def import_json_to_mongodb(file, collection):
+def dict_set(dic, path, value):
+    """
+    :param dic: Input dictionary.
+    :param path: path to the item to be changed: "/.../.../...".
+    :param value: value to be set.
+    :return:
+    """
+    path = path.split("/")
+    key = path[-1]
+    for item in path[1:-1]:
+        dic = dic[item]
+    dic[key] = value
+
+
+def import_to_mongodb(data, collection):
+    """
+    :param data: dict or JSON file
+    :param collection: collection to import
+    :return:
+    """
     client = pymongo.MongoClient('localhost')
     db = client['crux']
     collection = db[collection]
 
-    with open(file) as f:
-        data = json.load(f)
+    if type(data) not in (dict, list):
+        with open(data) as f:
+            data = json.load(f)
 
     if isinstance(data, list):
         collection.insert_many(data)
@@ -116,7 +136,7 @@ def import2mongodb_batch(folder, collection):
     cards = get_path(folder)
 
     for card in cards:
-        import_json_to_mongodb(card, collection)
+        import_to_mongodb(card, collection)
 
 
 # def main():

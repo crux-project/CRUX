@@ -20,7 +20,7 @@ def data_card(schema, input, output):
     xrd = raw["xrdMeasurements"]["xrdMeasurement"]
 
     context["center"]["centerName"] = input.split('/')[3]
-    context["contributors"]["dataLocation"] = input
+    context["dataLocation"] = input
     content["header"] = xrd["scan"]["header"]
     content["status"] = xrd.get("@status")
     content["sampleMode"] = xrd.get("@sampleMode")

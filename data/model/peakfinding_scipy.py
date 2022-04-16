@@ -1,9 +1,10 @@
 import xmltodict
 import numpy as np
 from scipy.signal import find_peaks
+import sys
 
 
-def peak_finding(input, output):
+def peak_finding(input, output="../data/test/pk_scipy.txt"):
     """
     :param input: Path to XRDML file.
     :param output: Path to the output txt file.
@@ -14,11 +15,18 @@ def peak_finding(input, output):
 
     dp = dic["xrdMeasurements"]["xrdMeasurement"]["scan"]["dataPoints"]
     y = dp["intensities"]["#text"]
-    y = list(map(int, y.split()))
-    sp = float(dp["positions"][0]["startPosition"])
-    ep = float(dp["positions"][0]["endPosition"])
+    y = list(map(float, y.split()))
+
+    if type(dp["positions"]) == list:
+        sp = float(dp["positions"][0]["startPosition"])
+        ep = float(dp["positions"][0]["endPosition"])
+    else:
+        sp = float(dp["positions"]["startPosition"])
+        ep = float(dp["positions"]["endPosition"])
+
     x = np.arange(sp, ep, (ep - sp) / len(y))
     peaks, _ = find_peaks(y)
+
     peak_position = []
     peak_intensity = []
     f = open(output, 'w')
@@ -36,10 +44,10 @@ def peak_finding(input, output):
 
 
 def main():
-    input = "../../data/test/MnO2_Unmilled_Air_InitialScan.xrdml"
-    output = "../../data/test/pk_scipy.txt"
-
-    peak_finding(input, output)
+    # input = "../data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
+    # input = "../data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
+    input = sys.argv[1]
+    peak_finding(input)
 
 
 if __name__ == "__main__":

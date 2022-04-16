@@ -21,8 +21,8 @@
         },
         "intendedUsers": null,
         "outOfScopeUses": {
-            "tasks": null,
-            "users": null
+            "outTasks": null,
+            "outUsers": null
         }
     },
     "trainingData": {
