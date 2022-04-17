@@ -1,10 +1,10 @@
 import xmltodict
 import numpy as np
-from scipy.signal import find_peaks
+import peakutils.peak as find_peaks
 import sys
 
 
-def peak_finding(input, output="../data/test/pk_scipy.txt"):
+def peak_finding(input, output="../data/test/pk_peakutils.txt"):
     """
     :param input: Path to XRDML file.
     :param output: Path to the output txt file.
@@ -12,7 +12,8 @@ def peak_finding(input, output="../data/test/pk_scipy.txt"):
     """
 
     x, y = detect_x_y(input)
-    peaks, _ = find_peaks(y)
+    peaks = find_peaks.indexes(np.array(y), thres=7.0 / max(y))
+    # peaks = find_peaks.indexes(np.array(y), thres=7.0/max(y), min_dist=2)
     peak_position = []
     peak_intensity = []
 
@@ -51,9 +52,9 @@ def detect_x_y(input):
 
 
 def main():
-    # input = "../data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
+    input = "../data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
     # input = "../data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
-    input = sys.argv[1]
+    # input = sys.argv[1]
     peak_finding(input)
 
 
