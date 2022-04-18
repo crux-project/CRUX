@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import json
 import pymongo
 
-sys.path.append('../peak_finding/')
+sys.path.append('../model/peakfinding/temp/peak_finding/')
 import peaklist
 
 datadir = "../data/test"
