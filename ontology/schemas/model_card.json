@@ -28,6 +28,8 @@
     "trainingData": {
         "dataID": null
     },
+    "dependencies": {
+    },
     "modelDescription": {
         "inputFormat": null,
         "outputFormat": null,
@@ -35,8 +37,6 @@
         "outputParameters": null,
         "modelArchitecture": null,
         "hyperParameters": {
-            "learningRate": null,
-            "epochNumber": null
         },
         "fairnessConstraints": null
     },

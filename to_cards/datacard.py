@@ -1,15 +1,13 @@
 import utils
 import xmltodict
-import os
 
 
-def data_card(schema, input, output):
+def data_card(schema, input):
     """
     Mapping to JSON file.
     :param schema: path of JSON schema.
     :param input: path of input XRDML file.
-    :param output: path of output JSON file.
-    :return:
+    :return: a datacard
     """
     card = utils.json2dic(schema)
     f = open(input, mode='r', encoding='utf-8')
@@ -30,41 +28,35 @@ def data_card(schema, input, output):
     if content["header"]["source"].get("instrumentID"):
         del content["header"]["source"]["instrumentID"]
 
-    utils.save2json(output, card)
+    return card
 
 
-def data_card_batch(inputs, outputs, schema):
+def data_card_batch(inputs, schema):
     """
     Batch convert XRDML files to JSON files.
     :param inputs: path of the folder for XRDML files.
-    :param outputs: path of the folder for JSON files(datacards).
     :param schema: path of JSON(card) schema.
-    :return:
+    :return: bunch of datacards
     """
     files = utils.get_path(inputs)
 
+    cards = []
     for input in files:
-        output = input[:-5] + "json"
-        output = output.replace(inputs, outputs, 1)
+        card = data_card(schema, input)
+        cards.append(card)
 
-        index = output.rfind("/") + 1
-        if not os.path.exists(output[:index]):
-            os.makedirs(output[:index])
-
-        data_card(schema, input, output)
+    return cards
 
 
 def main():
-    data = "../data/xrdml/"
-    datacards = "../data/data_cards/"
-
-    # Convert XRDML data to JSON (Done for 289)
+    # Generate data cards.
+    data = "../content/data/xrdml/"
     schema = "../ontology/schemas/data_card.json"
-    data_card_batch(data, datacards, schema)
+    datacards = data_card_batch(data, schema)
 
     # Import JSON files to MongoDB (Done for 289)
     collection = "datacard"
-    utils.import2mongodb_batch(datacards, collection)
+    utils.import_to_mongodb(datacards, collection)
 
 
 if __name__ == "__main__":

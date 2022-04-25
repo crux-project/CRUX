@@ -5,10 +5,10 @@ import xml.etree.ElementTree as ET
 import json
 import pymongo
 
-sys.path.append('../model/peakfinding/temp/peak_finding/')
-import peaklist
+# sys.path.append('../model/peakfinding/temp/peak_finding/')
+# import peaklist
 
-datadir = "../data/test"
+datadir = "../testdata"
 PathWrap = lambda fil: os.path.join(datadir, fil)
 # xrdml_file = PathWrap("MnO2_Unmilled_Air_InitialScan.xrdml")
 # output = PathWrap("pkauto.txt")
@@ -130,13 +130,6 @@ def get_path(folder):
             paths.append(os.path.join(root, file))
 
     return paths
-
-
-def import2mongodb_batch(folder, collection):
-    cards = get_path(folder)
-
-    for card in cards:
-        import_to_mongodb(card, collection)
 
 
 # def main():

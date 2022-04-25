@@ -16,9 +16,17 @@ def model_card(schema):
         result = db.taskcard.find_one({'taskName': items["taskName"]})
         items["taskID"] = result["_id"]
 
+    dep = items["dependencies"] if items["dependencies"] else "None"
+    for i in range(len(dep)):
+        if dep == "None":
+            break
+        result = db.modelcard.find_one({'modelContext.modelName': dep[i]})
+        card["dependencies"].setdefault(dep[i], {})
+        card["dependencies"][dep[i]]["modelID"] = result["_id"] if result else None
+
     for i in range(len(items)):
         key = keys[i]
-        if items[key]:
+        if items[key] and key != "dependencies":
             path = paths[i]
             utils.dict_set(card, path, items[key])
 
@@ -35,6 +43,8 @@ def set_para(keys):
 
     argus["inputParameters"].nargs = "+"
     argus["outputParameters"].nargs = "+"
+    argus["dependencies"].nargs = "+"
+    argus["hyperParameters"].nargs = "+"
 
     args = parser.parse_args()
     items = vars(args)
