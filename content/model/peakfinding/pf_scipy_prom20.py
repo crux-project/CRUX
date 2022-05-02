@@ -1,11 +1,11 @@
 import xmltodict
 import numpy as np
-import peakutils.peak as find_peaks
+from scipy.signal import find_peaks
 import sys
 import os
 
 
-def peak_finding(input, output="../testdata/pk_peakutils.txt"):
+def peak_finding(input, output="../testdata/pk_scipy.txt"):
     """
     :param input: Path to XRDML file.
     :param output: Path to the output txt file.
@@ -13,7 +13,7 @@ def peak_finding(input, output="../testdata/pk_peakutils.txt"):
     """
 
     x, y = detect_x_y(input)
-    peaks = find_peaks.indexes(np.array(y), thres=0.02/max(y), min_dist=200)
+    peaks, _ = find_peaks(y, prominence=20)
     peak_position = []
     peak_intensity = []
 
@@ -56,8 +56,11 @@ def detect_x_y(input):
 
 
 def main():
-    # input = "../content/data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
+    # input = "../content/data/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.xrdml"
     # input = "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
+    # input = "../content/data/xrdml/NC-State/Mn-O/MnO2_Unmilled_Air_25to1100øC.XRDML"
+    # input = "../content/data/xrdml/UNSW/A Basic Calibration BBHD Program-3_1.xrdml"
+    # output = "../testdata/ps_1000.txt"
     input = sys.argv[1]
     output = sys.argv[2]
     peak_finding(input, output)

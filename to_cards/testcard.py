@@ -2,6 +2,7 @@ import pymongo
 import utils
 import sys
 import os
+import time
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
@@ -14,7 +15,7 @@ def test_card(schema, task_name):
     for datacard in db["datacard"].find():
         num += 1
         for modelcard in db["modelcard"].find(
-                {"intendedUse.intendedTasks.taskName":task_name}):
+                {"intendedUse.intendedTasks.taskName": task_name}):
             card = utils.json2dic(schema)
             card["taskID"] = task["_id"]
             card["dataID"] = datacard["_id"]
@@ -23,12 +24,17 @@ def test_card(schema, task_name):
             input = datacard["dataContext"]["dataLocation"]
             model = modelcard["modelContext"]["modelLocation"]
             model_name = model.split('/')[-1][:-3]
-            output = input.replace("data", "test/"+model_name, 1)[:-6] + ".txt"
+            output = input.replace("data", "test/" + model_name, 1)[:-6] + ".txt"
             command = "python3 " + model + " \"" + input + "\" \"" + output + "\""
-            print(str(num) + ". " + input)
-            os.system(command)
-            card["outputLocation"] = output
 
+            print(str(num) + ". " + input)
+            start = time.time()
+            os.system(command)
+            end = time.time()
+            rt = end - start
+            card["performance"]["runningTime(s)"] = rt
+
+            card["outputLocation"] = output
             utils.import_to_mongodb(card, "testcard")
 
 
@@ -40,4 +46,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

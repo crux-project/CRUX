@@ -22,14 +22,14 @@ def peak_finding(input, output="../testdata/pk_peakutils.txt"):
         os.makedirs(output[:index])
 
     f = open(output, 'w')
-    f.write('pos' + '\t' + 'int' + '\t' + '\n')
+    f.write('pos' + '\t' + 'int')
 
     for peak in peaks:
         position = format(x[peak], '.4f')
         intensity = format(y[peak], '.2f')
         peak_position.append(position)
         peak_intensity.append(intensity)
-        f.write(str(position) + '\t' + str(intensity) + '\t' + '\n')
+        f.write('\n' + str(position) + '\t' + str(intensity))
     f.close()
 
     return peak_position, peak_intensity

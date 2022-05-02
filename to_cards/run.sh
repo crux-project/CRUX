@@ -1,16 +1,16 @@
 #!/bin/bash
-echo "Step 1/4 - Generating data cards......"
+echo "Step 1/5 - Generating data cards......"
 python3 datacard.py
 
 
-echo "Step 2/4 - Generating task cards......"
+echo "Step 2/5 - Generating task cards......"
 python3 taskcard.py peak_finding --input_format xrdml\
                                  --output_format txt\
                                  --input_parameters positions intensities\
                                  --output_parameters peaklist
 
 
-echo "Step 3/4 - Generating model cards......"
+echo "Step 3/5 - Generating model cards......"
 python3 modelcard.py --modelName scipy.signal.find_peaks\
                      --affiliation "The SciPy community"\
                      --contactInfo "scipy-dev@python.org"\
@@ -66,5 +66,23 @@ python3 modelcard.py --modelName peakfinding_peakutils\
 done
 
 
-echo "Step 4/4 - Generating testdata cards......"
+for prominence in 20 30 40 200 300 400 1000
+do
+python3 modelcard.py --modelName peakfinding_scipy\
+                     --modelLocation ../content/model/peakfinding/pf_scipy_prom$prominence.py\
+                     --dependencies scipy.signal.find_peaks\
+                     --inputFormat xrdml\
+                     --outputFormat txt\
+                     --inputParameters positions intensities\
+                     --outputParameters peaklist\
+                     --hyperParameters prominence=$prominence\
+                     --taskName peak_finding
+done
+
+
+echo "Step 4/5 - Generating test cards......"
 python3 testcard.py peak_finding
+
+
+echo "Step 5/5 - Generating performance......"
+python3 performance.py
