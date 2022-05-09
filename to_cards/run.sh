@@ -44,7 +44,7 @@ python3 modelcard.py --modelName peakutils.peak.index\
 
 for distance in 150 200 250 300
 do
-python3 modelcard.py --modelName peakfinding_scipy\
+python3 modelcard.py --modelName pf_scipy_dist$distance\
                      --modelLocation ../content/model/peakfinding/pf_scipy_dist$distance.py\
                      --dependencies scipy.signal.find_peaks\
                      --inputFormat xrdml\
@@ -54,7 +54,7 @@ python3 modelcard.py --modelName peakfinding_scipy\
                      --hyperParameters min_dist=$distance\
                      --taskName peak_finding
 
-python3 modelcard.py --modelName peakfinding_peakutils\
+python3 modelcard.py --modelName pf_peakutils_dist$distance\
                      --modelLocation ../content/model/peakfinding/pf_peakutils_dist$distance.py\
                      --dependencies peakutils.peak.index\
                      --inputFormat xrdml\
@@ -68,7 +68,7 @@ done
 
 for prominence in 20 30 40 200 300 400 1000
 do
-python3 modelcard.py --modelName peakfinding_scipy\
+python3 modelcard.py --modelName pf_scipy_prom$prominence\
                      --modelLocation ../content/model/peakfinding/pf_scipy_prom$prominence.py\
                      --dependencies scipy.signal.find_peaks\
                      --inputFormat xrdml\
@@ -80,9 +80,16 @@ python3 modelcard.py --modelName peakfinding_scipy\
 done
 
 
+python3 modelcard.py --modelName Jade\
+                     --inputFormat xrdml\
+                     --outputFormat txt\
+                     --outputParameters peaklist\
+                     --taskName peak_finding
+
+
 echo "Step 4/5 - Generating test cards......"
 python3 testcard.py peak_finding
 
 
-echo "Step 5/5 - Generating performance......"
-python3 performance.py
+echo "Step 5/5 - Generating performance (Allowed error: 0.01)......"
+python3 performance.py 0.01

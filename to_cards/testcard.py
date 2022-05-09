@@ -23,19 +23,27 @@ def test_card(schema, task_name):
 
             input = datacard["dataContext"]["dataLocation"]
             model = modelcard["modelContext"]["modelLocation"]
-            model_name = model.split('/')[-1][:-3]
+            model_name = modelcard["modelContext"]["modelName"]
             output = input.replace("data", "test/" + model_name, 1)[:-6] + ".txt"
-            command = "python3 " + model + " \"" + input + "\" \"" + output + "\""
 
-            print(str(num) + ". " + input)
-            start = time.time()
-            os.system(command)
-            end = time.time()
-            rt = end - start
-            card["performance"]["runningTime(s)"] = rt
+            if model_name == "Jade" and not os.path.exists(output):
+                continue
+            elif model_name != "Jade":
+                execute(input, output, model, num, card)
 
             card["outputLocation"] = output
             utils.import_to_mongodb(card, "testcard")
+
+
+def execute(input, output, model, data_num, card):
+    command = "python3 " + model + " \"" + input + "\" \"" + output + "\""
+
+    print(str(data_num) + ". " + input)
+    start = time.time()
+    os.system(command)
+    end = time.time()
+    rt = end - start
+    card["performance"]["runningTime(s)"] = rt
 
 
 def main():

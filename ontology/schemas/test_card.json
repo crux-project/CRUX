@@ -3,5 +3,6 @@
     "dataID": null,
     "modelID": null,
     "performance": {},
+    "groundtruth": null,
     "outputLocation": null
 }
