@@ -1,0 +1,8 @@
+XRDML file: ../content/data/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.xrdml
+Package: Scipy
+Allowed Error: 0.001
+distance  		prominence		recall         		precision      		f1_score       
+-------------------------------------------------------------------------------------
+100       		None      		0.03125        		0.02857        		0.02985        
+None      		100       		0.03125        		0.01042        		0.01562        
+100       		100       		0.03125        		0.04167        		0.03571        

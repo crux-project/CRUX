@@ -52,7 +52,7 @@ def main():
     input = "../content/data/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.xrdml"
     groundtruth = "../content/test/Jade/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
     p = performance.get_pos(groundtruth)
-    err = 0.01
+    err = 0.005
 
     output = "../testdata/tune_para_" + str(err) + ".txt"
     f = open(output, 'w')
