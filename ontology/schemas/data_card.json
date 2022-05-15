@@ -36,9 +36,5 @@
         },
         "chemicalElements": null
     },
-    "analysis": {
-        "task_1": {
-            "taskID": null
-        }
-    }
+    "analysis": {}
 }

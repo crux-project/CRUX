@@ -1,8 +1,9 @@
 import utils
+import argparse
 import xmltodict
 
 
-def data_card(schema, input):
+def data_card(input, schema="../ontology/schemas/data_card.json"):
     """
     Mapping to JSON file.
     :param schema: path of JSON schema.
@@ -31,7 +32,7 @@ def data_card(schema, input):
     return card
 
 
-def data_card_batch(inputs, schema):
+def data_card_batch(inputs, schema="../ontology/schemas/data_card.json"):
     """
     Batch convert XRDML files to JSON files.
     :param inputs: path of the folder for XRDML files.
@@ -42,17 +43,42 @@ def data_card_batch(inputs, schema):
 
     cards = []
     for input in files:
-        card = data_card(schema, input)
+        card = data_card(input, schema)
         cards.append(card)
 
     return cards
 
 
+def get_input():
+    parser = argparse.ArgumentParser(description='Raw data for datacard.')
+
+    parser.add_argument("-file", "--input_file",
+                        dest="file",
+                        help="Path to input file.")
+
+    parser.add_argument("-folder", "--input_folder",
+                        dest="folder",
+                        help="Path to input folder.")
+
+    inputs = vars(parser.parse_args())
+
+    if inputs['file']:
+        input = [inputs['file'], 'file']
+    else:
+        input = [inputs['folder'], 'folder']
+
+    return input
+
+
 def main():
     # Generate data cards.
-    data = "../content/data/xrdml/"
-    schema = "../ontology/schemas/data_card.json"
-    datacards = data_card_batch(data, schema)
+    # input = "../content/data/xrdml/"
+    input = get_input()
+
+    if input[1] == "file":
+        datacards = data_card(input[0])
+    else:
+        datacards = data_card_batch(input[0])
 
     # Import JSON files to MongoDB (Done for 289)
     collection = "datacard"
