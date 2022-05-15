@@ -1,0 +1,10 @@
+[
+  {
+    "_id": {"$oid": "626649eb4d65d87ad045227f"},
+    "inputFormat": "xrdml",
+    "inputParameters": ["positions", "intensities"],
+    "outputFormat": "txt",
+    "outputParameters": ["peaklist"],
+    "taskName": "peak_finding"
+  }
+]

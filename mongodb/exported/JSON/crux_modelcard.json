@@ -1,0 +1,866 @@
+[
+  {
+    "_id": {"$oid": "6278888ce4d87bc88d0075f3"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": null,
+        "taskName": null
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "scipy.signal.find_peaks",
+      "contributors": {
+        "username": null,
+        "affiliation": "The SciPy community",
+        "contactInfo": "scipy-dev@python.org"
+      },
+      "modelDate": "02/05/2022",
+      "modelVersion": "1.8.0",
+      "modelType": "Find peaks inside a signal based on peak properties.",
+      "paperOrResource": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html",
+      "citationDetails": null,
+      "license": "BSD 3-Clause New or Revised License",
+      "modelLocation": "https://github.com/scipy/scipy/blob/v1.8.0/scipy/signal/_peak_finding.py#L723-L1003"
+    },
+    "modelDescription": {
+      "inputFormat": "nparray",
+      "outputFormat": "nparray",
+      "inputParameters": ["x", "height", "threshold", "distance", "prominence", "width", "wlen", "rel_height", "plateau_size"],
+      "outputParameters": ["peaks", "properties"],
+      "modelArchitecture": null,
+      "hyperParameters": {
+      },
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278888de929ac1e300fcb01"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "numpy": {
+        "modelID": null
+      },
+      "scipy": {
+        "modelID": null
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": null,
+        "taskName": null
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "peakutils.peak.index",
+      "contributors": {
+        "username": "Lucas Hermann Negri",
+        "affiliation": null,
+        "contactInfo": "lucashnegri@gmail.com"
+      },
+      "modelDate": "01/23/2020",
+      "modelVersion": "1.3.3",
+      "modelType": "Peak detection routine.",
+      "paperOrResource": "https://peakutils.readthedocs.io/en/latest/reference.html#module-peakutils.peak",
+      "citationDetails": null,
+      "license": "MIT license",
+      "modelLocation": "https://bitbucket.org/lucashnegri/peakutils"
+    },
+    "modelDescription": {
+      "inputFormat": "nparray",
+      "outputFormat": "nparray",
+      "inputParameters": ["y", "thres", "min_dist", "thres_abs"],
+      "outputParameters": ["Array containing the numeric indexes of the peaks that were detected."],
+      "modelArchitecture": null,
+      "hyperParameters": {
+      },
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278888d57ace8649f576539"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_dist150",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_dist150.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["min_dist=150"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278888ed7561cb06b72b7a0"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "peakutils.peak.index": {
+        "modelID": {"$oid": "6278888de929ac1e300fcb01"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_peakutils_dist150",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_peakutils_dist150.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["thres=0.02/max(intensities)", "distance=150"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278888f30d694e77b47fc81"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_dist200",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_dist200.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["min_dist=200"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278888ff6a4160473f578c0"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "peakutils.peak.index": {
+        "modelID": {"$oid": "6278888de929ac1e300fcb01"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_peakutils_dist200",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_peakutils_dist200.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["thres=0.02/max(intensities)", "distance=200"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788890c38b0b5350fc4174"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_dist250",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_dist250.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["min_dist=250"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788890cebdcf36febe52d7"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "peakutils.peak.index": {
+        "modelID": {"$oid": "6278888de929ac1e300fcb01"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_peakutils_dist250",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_peakutils_dist250.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["thres=0.02/max(intensities)", "distance=250"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "6278889144b0d4c26d30e778"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_dist300",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_dist300.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["min_dist=300"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788892c5fecd2561bf61b2"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "peakutils.peak.index": {
+        "modelID": {"$oid": "6278888de929ac1e300fcb01"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_peakutils_dist300",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_peakutils_dist300.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["thres=0.02/max(intensities)", "distance=300"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "627888926964c705ed8b211b"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom20",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom20.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=20"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788893d852a5fc45212c0c"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom30",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom30.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=30"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "627888940e010d7f9fc950f0"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom40",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom40.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=40"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "627888949f35cdfa475ce049"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom200",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom200.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=200"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788895cead01ff5f6548dc"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom300",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom300.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=300"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "62788896bea8627d6735d955"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom400",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom400.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=400"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "627888962695da501bc24ab6"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+      "scipy.signal.find_peaks": {
+        "modelID": {"$oid": "6278888ce4d87bc88d0075f3"}
+      }
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "pf_scipy_prom1000",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": "../content/model/peakfinding/pf_scipy_prom1000.py"
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": ["positions", "intensities"],
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": ["prominence=1000"],
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  },
+  {
+    "_id": {"$oid": "627888973bc4bc8bcd2d8df6"},
+    "caveatsAndRecommendations": null,
+    "dependencies": {
+    },
+    "ethicalConsiderations": null,
+    "intendedUse": {
+      "intendedTasks": {
+        "taskID": {"$oid": "626649eb4d65d87ad045227f"},
+        "taskName": "peak_finding"
+      },
+      "intendedUsers": null,
+      "outOfScopeUses": {
+        "outTasks": null,
+        "outUsers": null
+      }
+    },
+    "modelContext": {
+      "modelName": "Jade",
+      "contributors": {
+        "username": null,
+        "affiliation": null,
+        "contactInfo": null
+      },
+      "modelDate": null,
+      "modelVersion": null,
+      "modelType": null,
+      "paperOrResource": null,
+      "citationDetails": null,
+      "license": null,
+      "modelLocation": null
+    },
+    "modelDescription": {
+      "inputFormat": "xrdml",
+      "outputFormat": "txt",
+      "inputParameters": null,
+      "outputParameters": ["peaklist"],
+      "modelArchitecture": null,
+      "hyperParameters": {
+      },
+      "fairnessConstraints": null
+    },
+    "trainingData": {
+      "dataID": null
+    }
+  }
+]
