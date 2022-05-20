@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Step 1/5 - Generating data cards......"
-python3 datacard.py -folder "../content/data/xrdml/"
-# python3 datacard.py -file "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
+#python3 datacard.py -folder "../content/data/xrdml/"
+python3 datacard.py -file "../content/data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
 
 
 echo "Step 2/5 - Generating task cards......"
