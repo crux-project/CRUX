@@ -132,3 +132,4 @@ dmypy.json
 .idea/
 content/data/
 content/test/
+content/ranking/

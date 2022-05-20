@@ -1,17 +1,17 @@
 #!/bin/bash
-echo "Step 1/5 - Generating data cards......"
+echo "Step 1/6 - Generating data cards......"
 python3 datacard.py -folder "../content/data/xrdml/"
 # python3 datacard.py -file "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
 
 
-echo "Step 2/5 - Generating task cards......"
+echo "Step 2/6 - Generating task cards......"
 python3 taskcard.py peak_finding --input_format xrdml\
                                  --output_format txt\
                                  --input_parameters positions intensities\
                                  --output_parameters peaklist
 
 
-echo "Step 3/5 - Generating model cards......"
+echo "Step 3/6 - Generating model cards......"
 python3 modelcard.py --modelName scipy.signal.find_peaks\
                      --affiliation "The SciPy community"\
                      --contactInfo "scipy-dev@python.org"\
@@ -88,9 +88,13 @@ python3 modelcard.py --modelName Jade\
                      --taskName peak_finding
 
 
-echo "Step 4/5 - Generating test cards......"
+echo "Step 4/6 - Generating test cards......"
 python3 testcard.py peak_finding
 
 
-echo "Step 5/5 - Generating performance (Allowed error: 0.01)......"
+echo "Step 5/6 - Generating performance (Allowed error: 0.01)......"
 python3 performance.py 0.01
+
+
+echo "Step 6/6 - Generating ranking lists......"
+python3 ranking.py
