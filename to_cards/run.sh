@@ -1,17 +1,38 @@
 #!/bin/bash
-echo "Step 1/6 - Generating data cards......"
+echo "Step 1/7 - Generating source infomation......"
+python3 source.py --name "Jacob L. Jones"\
+                  --affiliation "North Carolina State University"\
+                  --positions "Kobe Distinguished Professor, Materials Science and Engineering"\
+                  --positions "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center"\
+                  --positions "Director, Research Triangle Nanotechnology Network"\
+                  --address "3072B Engineering Building I, Raleigh, NC"\
+                  --phone 919-515-4557\
+                  --email jacobjones@ncsu.edu
+
+
+python3 source.py --name "Mauro Sardela"\
+                  --affiliation "University of Illinois at Urbana-Champaign"\
+                  --positions "Director, Central Research Facilities, Materials Research Laboratory"\
+                  --address "104 S. Goodwin Avenue – Urbana IL 61801"\
+                  --website www.mrl.illinois.edu\
+                  --phone 217-244-0547\
+                  --email sardela@illinois.edu\
+                  --office "#SC2014"
+
+
+echo "Step 2/7 - Generating data cards......"
 python3 datacard.py -folder "../content/data/xrdml/"
 # python3 datacard.py -file "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
 
 
-echo "Step 2/6 - Generating task cards......"
+echo "Step3/7 - Generating task cards......"
 python3 taskcard.py peak_finding --input_format xrdml\
                                  --output_format txt\
                                  --input_parameters positions intensities\
                                  --output_parameters peaklist
 
 
-echo "Step 3/6 - Generating model cards......"
+echo "Step 4/7 - Generating model cards......"
 python3 modelcard.py --modelName scipy.signal.find_peaks\
                      --affiliation "The SciPy community"\
                      --contactInfo "scipy-dev@python.org"\
@@ -88,13 +109,13 @@ python3 modelcard.py --modelName Jade\
                      --taskName peak_finding
 
 
-echo "Step 4/6 - Generating test cards......"
+echo "Step 5/7 - Generating test cards......"
 python3 testcard.py peak_finding
 
 
-echo "Step 5/6 - Generating performance (Allowed error: 0.01)......"
+echo "Step 6/7 - Generating performance (Allowed error: 0.01)......"
 python3 performance.py 0.01
 
 
-echo "Step 6/6 - Generating ranking lists......"
+echo "Step 7/7 - Generating ranking lists......"
 python3 ranking.py

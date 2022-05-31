@@ -133,3 +133,5 @@ dmypy.json
 content/data/
 content/test/
 content/ranking/
+*.rdf
+

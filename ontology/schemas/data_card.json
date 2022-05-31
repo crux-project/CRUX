@@ -3,8 +3,7 @@
         "uploadTime": null,
         "contributors": {
             "username": null,
-            "affiliation": null,
-            "contactInfo": null
+            "userID": null
         },
         "dataLocation": null,
         "center": {
@@ -36,5 +35,5 @@
         },
         "chemicalElements": null
     },
-    "analysis": {}
+    "analysis": []
 }

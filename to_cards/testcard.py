@@ -12,8 +12,13 @@ def test_card(schema, task_name):
     task = db.taskcard.find_one({'taskName': task_name})
     num = 0
 
+    # for datacard in db["datacard"].find({'dataContext.center.centerName': 'UNSW'}):
     for datacard in db["datacard"].find():
         num += 1
+        db.datacard.update_one(
+            {'_id': datacard["_id"]},
+            {'$push': {'analysis': task["_id"]}
+             })
         for modelcard in db["modelcard"].find(
                 {"intendedUse.intendedTasks.taskName": task_name}):
             card = utils.json2dic(schema)

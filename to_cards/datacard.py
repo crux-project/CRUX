@@ -1,6 +1,10 @@
 import utils
 import argparse
 import xmltodict
+import pymongo
+
+client = pymongo.MongoClient(host='127.0.0.1')
+db = client["crux"]
 
 
 def data_card(input, schema="../ontology/schemas/data_card.json"):
@@ -17,8 +21,9 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     context = card["dataContext"]
     content = card["dataContent"]
     xrd = raw["xrdMeasurements"]["xrdMeasurement"]
+    center = input.split('/')[4]
 
-    context["center"]["centerName"] = input.split('/')[3]
+    context["center"]["centerName"] = center
     context["dataLocation"] = input
     content["header"] = xrd["scan"]["header"]
     content["status"] = xrd.get("@status")
@@ -28,6 +33,16 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
 
     if content["header"]["source"].get("instrumentID"):
         del content["header"]["source"]["instrumentID"]
+
+    contributor = context["contributors"]
+    if center == "NC-State":
+        contributor["username"] = "Jacob L. Jones"
+    elif center == "UIUC":
+        contributor["username"] = "Mauro Sardela"
+
+    user = db.source.find_one({'name': contributor["username"]})
+    if user:
+        contributor["userID"] = user["_id"]
 
     return card
 
