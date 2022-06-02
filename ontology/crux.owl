@@ -565,6 +565,9 @@
         <Class IRI="#Solvothermal_Processing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Spark_PLasma_Sintering"/>
     </Declaration>
     <Declaration>
@@ -637,6 +640,9 @@
         <Class IRI="#Wire_Feed_Speed"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#address"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#affiliation"/>
     </Declaration>
     <Declaration>
@@ -673,7 +679,7 @@
         <Class IRI="#citationDetails"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#contactInfo"/>
+        <Class IRI="#contact"/>
     </Declaration>
     <Declaration>
         <Class IRI="#contributors"/>
@@ -698,6 +704,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#electricField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#email"/>
     </Declaration>
     <Declaration>
         <Class IRI="#endTimeStamp"/>
@@ -784,6 +793,9 @@
         <Class IRI="#name"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#office"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#outOfScopeUses"/>
     </Declaration>
     <Declaration>
@@ -806,6 +818,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#positions"/>
     </Declaration>
     <Declaration>
         <Class IRI="#precision"/>
@@ -844,9 +862,6 @@
         <Class IRI="#taskName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#task_1"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#temperature"/>
     </Declaration>
     <Declaration>
@@ -865,6 +880,9 @@
         <Class IRI="#usedWavelength"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#userID"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#username"/>
     </Declaration>
     <Declaration>
@@ -872,6 +890,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#version"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#website"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gas/Metal_Ratio"/>
@@ -2605,8 +2626,12 @@
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#address"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#affiliation"/>
-        <Class IRI="#contributors"/>
+        <Class IRI="#Source"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#allowedError"/>
@@ -2653,8 +2678,8 @@
         <Class IRI="#modelContext"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#contactInfo"/>
-        <Class IRI="#contributors"/>
+        <Class IRI="#contact"/>
+        <Class IRI="#Source"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#contributors"/>
@@ -2699,6 +2724,10 @@
     <SubClassOf>
         <Class IRI="#electricField"/>
         <Class IRI="#measurementCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#email"/>
+        <Class IRI="#contact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#endTimeStamp"/>
@@ -2841,6 +2870,10 @@
         <Class IRI="#instrumentControlSoftware"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#office"/>
+        <Class IRI="#contact"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#outOfScopeUses"/>
         <Class IRI="#intendedUse"/>
     </SubClassOf>
@@ -2879,6 +2912,14 @@
     <SubClassOf>
         <Class IRI="#performance"/>
         <Class IRI="#TestCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phone"/>
+        <Class IRI="#contact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#positions"/>
+        <Class IRI="#Source"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#precision"/>
@@ -2930,11 +2971,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#taskID"/>
-        <Class IRI="#intendedTasks"/>
+        <Class IRI="#analysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#taskID"/>
-        <Class IRI="#task_1"/>
+        <Class IRI="#intendedTasks"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#taskName"/>
@@ -2943,10 +2984,6 @@
     <SubClassOf>
         <Class IRI="#taskName"/>
         <Class IRI="#intendedTasks"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#task_1"/>
-        <Class IRI="#analysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#temperature"/>
@@ -2973,6 +3010,18 @@
         <Class IRI="#dataContent"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#userID"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#userID"/>
+        <Class IRI="#contributors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#username"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#username"/>
         <Class IRI="#contributors"/>
     </SubClassOf>
@@ -2989,6 +3038,10 @@
         <Class IRI="#instrumentControlSoftware"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#website"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gas/Metal_Ratio"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -2996,6 +3049,14 @@
         <Class IRI="#runningTime(s)"/>
         <Class IRI="#performance"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActualKnowledge"/>
+        <Class IRI="#DataCard"/>
+        <Class IRI="#ModelCard"/>
+        <Class IRI="#Source"/>
+        <Class IRI="#TaskCard"/>
+        <Class IRI="#TestCard"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ActualKnowledge"/>
         <Class IRI="#DataCard"/>
@@ -3012,9 +3073,13 @@
         <Class IRI="#runningTime(s)"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#address"/>
         <Class IRI="#affiliation"/>
-        <Class IRI="#contactInfo"/>
+        <Class IRI="#contact"/>
+        <Class IRI="#positions"/>
+        <Class IRI="#userID"/>
         <Class IRI="#username"/>
+        <Class IRI="#website"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#allowedError"/>
@@ -3089,6 +3154,11 @@
         <Class IRI="#paperOrResource"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#email"/>
+        <Class IRI="#office"/>
+        <Class IRI="#phone"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#fairnessConstraints"/>
         <Class IRI="#hyperParameters"/>
         <Class IRI="#inputFormat"/>
@@ -3135,6 +3205,10 @@
     <DisjointClasses>
         <Class IRI="#taskID"/>
         <Class IRI="#taskName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#userID"/>
+        <Class IRI="#username"/>
     </DisjointClasses>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasParameter"/>
