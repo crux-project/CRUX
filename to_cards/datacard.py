@@ -40,7 +40,7 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     elif center == "UIUC":
         contributor["username"] = "Mauro Sardela"
 
-    user = db.source.find_one({'name': contributor["username"]})
+    user = db.source.find_one({'username': contributor["username"]})
     if user:
         contributor["userID"] = user["_id"]
 

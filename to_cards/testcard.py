@@ -1,49 +1,60 @@
 import pymongo
 import utils
-import sys
 import os
 import time
+import argparse
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
 
 
-def test_card(schema, task_name):
-    task = db.taskcard.find_one({'taskName': task_name})
+def test_card(schema, task, datacard, modelcard):
+    taskcard = db.taskcard.find_one({'taskName': task})
+
+    db.datacard.update_one(
+        {'_id': datacard["_id"]},
+        {'$addToSet': {'analysis': taskcard["_id"]}}
+    )
+
+    card = utils.json2dic(schema)
+    card["taskID"] = taskcard["_id"]
+    card["dataID"] = datacard["_id"]
+    card["modelID"] = modelcard["_id"]
+
+    input = datacard["dataContext"]["dataLocation"]
+    model = modelcard["modelContext"]["modelLocation"]
+    model_name = modelcard["modelContext"]["modelName"]
+    output = input.replace("data", "test/" + model_name, 1)[:-6] + ".txt"
+    card["outputLocation"] = output
+
+    if model_name == "Jade" and os.path.exists(output):
+        utils.import_to_mongodb(card, "testcard")
+    elif model_name != "Jade":
+        execute(input, output, model, card)
+        utils.import_to_mongodb(card, "testcard")
+
+
+def test_card_task(task, schema="../ontology/schemas/test_card.json"):
     num = 0
 
-    # for datacard in db["datacard"].find({'dataContext.center.centerName': 'UNSW'}):
     for datacard in db["datacard"].find():
         num += 1
-        db.datacard.update_one(
-            {'_id': datacard["_id"]},
-            {'$push': {'analysis': task["_id"]}
-             })
         for modelcard in db["modelcard"].find(
-                {"intendedUse.intendedTasks.taskName": task_name}):
-            card = utils.json2dic(schema)
-            card["taskID"] = task["_id"]
-            card["dataID"] = datacard["_id"]
-            card["modelID"] = modelcard["_id"]
-
-            input = datacard["dataContext"]["dataLocation"]
-            model = modelcard["modelContext"]["modelLocation"]
-            model_name = modelcard["modelContext"]["modelName"]
-            output = input.replace("data", "test/" + model_name, 1)[:-6] + ".txt"
-
-            if model_name == "Jade" and not os.path.exists(output):
-                continue
-            elif model_name != "Jade":
-                execute(input, output, model, num, card)
-
-            card["outputLocation"] = output
-            utils.import_to_mongodb(card, "testcard")
+                {"intendedUse.intendedTasks.taskName": task}):
+            test_card(schema, task, datacard, modelcard)
+        print(str(num) + ": " + datacard["dataContext"]["dataLocation"])
 
 
-def execute(input, output, model, data_num, card):
+def test_card_model_data(model, data, task, schema="../ontology/schemas/test_card.json"):
+    datacard = db.datacard.find_one({"dataContext.dataLocation": data})
+    modelcard = db.modelcard.find_one({"modelContext.modelName": model})
+
+    test_card(schema, task, datacard, modelcard)
+
+
+def execute(input, output, model, card):
     command = "python3 " + model + " \"" + input + "\" \"" + output + "\""
 
-    print(str(data_num) + ". " + input)
     start = time.time()
     os.system(command)
     end = time.time()
@@ -51,10 +62,35 @@ def execute(input, output, model, data_num, card):
     card["performance"]["runningTime(s)"] = rt
 
 
+def get_input():
+    parser = argparse.ArgumentParser(description='Specify the execute range.')
+
+    parser.add_argument("task",
+                        help="Task name.")
+
+    parser.add_argument("-d", "--data",
+                        dest="data",
+                        help="Path to XRDML data.")
+
+    parser.add_argument("-m", "--model",
+                        dest="model",
+                        help="Path to the script.")
+
+    inputs = vars(parser.parse_args())
+
+    return inputs
+
+
 def main():
-    schema = "../ontology/schemas/test_card.json"
-    task = sys.argv[1]
-    test_card(schema, task)
+    inputs = get_input()
+    task = inputs["task"]
+
+    if inputs["data"] and inputs["model"]:
+        model = inputs["model"]
+        data = inputs["data"]
+        test_card_model_data(model, data, task)
+    else:
+        test_card_task(task)
 
 
 if __name__ == "__main__":
