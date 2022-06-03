@@ -3,6 +3,7 @@ import utils
 import os
 import time
 import argparse
+import multiprocessing
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
@@ -34,15 +35,24 @@ def test_card(schema, task, datacard, modelcard):
         utils.import_to_mongodb(card, "testcard")
 
 
+def test_card_mp(temp):
+    return test_card(temp[0], temp[1], temp[2], temp[3])
+
+
 def test_card_task(task, schema="../ontology/schemas/test_card.json"):
     num = 0
+    list = []
 
     for datacard in db["datacard"].find():
         num += 1
         for modelcard in db["modelcard"].find(
                 {"intendedUse.intendedTasks.taskName": task}):
-            test_card(schema, task, datacard, modelcard)
-        print(str(num) + ": " + datacard["dataContext"]["dataLocation"])
+            temp = (schema, task, datacard, modelcard)
+            list.append(temp)
+
+    num_cpu = multiprocessing.cpu_count()
+    pool = multiprocessing.Pool(num_cpu)
+    pool.map(test_card_mp, list)
 
 
 def test_card_model_data(model, data, task, schema="../ontology/schemas/test_card.json"):

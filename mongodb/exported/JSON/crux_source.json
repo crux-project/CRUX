@@ -8,8 +8,8 @@
       "phone": "919-515-4557",
       "office": null
     },
-    "name": "Jacob L. Jones",
     "positions": ["Kobe Distinguished Professor, Materials Science and Engineering", "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center", "Director, Research Triangle Nanotechnology Network"],
+    "username": "Jacob L. Jones",
     "website": null
   },
   {
@@ -21,8 +21,8 @@
       "phone": "217-244-0547",
       "office": "#SC2014"
     },
-    "name": "Mauro Sardela",
     "positions": ["Director, Central Research Facilities, Materials Research Laboratory"],
+    "username": "Mauro Sardela",
     "website": "www.mrl.illinois.edu"
   }
 ]
