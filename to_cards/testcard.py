@@ -1,15 +1,15 @@
 import pymongo
 import utils
-import os
 import time
 import argparse
 import multiprocessing
+import subprocess
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
 
 
-def test_card(schema, task, datacard, modelcard):
+def test_card(schema, task, datacard, modelcard, peak_schema = "../ontology/schemas/peaks.json"):
     taskcard = db.taskcard.find_one({'taskName': task})
 
     db.datacard.update_one(
@@ -24,15 +24,17 @@ def test_card(schema, task, datacard, modelcard):
 
     input = datacard["dataContext"]["dataLocation"]
     model = modelcard["modelContext"]["modelLocation"]
-    model_name = modelcard["modelContext"]["modelName"]
-    output = input.replace("data", "test/" + model_name, 1)[:-6] + ".txt"
-    card["outputLocation"] = output
 
-    if model_name == "Jade" and os.path.exists(output):
-        utils.import_to_mongodb(card, "testcard")
-    elif model_name != "Jade":
-        execute(input, output, model, card)
-        utils.import_to_mongodb(card, "testcard")
+    peaks = utils.json2dic(peak_schema)
+    peaks["x"], peaks["y"] = execute(input, model, card)
+    peaks["testID"] = utils.import_to_mongodb(card, "testcard")
+    peaks["sampleID"] = datacard["dataContent"]["sampleID"]
+
+    peakID = utils.import_to_mongodb(peaks, "peaklist")
+    db.testcard.update_one(
+        {'_id': peaks["testID"]},
+        {'$set': {'output': {"peaklist": peakID}}}
+    )
 
 
 def test_card_mp(temp):
@@ -62,14 +64,20 @@ def test_card_model_data(model, data, task, schema="../ontology/schemas/test_car
     test_card(schema, task, datacard, modelcard)
 
 
-def execute(input, output, model, card):
-    command = "python3 " + model + " \"" + input + "\" \"" + output + "\""
+def execute(input, model, card):
+    command = "python3 " + model + " \"" + input + "\""
 
     start = time.time()
-    os.system(command)
+    peaks = subprocess.check_output(command, shell=True)
     end = time.time()
     rt = end - start
     card["performance"]["runningTime(s)"] = rt
+
+    peaks = peaks.decode().split("\n")
+    x = peaks[0][2:-2].split("', '")
+    y = peaks[1][2:-2].split("', '")
+
+    return x, y
 
 
 def get_input():
@@ -78,13 +86,13 @@ def get_input():
     parser.add_argument("task",
                         help="Task name.")
 
-    parser.add_argument("-d", "--data",
+    parser.add_argument("-d", "--dataPath",
                         dest="data",
                         help="Path to XRDML data.")
 
-    parser.add_argument("-m", "--model",
+    parser.add_argument("-m", "--modelName",
                         dest="model",
-                        help="Path to the script.")
+                        help="Model name.")
 
     inputs = vars(parser.parse_args())
 

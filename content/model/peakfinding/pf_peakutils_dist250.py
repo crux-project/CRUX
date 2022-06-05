@@ -2,12 +2,10 @@ import xmltodict
 import numpy as np
 import peakutils.peak as find_peaks
 import sys
-import os
 
-def peak_finding(input, output="../testdata/pk_peakutils.txt"):
+def peak_finding(input):
     """
     :param input: Path to XRDML file.
-    :param output: Path to the output txt file.
     :return: Peaklist with positions and intensities
     """
 
@@ -16,20 +14,11 @@ def peak_finding(input, output="../testdata/pk_peakutils.txt"):
     peak_position = []
     peak_intensity = []
 
-    index = output.rfind("/") + 1
-    if not os.path.exists(output[:index]):
-        os.makedirs(output[:index])
-
-    f = open(output, 'w')
-    f.write('pos' + '\t' + 'int')
-
     for peak in peaks:
         position = format(x[peak], '.4f')
         intensity = format(y[peak], '.2f')
         peak_position.append(position)
         peak_intensity.append(intensity)
-        f.write('\n' + str(position) + '\t' + str(intensity))
-    f.close()
 
     return peak_position, peak_intensity
 
@@ -58,8 +47,9 @@ def main():
     # input = "../content/data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml"
     # input = "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
     input = sys.argv[1]
-    output = sys.argv[2]
-    peak_finding(input, output)
+    x, y = peak_finding(input)
+    print(x)
+    print(y)
 
 
 if __name__ == "__main__":

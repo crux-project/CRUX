@@ -108,11 +108,13 @@ def import_to_mongodb(data, collection):
             data = json.load(f)
 
     if isinstance(data, list):
-        collection.insert_many(data)
+        instance = collection.insert_many(data)
+        return instance.inserted_ids
     else:
-        collection.insert_one(data)
+        instance = collection.insert_one(data)
+        return instance.inserted_id
 
-    client.close()
+    #client.close()
 
 
 def get_path(folder):
