@@ -21,9 +21,10 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     context = card["dataContext"]
     content = card["dataContent"]
     xrd = raw["xrdMeasurements"]["xrdMeasurement"]
-    center = input.split('/')[4]
+    centerName = input.split('/')[4]
+    sampleName = input.split('/')[5]
 
-    context["center"]["centerName"] = center
+    context["center"]["centerName"] = centerName
     context["dataLocation"] = input
     content["header"] = xrd["scan"]["header"]
     content["status"] = xrd.get("@status")
@@ -35,10 +36,29 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
         del content["header"]["source"]["instrumentID"]
 
     contributor = context["contributors"]
-    if center == "NC-State":
+    if centerName == "NC-State":
         contributor["username"] = "Jacob L. Jones"
-    elif center == "UIUC":
+    elif centerName == "UIUC":
         contributor["username"] = "Mauro Sardela"
+
+    # Store information for center
+    center = db.center.find_one({'centerName': centerName})
+    if center:
+        context["center"]["centerID"] = center["_id"]
+    else:
+        center = db["center"].insert_one({"centerName": centerName})
+        context["center"]["centerID"] = center.inserted_id
+
+    # Store information for sample
+    sample = db.sample.find_one({'sampleName': sampleName})
+    if sample:
+        content["sampleID"] = sample["_id"]
+    else:
+        sample = db["sample"].insert_one({
+            "sampleName": sampleName,
+            "centerID": context["center"]["centerID"]
+        })
+        content["sampleID"] = sample.inserted_id
 
     user = db.source.find_one({'username': contributor["username"]})
     if user:

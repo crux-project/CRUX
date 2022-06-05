@@ -23,6 +23,7 @@
     "dataContent": {
         "header": null,
         "status": null,
+        "sampleID": null,
         "sampleMode": null,
         "sampleOffset": null,
         "usedWavelength": null,
