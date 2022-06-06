@@ -1,4 +1,3 @@
-import numpy as np
 import math
 import sys
 from collections import Counter
@@ -6,23 +5,6 @@ import pymongo
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
-
-
-def get_pos(file):
-    pos = []
-    index = [3, 1] if "Jade" in file else [1, 0]
-
-    f = open(file, 'r')
-    lines = f.readlines()[index[0]:]
-    if "Jade" in file:
-        lines = lines[:-3]
-    for line in lines:
-        line = line.strip('\n').split('\t')
-        pos.append(line[index[1]])
-
-    pos = np.array(pos).astype(float).tolist()
-
-    return pos
 
 
 def intersection(l1, l2, err):
@@ -45,13 +27,9 @@ def intersection(l1, l2, err):
     return count
 
 
-def generate_matric(groundtruth, predict, err):
+def generate_matric(p, pp, err):
     metrics = {}
-
-    p = get_pos(groundtruth)
-    pp = get_pos(predict)
     tp = intersection(p, pp, err)
-    # tp = list(set(p) & set(pp))
 
     recall, precision, f1 = f1_score(tp, len(p), len(pp))
 
@@ -105,27 +83,64 @@ def jaccard_similarity(p, pp, tp):
     return j_similarity
 
 
+def get_pd_gt(testcard):
+    predictID = testcard["output"]["peaklist"]
+
+    dataID = testcard["dataID"]
+    datacard = db.datacard.find_one({'_id': dataID})
+
+    sampleID = datacard["dataContent"]["sampleID"]
+    sample = db.sample.find_one({'_id': sampleID})
+    sampleName = sample["sampleName"]
+
+    if sampleName in ["BCdT - PT", "BSc - PT", "BZnV - BSc - PT"]:
+        gt_modelName = "Jade"
+    elif sampleName == "CaCO3-TiO2":
+        gt_modelName = "pf_scipy_prom30"
+    elif sampleName == "Mn-O":
+        gt_modelName = "pf_scipy_prom40"
+    else:
+        gt_modelName = "pf_scipy_prom300"
+
+    gt_modelcard = db.modelcard.find_one({
+        "modelContext.modelName": gt_modelName
+    })
+    gt_modelID = gt_modelcard["_id"]
+
+    gt_testcard = db.testcard.find_one({'$and': [
+        {"dataID": dataID},
+        {"modelID": gt_modelID}
+    ]})
+    gt_testID = gt_testcard['_id']
+
+    gt_peaklist = db.peaklist.find_one({"testID": gt_testID})
+    groundtruth = gt_peaklist["x"]
+    pd_peaklist = db.peaklist.find_one({"_id": predictID})
+    predict = pd_peaklist["x"]
+
+    db.testcard.update_one(testcard, {
+        "$set": {"groundtruth": gt_peaklist['_id']}
+    })
+
+    return predict, groundtruth
+
+
 def insert2testcard(err=0.01):
     for testcard in db.testcard.find():
-        previous = testcard["performance"]
-        predict = testcard["outputLocation"]
-        groundtruths = predict.split('/')
+        # No performance if the groundtruth is the result itself.
+        if testcard["output"]["peaklist"] == testcard["groundtruth"]:
+            continue
 
-        if groundtruths[6] in ["BCdT - PT", "BSc - PT", "BZnV - BSc - PT"]:
-            groundtruths[3] = "Jade"
-        elif groundtruths[6] == "CaCO3-TiO2":
-            groundtruths[3] = "pf_scipy_prom30"
-        elif groundtruths[6] == "Mn-O":
-            groundtruths[3] = "pf_scipy_prom40"
-        else:
-            groundtruths[3] = "pf_scipy_prom300"
-        groundtruth = "/".join(groundtruths)
-
+        predict, groundtruth = get_pd_gt(testcard)
         matrics = generate_matric(groundtruth, predict, err)
+
+        previous = testcard["performance"]
         current = {**previous, **matrics}
-        db.testcard.update_one(testcard, {"$set": {"performance": current,
-                                                   "groundtruth": groundtruth,
-                                                   "allowedError": err}})
+
+        db.testcard.update_one(testcard, {
+            "$set": {"performance": current,
+                     "allowedError": err}
+        })
 
 
 def main():

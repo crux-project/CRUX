@@ -133,5 +133,6 @@ dmypy.json
 content/data/
 content/test/
 content/ranking/
+content/Jade/
 *.rdf
 

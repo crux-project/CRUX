@@ -1,4 +1,5 @@
 import pymongo
+import os.path
 import utils
 import time
 import argparse
@@ -9,7 +10,7 @@ client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
 
 
-def test_card(schema, task, datacard, modelcard, peak_schema = "../ontology/schemas/peaks.json"):
+def test_card(task, datacard, modelcard, schema="../ontology/schemas/test_card.json"):
     taskcard = db.taskcard.find_one({'taskName': task})
 
     db.datacard.update_one(
@@ -22,12 +23,23 @@ def test_card(schema, task, datacard, modelcard, peak_schema = "../ontology/sche
     card["dataID"] = datacard["_id"]
     card["modelID"] = modelcard["_id"]
 
-    input = datacard["dataContext"]["dataLocation"]
-    model = modelcard["modelContext"]["modelLocation"]
+    peaks(card, modelcard, datacard)
 
+
+def peaks(testcard, modelcard, datacard, peak_schema="../ontology/schemas/peaks.json"):
+    input = datacard["dataContext"]["dataLocation"]
+    model = modelcard["modelContext"]
+    jade_file = input.replace("data", "Jade", 1)[:-6] + ".txt"
     peaks = utils.json2dic(peak_schema)
-    peaks["x"], peaks["y"] = execute(input, model, card)
-    peaks["testID"] = utils.import_to_mongodb(card, "testcard")
+
+    if model["modelName"] != "Jade":
+        peaks["x"], peaks["y"] = execute(input, model["modelLocation"], testcard)
+    elif os.path.isfile(jade_file):
+        peaks["x"] = jade_pos(jade_file)
+    else:
+        return
+
+    peaks["testID"] = utils.import_to_mongodb(testcard, "testcard")
     peaks["sampleID"] = datacard["dataContent"]["sampleID"]
 
     peakID = utils.import_to_mongodb(peaks, "peaklist")
@@ -37,11 +49,25 @@ def test_card(schema, task, datacard, modelcard, peak_schema = "../ontology/sche
     )
 
 
+def jade_pos(file):
+    pos = []
+    f = open(file, 'r')
+    lines = f.readlines()[3:][:-3]
+
+    for line in lines:
+        line = line.strip('\n').split('\t')
+        pos.append(line[1])
+
+    pos = [float(x) for x in pos] if pos != [''] else []
+
+    return pos
+
+
 def test_card_mp(temp):
-    return test_card(temp[0], temp[1], temp[2], temp[3])
+    return test_card(temp[0], temp[1], temp[2])
 
 
-def test_card_task(task, schema="../ontology/schemas/test_card.json"):
+def test_card_task(task):
     num = 0
     list = []
 
@@ -49,7 +75,7 @@ def test_card_task(task, schema="../ontology/schemas/test_card.json"):
         num += 1
         for modelcard in db["modelcard"].find(
                 {"intendedUse.intendedTasks.taskName": task}):
-            temp = (schema, task, datacard, modelcard)
+            temp = (task, datacard, modelcard)
             list.append(temp)
 
     num_cpu = multiprocessing.cpu_count()
@@ -57,11 +83,11 @@ def test_card_task(task, schema="../ontology/schemas/test_card.json"):
     pool.map(test_card_mp, list)
 
 
-def test_card_model_data(model, data, task, schema="../ontology/schemas/test_card.json"):
+def test_card_model_data(model, data, task):
     datacard = db.datacard.find_one({"dataContext.dataLocation": data})
     modelcard = db.modelcard.find_one({"modelContext.modelName": model})
 
-    test_card(schema, task, datacard, modelcard)
+    test_card(task, datacard, modelcard)
 
 
 def execute(input, model, card):
@@ -74,8 +100,12 @@ def execute(input, model, card):
     card["performance"]["runningTime(s)"] = rt
 
     peaks = peaks.decode().split("\n")
+
     x = peaks[0][2:-2].split("', '")
     y = peaks[1][2:-2].split("', '")
+
+    x = [float(i) for i in x] if x != [''] else []
+    y = [float(i) for i in y] if y != [''] else []
 
     return x, y
 
