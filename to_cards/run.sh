@@ -109,13 +109,13 @@
 #
 #echo "Step 5 - Generating test cards......"
 #python3 testcard.py peak_finding
-# python3 testcard.py peak_finding -m pf_scipy_prom200 -d "../content/data/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.xrdml"
+## python3 testcard.py peak_finding -m pf_scipy_prom200 -d "../content/data/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.xrdml"
 #
-#
-#echo "Step 6 - Generating performance (Allowed error: 0.01)......"
-#python3 performance.py 0.01
-#
-#
+
+echo "Step 6 - Generating performance (Allowed error: 0.01)......"
+python3 performance.py 0.01
+
+
 echo "Step 7 - Generating ranking lists......"
 python3 ranking.py
 

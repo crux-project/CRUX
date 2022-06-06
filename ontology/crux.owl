@@ -352,6 +352,9 @@
         <Class IRI="#Casting"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Center"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Composition"/>
     </Declaration>
     <Declaration>
@@ -389,6 +392,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#F1_score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FactualKnowledge"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Feed_Rate"/>
@@ -484,6 +490,9 @@
         <Class IRI="#Particle_Size"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Peaklist"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Powder_Diameter"/>
     </Declaration>
     <Declaration>
@@ -539,6 +548,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Rotation_Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sample"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Scan_Speed"/>
@@ -805,16 +817,19 @@
         <Class IRI="#outUsers"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#outputFormat"/>
+        <Class IRI="#output"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#outputLocation"/>
+        <Class IRI="#outputFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="#outputParameters"/>
     </Declaration>
     <Declaration>
         <Class IRI="#paperOrResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#peaklistID"/>
     </Declaration>
     <Declaration>
         <Class IRI="#performance"/>
@@ -841,7 +856,13 @@
         <Class IRI="#recall"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#sampleID"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sampleMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sampleName"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sampleOffset"/>
@@ -893,6 +914,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#website"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#y"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gas/Metal_Ratio"/>
@@ -1485,6 +1512,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Center"/>
+        <Class IRI="#FactualKnowledge"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Composition"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -2052,6 +2083,10 @@
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Peaklist"/>
+        <Class IRI="#FactualKnowledge"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Powder_Diameter"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -2203,6 +2238,10 @@
     <SubClassOf>
         <Class IRI="#Rotation_Speed"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sample"/>
+        <Class IRI="#FactualKnowledge"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Scan_Speed"/>
@@ -2663,7 +2702,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#centerID"/>
+        <Class IRI="#Center"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#centerID"/>
+        <Class IRI="#Sample"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#centerID"/>
         <Class IRI="#center"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#centerName"/>
+        <Class IRI="#Center"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#centerName"/>
@@ -2703,15 +2754,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#dataID"/>
-        <Class IRI="#DataCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#dataID"/>
         <Class IRI="#TestCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#dataID"/>
-        <Class IRI="#trainingData"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#dataLocation"/>
@@ -2827,15 +2870,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#modelID"/>
-        <Class IRI="#ModelCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#modelID"/>
         <Class IRI="#TestCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#modelID"/>
-        <Class IRI="#dependencies"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#modelLocation"/>
@@ -2886,16 +2921,16 @@
         <Class IRI="#outOfScopeUses"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#output"/>
+        <Class IRI="#TestCard"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#outputFormat"/>
         <Class IRI="#TaskCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#outputFormat"/>
         <Class IRI="#modelDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#outputLocation"/>
-        <Class IRI="#TestCard"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#outputParameters"/>
@@ -2908,6 +2943,14 @@
     <SubClassOf>
         <Class IRI="#paperOrResource"/>
         <Class IRI="#modelContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peaklistID"/>
+        <Class IRI="#Peaklist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peaklistID"/>
+        <Class IRI="#output"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#performance"/>
@@ -2942,8 +2985,24 @@
         <Class IRI="#performance"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#Peaklist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#Sample"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#dataContent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sampleMode"/>
         <Class IRI="#dataContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleName"/>
+        <Class IRI="#Sample"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sampleOffset"/>
@@ -2963,19 +3022,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#taskID"/>
-        <Class IRI="#TaskCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#taskID"/>
         <Class IRI="#TestCard"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#taskID"/>
-        <Class IRI="#analysis"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#taskID"/>
-        <Class IRI="#intendedTasks"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#taskName"/>
@@ -3042,6 +3089,14 @@
         <Class IRI="#Source"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#x"/>
+        <Class IRI="#Peaklist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#y"/>
+        <Class IRI="#Peaklist"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gas/Metal_Ratio"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -3049,6 +3104,15 @@
         <Class IRI="#runningTime(s)"/>
         <Class IRI="#performance"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActualKnowledge"/>
+        <Class IRI="#DataCard"/>
+        <Class IRI="#FactualKnowledge"/>
+        <Class IRI="#ModelCard"/>
+        <Class IRI="#Source"/>
+        <Class IRI="#TaskCard"/>
+        <Class IRI="#TestCard"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ActualKnowledge"/>
         <Class IRI="#DataCard"/>
@@ -3063,6 +3127,11 @@
         <Class IRI="#ModelCard"/>
         <Class IRI="#TaskCard"/>
         <Class IRI="#TestCard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Center"/>
+        <Class IRI="#Peaklist"/>
+        <Class IRI="#Sample"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#F1_score"/>
@@ -3086,16 +3155,10 @@
         <Class IRI="#dataID"/>
         <Class IRI="#groundtruth"/>
         <Class IRI="#modelID"/>
-        <Class IRI="#outputLocation"/>
+        <Class IRI="#output"/>
         <Class IRI="#performance"/>
         <Class IRI="#taskID"/>
         <Class IRI="#testID"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#analysis"/>
-        <Class IRI="#dataContent"/>
-        <Class IRI="#dataContext"/>
-        <Class IRI="#dataID"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#applicationSoftware"/>
@@ -3113,16 +3176,6 @@
         <Class IRI="#startTimeStamp"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#caveatsAndRecommendations"/>
-        <Class IRI="#dependencies"/>
-        <Class IRI="#ethicalConsiderations"/>
-        <Class IRI="#intendedUse"/>
-        <Class IRI="#modelContext"/>
-        <Class IRI="#modelDescription"/>
-        <Class IRI="#modelID"/>
-        <Class IRI="#trainingData"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#center"/>
         <Class IRI="#contributors"/>
         <Class IRI="#dataLocation"/>
@@ -3131,12 +3184,22 @@
     <DisjointClasses>
         <Class IRI="#centerID"/>
         <Class IRI="#centerName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#centerID"/>
+        <Class IRI="#centerName"/>
         <Class IRI="#instrument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#centerID"/>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#sampleName"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#chemicalElements"/>
         <Class IRI="#header"/>
         <Class IRI="#processingTechnique"/>
+        <Class IRI="#sampleID"/>
         <Class IRI="#sampleMode"/>
         <Class IRI="#sampleOffset"/>
         <Class IRI="#status"/>
@@ -3168,14 +3231,6 @@
         <Class IRI="#outputParameters"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#inputFormat"/>
-        <Class IRI="#inputParameters"/>
-        <Class IRI="#outputFormat"/>
-        <Class IRI="#outputParameters"/>
-        <Class IRI="#taskID"/>
-        <Class IRI="#taskName"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#instrumentID"/>
         <Class IRI="#instrumentType"/>
         <Class IRI="#measurementCondition"/>
@@ -3184,10 +3239,6 @@
         <Class IRI="#intendedTasks"/>
         <Class IRI="#intendedUsers"/>
         <Class IRI="#outOfScopeUses"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#modelID"/>
-        <Class IRI="#modelName"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#name"/>
@@ -3201,10 +3252,6 @@
         <Class IRI="#prefix"/>
         <Class IRI="#units"/>
         <Class IRI="#value"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#taskID"/>
-        <Class IRI="#taskName"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#userID"/>

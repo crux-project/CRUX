@@ -1,0 +1,92 @@
+[
+  {
+    "_id": {"$oid": "629db0c64a75d47d61d33125"},
+    "centerID": {"$oid": "629db0c64a75d47d61d33124"},
+    "sampleName": "S1_UNSW"
+  },
+  {
+    "_id": {"$oid": "629db0c64a75d47d61d33127"},
+    "centerID": {"$oid": "629db0c64a75d47d61d33126"},
+    "sampleName": "CaCO3-TiO2"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33128"},
+    "centerID": {"$oid": "629db0c64a75d47d61d33126"},
+    "sampleName": "Mn-O"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312a"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnZr - BIn - BSc - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312b"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnTi - BSc - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312c"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BSnZn - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312d"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnV - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312e"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BMgV - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d3312f"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnZr - BS - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33130"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZGe - BS - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33131"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnZr - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33132"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnTi - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33133"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BMgMo -PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33134"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BZnV - BSc - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33135"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BSc - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33136"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BCdT - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33137"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BMgGe - PT"
+  },
+  {
+    "_id": {"$oid": "629db0c74a75d47d61d33138"},
+    "centerID": {"$oid": "629db0c74a75d47d61d33129"},
+    "sampleName": "BSb - PT"
+  }
+]
