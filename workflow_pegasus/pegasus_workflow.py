@@ -1,7 +1,4 @@
-# -*- codingL utf-8 -*-
-# @Time : 6/8/22 3:47 PM
-# @Author : YIYANG BIAN
-# @File : pegasus_workflow.py
+
 
 import logging
 from pathlib import Path
