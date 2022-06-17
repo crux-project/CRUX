@@ -1,6 +1,0 @@
-[
-  {
-    "id": 1,
-    "type": "remove",
-    "target": { "site_label": "local", "url": "file:////Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/wf-scratch/LOCAL/bianyiyang/pegasus/peakfinding-workflow/run0008/./generate_source", "recursive": "False" } }
-]

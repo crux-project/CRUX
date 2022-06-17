@@ -1,4 +1,0 @@
-ts=1969-12-31T19:44:08.057278Z event=task.info xwf.id=cbf50d8b-2aee-4e23-bab6-9b21454267a0 task.id="ID0000001" type="1" type_desc="compute" transformation="generate_source.py" argv="-a generate_sourcecard -T 3 -i f.a -o f.b" 
-ts=1969-12-31T19:44:08.108895Z event=static.meta.start xwf.id=cbf50d8b-2aee-4e23-bab6-9b21454267a0 
-ts=1969-12-31T19:44:08.109035Z event=xwf.meta xwf.id=cbf50d8b-2aee-4e23-bab6-9b21454267a0 key="wf.api" value="python" 
-ts=1969-12-31T19:44:08.109136Z event=static.meta.end xwf.id=cbf50d8b-2aee-4e23-bab6-9b21454267a0 

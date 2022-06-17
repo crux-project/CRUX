@@ -1,7 +1,0 @@
-Pegasus DAGMAN is /usr/local/Homebrew/lib/pegasus/python/Pegasus/cli/pegasus-dagman.py
-2022-06-08 22:29:47,243:INFO:pegasus-dagman(158): DAGMAN_COPY_TO_SPOOL is set to b'false\n'
-2022-06-08 22:29:47,253:INFO:pegasus-dagman(114): Launched Dagman with Pid 4126
-2022-06-08 22:29:47,256:INFO:pegasus-dagman(141): Launched Monitord with Pid 4127
-Executing condor dagman ... 
-2022-06-08 22:45:21,274:INFO:pegasus-dagman(278): Dagman exited with code 1
-2022-06-08 22:45:21,275:INFO:pegasus-dagman(279): Monitord exited with code 0

@@ -1,5 +1,0 @@
-ts=1969-12-31T23:42:58.098010Z event=task.info xwf.id=9b70a4d4-48ae-4f31-8660-e75c95025e6e task.id="ID0000001" type="1" type_desc="compute" transformation="generate_source" 
-ts=1969-12-31T23:42:58.099098Z event=task.info xwf.id=9b70a4d4-48ae-4f31-8660-e75c95025e6e task.id="ID0000002" type="1" type_desc="compute" transformation="generate_datacard" argv="-a generate_datacard -T 3 -i f.b -o f.c" 
-ts=1969-12-31T23:42:58.255319Z event=static.meta.start xwf.id=9b70a4d4-48ae-4f31-8660-e75c95025e6e 
-ts=1969-12-31T23:42:58.255784Z event=xwf.meta xwf.id=9b70a4d4-48ae-4f31-8660-e75c95025e6e key="wf.api" value="python" 
-ts=1969-12-31T23:42:58.256819Z event=static.meta.end xwf.id=9b70a4d4-48ae-4f31-8660-e75c95025e6e 
