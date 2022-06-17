@@ -1,4 +1,3 @@
-
 import os
 cmd = "cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 source.py --name 'Jacob L. Jones'\
                   --affiliation 'North Carolina State University'\
