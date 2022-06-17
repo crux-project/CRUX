@@ -1,0 +1,62 @@
+[
+  {
+    "_id": {"$oid": "62abe23b489af34c3d523724"},
+    "address": "3072B Engineering Building I, Raleigh, NC",
+    "affiliation": [
+      {"$oid": "629db0c64a75d47d61d33126"}
+    ],
+    "contact": {
+      "email": "jacobjones@ncsu.edu",
+      "phone": "919-515-4557",
+      "office": null
+    },
+    "positions": ["Kobe Distinguished Professor, Materials Science and Engineering", "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center", "Director, Research Triangle Nanotechnology Network"],
+    "username": "Jacob L. Jones",
+    "website": null
+  },
+  {
+    "_id": {"$oid": "62abe23cab2945b5a163e72e"},
+    "address": "104 S. Goodwin Avenue – Urbana IL 61801",
+    "affiliation": [
+      {"$oid": "62abe3f5daf941770f8de62b"}
+    ],
+    "contact": {
+      "email": "sardela@illinois.edu",
+      "phone": "217-244-0547",
+      "office": "#SC2014"
+    },
+    "positions": ["Director, Central Research Facilities, Materials Research Laboratory"],
+    "username": "Mauro Sardela",
+    "website": "www.mrl.illinois.edu"
+  },
+  {
+    "_id": {"$oid": "62abe23d15bd6aa6a169421d"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "629db0c74a75d47d61d33129"}
+    ],
+    "contact": {
+      "email": "benjamin.kowalski@nasa.gov",
+      "phone": null,
+      "office": null
+    },
+    "positions": null,
+    "username": "Benjamin A. Kowalski",
+    "website": null
+  },
+  {
+    "_id": {"$oid": "62abe51a5e8ee11177af88cc"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "629db0c64a75d47d61d33124"}
+    ],
+    "contact": {
+      "email": null,
+      "phone": null,
+      "office": null
+    },
+    "positions": null,
+    "username": "Anonymous",
+    "website": null
+  }
+]
