@@ -1,4 +1,9 @@
-apiVersion: argoproj.io/v1alpha1
+# -*- codingL utf-8 -*-
+# @Time : 6/8/22 10:05 PM
+# @Author : YIYANG BIAN
+# @File : generate_source.py
+
+piVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
   generateName: workflow-template-dag-diamond-

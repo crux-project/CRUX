@@ -1,3 +1,8 @@
+# -*- codingL utf-8 -*-
+# @Time : 5/12/22 6:18 PM
+# @Author : YIYANG BIAN
+# @File : worflow_airflow.py
+
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator

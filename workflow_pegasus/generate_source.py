@@ -1,3 +1,8 @@
+# -*- codingL utf-8 -*-
+# @Time : 6/8/22 10:05 PM
+# @Author : YIYANG BIAN
+# @File : generate_source.py
+
 import os
 cmd = "cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 source.py --name 'Jacob L. Jones'\
                   --affiliation 'North Carolina State University'\

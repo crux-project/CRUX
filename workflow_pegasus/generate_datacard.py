@@ -1,3 +1,8 @@
+# -*- codingL utf-8 -*-
+# @Time : 6/9/22 1:55 PM
+# @Author : YIYANG BIAN
+# @File : generate_datacard.py
+
 import os
 
 cmd = "cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 datacard.py -file " \
