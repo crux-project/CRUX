@@ -1,0 +1,43 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.0.2",
+  "wf_api": "python",
+  "type": "error",
+  "start_time": 1.654797079388E9,
+  "end_time": 1.654797080124E9,
+  "duration": 0.736,
+  "exitcode": 1,
+  "root_wf_uuid": "1ec877c7-74e4-4b50-96b7-e2b85fe08ea5",
+  "wf_uuid": "1ec877c7-74e4-4b50-96b7-e2b85fe08ea5",
+  "data_config": "condorio",
+  "planner_args": "--output-sites local --cleanup inplace --submit workflow.yml --json ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 1,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 1,
+    "deleted_tasks": 0,
+    "dax_input_files": 0,
+    "dax_inter_files": 0,
+    "dax_output_files": 0,
+    "dax_total_files": 0,
+    "compute_jobs": 1,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 0,
+    "so_tx_jobs": 0,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 0,
+    "create_dir_jobs": 0,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 1
+  },
+  "app_metrics": {
+    "name": "peakfinding-workflow"
+  },
+  "error": "java.lang.RuntimeException: Site Selector could not map the job generate_source with id generate_source_ID0000001\nto any of the execution sites [condorpool]\nusing the Transformation Mapper (All Mode - Handle both Installed and Stageable Executables on all sites)\nThis error is most likely due to an error in the transformation catalog.\nMake sure that the generate_source transformation exists with matching system information for sites \n[condorpool] you are trying to plan for {condorpool\u003d{arch\u003dx86_64 os\u003dlinux}}\nCandidate Entries found were [\n \n Logical Namespace : null\n Logical Name      : generate_source\n Version           : null\n Resource Id       : local\n Physical Name     : /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/generate_source.py\n SysInfo           : {arch\u003dx86_64 os\u003dlinux}\n TYPE              : INSTALLED\n BYPASS              : false\n Notifications: \n Container    : null\n Compound Tx  : null]\n\tat edu.isi.pegasus.planner.refiner.InterPoolEngine.complainForFailedSiteMapping(InterPoolEngine.java:884)\n\tat edu.isi.pegasus.planner.refiner.InterPoolEngine.incorporateSiteMapping(InterPoolEngine.java:250)\n\tat edu.isi.pegasus.planner.refiner.InterPoolEngine.scheduleJobs(InterPoolEngine.java:226)\n\tat edu.isi.pegasus.planner.refiner.InterPoolEngine.determineSites(InterPoolEngine.java:165)\n\tat edu.isi.pegasus.planner.refiner.MainEngine.runPlanner(MainEngine.java:182)\n\tat edu.isi.pegasus.planner.client.CPlanner.executeCommand(CPlanner.java:611)\n\tat edu.isi.pegasus.planner.client.CPlanner.executeCommand(CPlanner.java:322)\n\tat edu.isi.pegasus.planner.client.CPlanner.main(CPlanner.java:209)\n"
+}
+

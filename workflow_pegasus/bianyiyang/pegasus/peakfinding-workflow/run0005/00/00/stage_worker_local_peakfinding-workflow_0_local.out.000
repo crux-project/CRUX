@@ -1,0 +1,178 @@
+- invocation: True
+  version: 3.0
+  start: 2022-06-08T22:51:22.404-04:00
+  duration: 3.688
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "peakfinding-workflow"
+  wf-stamp: "2022-06-08T22:51:12-04:00"
+  interface: 
+  hostaddr: 0.0.0.0
+  pid: 9417
+  uid: 501
+  user: bianyiyang
+  gid: 20
+  group: staff
+  umask: 0o0022
+  mainjob:
+    start: 2022-06-08T22:51:22.405-04:00
+    duration: 3.686
+    pid: 9421
+    usage:
+      utime: 0.389
+      stime: 0.223
+      maxrss: 24920
+      minflt: 30257
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 9
+      msgrcv: 588
+      nsignals: 3
+      nvcsw: 327
+      nivcsw: 2221
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/local/Homebrew/Cellar/pegasus@5/5.0.2/bin/pegasus-transfer
+      mode: 0o100555
+      size: 2840
+      inode: 12718520
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-05-31T12:26:35-04:00
+      atime: 2022-05-31T14:01:25-04:00
+      ctime: 2022-05-31T12:28:46-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 80
+      group: admin
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 47.0
+  cwd: /usr/local/condor/local/spool/local_univ_execute/dir_9408
+  usage:
+    utime: 0.002
+    stime: 0.003
+    maxrss: 1276
+    minflt: 562
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 21
+  machine:
+    page-size: 4096
+    uname_system: darwin
+    uname_nodename: bianyiyangdembp.lan
+    uname_release: 21.5.0
+    uname_machine: x86_64
+    ram_total: 16777216
+    ram_avail: 799736
+    ram_active: 6996796
+    ram_inactive: 6261516
+    ram_wired: 2717564
+    swap_total: 0
+    swap_avail: 0
+    swap_used: 0
+    boot: 2022-06-08T21:32:58.824-04:00
+    cpu_count: 8
+    cpu_speed: 2800
+    cpu_vendor: GenuineIntel
+    cpu_name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+    load_min1: 2.48
+    load_min5: 2.33
+    load_min15: 2.23
+    proc_total: 446
+    proc_sleeping: 446
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10660
+      size: 463
+      inode: 188436089570540883
+      nlink: 0
+      blksize: 16384
+      blocks: 1
+      mtime: 2022-06-08T22:51:22-04:00
+      atime: 2022-06-08T22:51:22-04:00
+      ctime: 2022-06-08T22:51:22-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 20
+      group: staff
+    stdout:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_9408/ks.out.fvCm6A
+      descriptor: 3
+      mode: 0o100600
+      size: 1766
+      inode: 13280760
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-08T22:51:26-04:00
+      atime: 2022-06-08T22:51:22-04:00
+      ctime: 2022-06-08T22:51:26-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+      data_truncated: false
+      data: |
+        2022-06-08 22:51:22,554    INFO:  Reading URL pairs from stdin
+        2022-06-08 22:51:22,555    INFO:  1 transfers loaded
+        2022-06-08 22:51:22,555    INFO:  PATH=/usr/local/Homebrew/bin:/Users/bianyiyang/jdk-17.0.2.jdk/Contents/Home/bin:/Users/bianyiyang/opt/anaconda3/bin:/Users/bianyiyang/opt/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/Homebrew/bin:/usr/local/Homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bianyiyang/mongodb-macos-x86_64-5.0.8/bin:/usr/local/condor/bin:/usr/local/condor/sbin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2022-06-08 22:51:22,555    INFO:  LD_LIBRARY_PATH=
+        2022-06-08 22:51:22,857    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:51:22,857    INFO:  Starting transfers - attempt 1
+        2022-06-08 22:51:24,929    INFO:  Command 'wget' not found in the current environment
+        2022-06-08 22:51:24,947    INFO:  Tool found: curl   Version: 7.79   Path: /usr/bin/curl
+        2022-06-08 22:51:24,947    INFO:  /usr/bin/curl -s -S --insecure --location -o '///Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/bianyiyang/pegasus/peakfinding-workflow/run0005/pegasus-worker-5.0.2-x86_64_rhel_7.tar.gz' 'http://download.pegasus.isi.edu/pegasus/5.0.2/pegasus-worker-5.0.2-x86_64_rhel_7.tar.gz'
+        2022-06-08 22:51:26,046    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:51:26,047    INFO:  Stats: Total 1 transfers, 10.4 MB transferred in 3 seconds. Rate: 3.0 MB/s (23.9 Mb/s)
+        2022-06-08 22:51:26,047    INFO:         Between sites pegasus->local : 1 transfers, 10.4 MB transferred in 3 seconds. Rate: 3.0 MB/s (23.9 Mb/s)
+        2022-06-08 22:51:26,047    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_9408/ks.err.PZMhF8
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 13280761
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-08T22:51:22-04:00
+      atime: 2022-06-08T22:51:22-04:00
+      ctime: 2022-06-08T22:51:22-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+    metadata:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_9408/ks.meta.nlK83E
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 13280762
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-08T22:51:22-04:00
+      atime: 2022-06-08T22:51:22-04:00
+      ctime: 2022-06-08T22:51:22-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor

@@ -1,0 +1,17 @@
+{
+  "root_workflow_uuid": "e1b270f9-2d79-4101-98cf-79bd20eb97fb",
+  "workflow_uuid": "e1b270f9-2d79-4101-98cf-79bd20eb97fb",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "generate_source_ID0000001": {},
+      "clean_up_local_level_3_0": {},
+      "stage_worker_local_peakfinding-workflow_0_local": {},
+      "stage_in_local_local_0_0": {},
+      "create_dir_peakfinding-workflow_0_local": {},
+      "cleanup_peakfinding-workflow_0_local": {}
+    }
+  }
+}

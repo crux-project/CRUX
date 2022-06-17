@@ -1,0 +1,173 @@
+- invocation: True
+  version: 3.0
+  start: 2022-06-09T13:52:22.241-04:00
+  duration: 2.576
+  transformation: "pegasus::dirmanager"
+  derivation: "null"
+  resource: "local"
+  wf-label: "peakfinding-workflow"
+  wf-stamp: "2022-06-09T13:52:15-04:00"
+  interface: 
+  hostaddr: 0.0.0.0
+  pid: 26427
+  uid: 501
+  user: bianyiyang
+  gid: 20
+  group: staff
+  umask: 0o0022
+  mainjob:
+    start: 2022-06-09T13:52:22.283-04:00
+    duration: 2.534
+    pid: 26438
+    usage:
+      utime: 0.344
+      stime: 0.095
+      maxrss: 24260
+      minflt: 27080
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 3
+      nvcsw: 33
+      nivcsw: 553
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/local/Homebrew/Cellar/pegasus@5/5.0.2/bin/pegasus-transfer
+      mode: 0o100555
+      size: 2840
+      inode: 12718520
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-05-31T12:26:35-04:00
+      atime: 2022-05-31T14:01:25-04:00
+      ctime: 2022-05-31T12:28:46-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 80
+      group: admin
+    argument_vector:
+    procs:
+  jobids:
+    condor: 75.0
+  cwd: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/bianyiyang/pegasus/peakfinding-workflow/run0011
+  usage:
+    utime: 0.003
+    stime: 0.003
+    maxrss: 1256
+    minflt: 651
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 1
+    msgrcv: 1
+    nsignals: 0
+    nvcsw: 5
+    nivcsw: 8
+  machine:
+    page-size: 4096
+    uname_system: darwin
+    uname_nodename: bianyiyangdembp.lan
+    uname_release: 21.5.0
+    uname_machine: x86_64
+    ram_total: 16777216
+    ram_avail: 107396
+    ram_active: 6968740
+    ram_inactive: 6956836
+    ram_wired: 2741772
+    swap_total: 0
+    swap_avail: 0
+    swap_used: 0
+    boot: 2022-06-08T21:33:05.346-04:00
+    cpu_count: 8
+    cpu_speed: 2800
+    cpu_vendor: GenuineIntel
+    cpu_name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+    load_min1: 2.04
+    load_min5: 2.21
+    load_min15: 2.27
+    proc_total: 470
+    proc_sleeping: 470
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 220
+      inode: 13318164
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-09T13:52:18-04:00
+      atime: 2022-06-09T13:52:18-04:00
+      ctime: 2022-06-09T13:52:18-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 20
+      group: staff
+    stdout:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_26424/ks.out.OYD6w1
+      descriptor: 3
+      mode: 0o100600
+      size: 1186
+      inode: 13318290
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-09T13:52:24-04:00
+      atime: 2022-06-09T13:52:22-04:00
+      ctime: 2022-06-09T13:52:24-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+      data_truncated: false
+      data: |
+        2022-06-09 13:52:22,426    INFO:  Reading URL pairs from stdin
+        2022-06-09 13:52:22,427    INFO:  1 transfers loaded
+        2022-06-09 13:52:22,427    INFO:  PATH=/Users/bianyiyang/jdk-17.0.2.jdk/Contents/Home/bin:/Users/bianyiyang/opt/anaconda3/bin:/Users/bianyiyang/opt/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/Homebrew/bin:/usr/local/Homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bianyiyang/mongodb-macos-x86_64-5.0.8/bin:/usr/local/condor/bin:/usr/local/condor/sbin
+        2022-06-09 13:52:22,427    INFO:  LD_LIBRARY_PATH=
+        2022-06-09 13:52:22,715    INFO:  --------------------------------------------------------------------------------
+        2022-06-09 13:52:22,715    INFO:  Starting transfers - attempt 1
+        2022-06-09 13:52:24,782    INFO:  /bin/mkdir -p '//Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/wf-scratch/LOCAL/bianyiyang/pegasus/peakfinding-workflow/run0011' 
+        2022-06-09 13:52:24,803    INFO:  --------------------------------------------------------------------------------
+        2022-06-09 13:52:24,804    INFO:  Stats: no local files in the transfer set
+        2022-06-09 13:52:24,804    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_26424/ks.err.9K8DOf
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 13318291
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-09T13:52:22-04:00
+      atime: 2022-06-09T13:52:22-04:00
+      ctime: 2022-06-09T13:52:22-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+    metadata:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_26424/ks.meta.u6HKfS
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 13318292
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-09T13:52:22-04:00
+      atime: 2022-06-09T13:52:22-04:00
+      ctime: 2022-06-09T13:52:22-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor

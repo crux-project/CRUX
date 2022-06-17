@@ -1,0 +1,11 @@
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "generate_datacard"
+    pfn: "generate_datacard"
+    sha256: cb830c473aaa723a3c98eb393edff217679de3ab5db049d80136f0d6915e0430
+    success: True
+- integrity_summary:
+    succeeded: 1
+    failed: 0
+    duration: 0.043

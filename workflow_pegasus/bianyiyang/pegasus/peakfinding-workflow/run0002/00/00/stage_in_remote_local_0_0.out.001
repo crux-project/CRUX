@@ -1,0 +1,258 @@
+- invocation: True
+  version: 3.0
+  start: 2022-06-08T22:37:43.919-04:00
+  duration: 436.787
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "peakfinding-workflow"
+  wf-stamp: "2022-06-08T22:29:40-04:00"
+  interface: 
+  hostaddr: 0.0.0.0
+  pid: 6185
+  uid: 501
+  user: bianyiyang
+  gid: 20
+  group: staff
+  umask: 0o0022
+  mainjob:
+    start: 2022-06-08T22:37:43.920-04:00
+    duration: 436.786
+    pid: 6186
+    usage:
+      utime: 0.324
+      stime: 0.066
+      maxrss: 24324
+      minflt: 24748
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 4
+      nvcsw: 34
+      nivcsw: 251
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /usr/local/Homebrew/Cellar/pegasus@5/5.0.2/bin/pegasus-transfer
+      mode: 0o100555
+      size: 2840
+      inode: 12718520
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-05-31T12:26:35-04:00
+      atime: 2022-05-31T14:01:25-04:00
+      ctime: 2022-05-31T12:28:46-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 80
+      group: admin
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 37.0
+  cwd: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/bianyiyang/pegasus/peakfinding-workflow/run0002
+  usage:
+    utime: 0.003
+    stime: 0.003
+    maxrss: 1268
+    minflt: 634
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 1
+    msgrcv: 1
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 4
+  machine:
+    page-size: 4096
+    uname_system: darwin
+    uname_nodename: bianyiyangdembp.lan
+    uname_release: 21.5.0
+    uname_machine: x86_64
+    ram_total: 16777216
+    ram_avail: 1032636
+    ram_active: 6980120
+    ram_inactive: 6167744
+    ram_wired: 2594720
+    swap_total: 0
+    swap_avail: 0
+    swap_used: 0
+    boot: 2022-06-08T21:32:58.824-04:00
+    cpu_count: 8
+    cpu_speed: 2800
+    cpu_vendor: GenuineIntel
+    cpu_name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+    load_min1: 2.24
+    load_min5: 2.14
+    load_min15: 2.11
+    proc_total: 434
+    proc_sleeping: 434
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 519
+      inode: 13272362
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-08T22:29:43-04:00
+      atime: 2022-06-08T22:30:08-04:00
+      ctime: 2022-06-08T22:29:43-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 20
+      group: staff
+    stdout:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_6183/ks.out.tGI6wC
+      descriptor: 3
+      mode: 0o100600
+      size: 2069
+      inode: 13273697
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-08T22:45:00-04:00
+      atime: 2022-06-08T22:37:43-04:00
+      ctime: 2022-06-08T22:45:00-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+      data_truncated: false
+      data: |
+        2022-06-08 22:37:44,048    INFO:  Reading URL pairs from stdin
+        2022-06-08 22:37:44,049    INFO:  1 transfers loaded
+        2022-06-08 22:37:44,049    INFO:  PATH=/Users/bianyiyang/jdk-17.0.2.jdk/Contents/Home/bin:/Users/bianyiyang/opt/anaconda3/bin:/Users/bianyiyang/opt/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/Homebrew/bin:/usr/local/Homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bianyiyang/mongodb-macos-x86_64-5.0.8/bin:/usr/local/condor/bin:/usr/local/condor/sbin
+        2022-06-08 22:37:44,049    INFO:  LD_LIBRARY_PATH=
+        2022-06-08 22:37:44,311    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:37:44,311    INFO:  Starting transfers - attempt 1
+        2022-06-08 22:37:46,387   ERROR:  Expected local file does not exist: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/workflow_pegasus/generate_source.py
+        2022-06-08 22:39:56,453    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:39:56,453    INFO:  Starting transfers - attempt 2
+        2022-06-08 22:39:58,519   ERROR:  Expected local file does not exist: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/workflow_pegasus/generate_source.py
+        2022-06-08 22:44:58,628    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:44:58,628    INFO:  Starting transfers - attempt 3
+        2022-06-08 22:45:00,691   ERROR:  Expected local file does not exist: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/workflow_pegasus/generate_source.py
+        2022-06-08 22:45:00,692    INFO:  --------------------------------------------------------------------------------
+        2022-06-08 22:45:00,692    INFO:  Stats: Total 3 transfers, 0.0 B transferred in 437 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2022-06-08 22:45:00,692    INFO:         Between sites local->local : 3 transfers, 0.0 B transferred in 437 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2022-06-08 22:45:00,692 CRITICAL:  Some transfers failed! See above, and possibly stderr.
+        
+    stderr:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_6183/ks.err.9Q5qkL
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 13273698
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-08T22:37:43-04:00
+      atime: 2022-06-08T22:37:43-04:00
+      ctime: 2022-06-08T22:37:43-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+    metadata:
+      temporary_name: /usr/local/condor/local/spool/local_univ_execute/dir_6183/ks.meta.0ofSUz
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 13273699
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-06-08T22:37:43-04:00
+      atime: 2022-06-08T22:37:43-04:00
+      ctime: 2022-06-08T22:37:43-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 300
+      group: condor
+    kickstart:
+      file_name: /usr/local/Homebrew/Cellar/pegasus@5/5.0.2/bin/pegasus-kickstart
+      mode: 0o100555
+      size: 110520
+      inode: 12702943
+      nlink: 1
+      blksize: 4096
+      blocks: 216
+      mtime: 2022-05-31T12:25:40-04:00
+      atime: 2022-05-31T14:01:28-04:00
+      ctime: 2022-05-31T12:28:50-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 80
+      group: admin
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 4096
+      inode: 13273694
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2022-06-08T22:45:00-04:00
+      atime: 2022-06-08T22:37:43-04:00
+      ctime: 2022-06-08T22:45:00-04:00
+      uid: 501
+      user: bianyiyang
+      gid: 20
+      group: staff
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "37.0"
+    "KICKSTART_INTEGRITY_DATA": "/usr/local/condor/local/spool/local_univ_execute/dir_6183/ks.integrity.NvfvWE"
+    "KICKSTART_METADATA": "/usr/local/condor/local/spool/local_univ_execute/dir_6183/ks.meta.0ofSUz"
+    "LANG": "en_US.UTF-8"
+    "PATH": "/Users/bianyiyang/jdk-17.0.2.jdk/Contents/Home/bin:/Users/bianyiyang/opt/anaconda3/bin:/Users/bianyiyang/opt/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/Homebrew/bin:/usr/local/Homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bianyiyang/mongodb-macos-x86_64-5.0.8/bin:/usr/local/condor/bin:/usr/local/condor/sbin"
+    "PEGASUS_DAG_JOB_ID": "stage_in_remote_local_0_0"
+    "PEGASUS_HOME": "/usr/local/Homebrew"
+    "PEGASUS_SITE": "local"
+    "PEGASUS_WF_LABEL": "peakfinding-workflow"
+    "PEGASUS_WF_UUID": "d346dac5-c0fe-42e5-bd27-b76daa2c3c73"
+    "PYTHONPATH": "/Users/bianyiyang/airflow/dags:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_display"
+    "TEMP": "/usr/local/condor/local/spool/local_univ_execute/dir_6183"
+    "TMP": "/usr/local/condor/local/spool/local_univ_execute/dir_6183"
+    "TMPDIR": "/usr/local/condor/local/spool/local_univ_execute/dir_6183"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_114": "547:1654738408:967105588"
+    "_CONDOR_ANCESTOR_547": "6183:1654742263:923233880"
+    "_CONDOR_ANCESTOR_6183": "6185:1654742263:488772308"
+    "_CONDOR_BIN": "/usr/local/condor/bin"
+    "_CONDOR_JOB_AD": "/usr/local/condor/local/spool/local_univ_execute/dir_6183/.job.ad"
+    "_CONDOR_JOB_IWD": "/Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/bianyiyang/pegasus/peakfinding-workflow/run0002"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/usr/local/condor/local/spool/local_univ_execute/dir_6183/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/usr/local/condor/local/spool/local_univ_execute/dir_6183"
+    "_CONDOR_SLOT": ""
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: 8388608
+    RLIMIT_STACK_hard: 67104768
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_MEMLOCK_soft: unlimited
+    RLIMIT_MEMLOCK_hard: unlimited
+    RLIMIT_NPROC_soft: 2784
+    RLIMIT_NPROC_hard: 4176
+    RLIMIT_NOFILE_soft: 4096
+    RLIMIT_NOFILE_hard: unlimited

@@ -1,0 +1,26 @@
+x-pegasus:
+  apiLang: python
+  createdBy: bianyiyang
+  createdOn: 06-08-22T22:33:56Z
+pegasus: '5.0'
+name: peakfinding-workflow
+transformationCatalog:
+  transformations:
+  - name: generate_source.py
+    sites:
+    - name: local
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/workflow_pegasus/generate_source.py
+      type: stageable
+jobs:
+- type: job
+  name: generate_source.py
+  id: ID0000001
+  arguments:
+  - -a
+  - generate_sourcecard
+  - -T
+  - '3'
+  - -i
+  - -o
+  uses: []
+jobDependencies: []

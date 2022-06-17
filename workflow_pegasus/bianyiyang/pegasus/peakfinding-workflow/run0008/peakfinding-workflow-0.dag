@@ -1,0 +1,57 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG peakfinding-workflow
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB stage_worker_local_peakfinding-workflow_0_local 00/00/stage_worker_local_peakfinding-workflow_0_local.sub
+SCRIPT POST stage_worker_local_peakfinding-workflow_0_local /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/stage_worker_local_peakfinding-workflow_0_local.out
+PRIORITY stage_worker_local_peakfinding-workflow_0_local 700
+RETRY stage_worker_local_peakfinding-workflow_0_local 1
+CATEGORY stage_worker_local_peakfinding-workflow_0_local stagein
+VARS stage_worker_local_peakfinding-workflow_0_local +DAGNodeRetry="$(RETRY)"
+
+JOB create_dir_peakfinding-workflow_0_local 00/00/create_dir_peakfinding-workflow_0_local.sub
+SCRIPT POST create_dir_peakfinding-workflow_0_local /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/create_dir_peakfinding-workflow_0_local.out
+PRIORITY create_dir_peakfinding-workflow_0_local 800
+RETRY create_dir_peakfinding-workflow_0_local 1
+VARS create_dir_peakfinding-workflow_0_local +DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/00/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 1
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 +DAGNodeRetry="$(RETRY)"
+
+JOB generate_source_ID0000001 00/00/generate_source_ID0000001.sub
+SCRIPT POST generate_source_ID0000001 /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/generate_source_ID0000001.out
+PRIORITY generate_source_ID0000001 20
+RETRY generate_source_ID0000001 1
+VARS generate_source_ID0000001 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_3_0 00/00/clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/clean_up_local_level_3_0.out
+PRIORITY clean_up_local_level_3_0 1000
+RETRY clean_up_local_level_3_0 1
+CATEGORY clean_up_local_level_3_0 cleanup
+VARS clean_up_local_level_3_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_peakfinding-workflow_0_local 00/00/cleanup_peakfinding-workflow_0_local.sub
+SCRIPT POST cleanup_peakfinding-workflow_0_local /usr/local/Homebrew/bin/pegasus-exitcode  -r $RETURN -l peakfinding-workflow-0.exitcode.log -M peakfinding-workflow-0.cache.meta   .//00/00/cleanup_peakfinding-workflow_0_local.out
+PRIORITY cleanup_peakfinding-workflow_0_local 1000
+RETRY cleanup_peakfinding-workflow_0_local 1
+VARS cleanup_peakfinding-workflow_0_local +DAGNodeRetry="$(RETRY)"
+
+PARENT  generate_source_ID0000001 CHILD clean_up_local_level_3_0
+PARENT  clean_up_local_level_3_0 CHILD cleanup_peakfinding-workflow_0_local
+PARENT  stage_worker_local_peakfinding-workflow_0_local CHILD stage_in_local_local_0_0
+PARENT  stage_in_local_local_0_0 CHILD generate_source_ID0000001
+PARENT  create_dir_peakfinding-workflow_0_local CHILD stage_in_local_local_0_0
+######################################################################
+# End of DAG
+######################################################################

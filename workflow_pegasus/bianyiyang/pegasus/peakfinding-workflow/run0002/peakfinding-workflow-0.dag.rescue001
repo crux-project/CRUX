@@ -1,0 +1,18 @@
+# Rescue DAG file, created after running
+#   the peakfinding-workflow-0.dag DAG file
+# Created 6/9/2022 02:45:09 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 6
+# Nodes premarked DONE: 2
+# Nodes that failed: 1
+#   stage_in_remote_local_0_0,<ENDLIST>
+
+DONE stage_worker_local_peakfinding-workflow_0_local
+RETRY stage_worker_local_peakfinding-workflow_0_local 1
+DONE create_dir_peakfinding-workflow_0_local
+RETRY create_dir_peakfinding-workflow_0_local 1
+RETRY stage_in_remote_local_0_0 1
+RETRY generate_source_py_ID0000001 1
+RETRY clean_up_local_level_3_0 1
+RETRY cleanup_peakfinding-workflow_0_local 1
