@@ -1,3 +1,7 @@
+"""
+This module generates a task card for each task.
+"""
+
 import argparse
 import utils
 

@@ -1,3 +1,7 @@
+"""
+This module generates a model card for each model(script of package).
+"""
+
 import utils
 import argparse
 import pymongo
