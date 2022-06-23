@@ -1,6 +1,6 @@
 [
   {
-    "_id": {"$oid": "62b3b33606689237b0abcdb2"},
+    "_id": {"$oid": "62b4713a267bc2bcc3b7b4e3"},
     "caveatsAndRecommendations": null,
     "dependencies": {
     },
@@ -18,10 +18,9 @@
     },
     "modelContext": {
       "modelName": "scipy.signal.find_peaks",
-      "contributors": {
-        "username": null,
-        "affiliation": "The SciPy community",
-        "contactInfo": "scipy-dev@python.org"
+      "contributor": {
+        "username": "SciPy",
+        "userID": {"$oid": "62b470335e467cec0623d5c1"}
       },
       "modelDate": "02/05/2022",
       "modelVersion": "1.8.0",
@@ -46,7 +45,7 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b3371c727ff6e53f18b3"},
+    "_id": {"$oid": "62b4713bd07724acd5318fa6"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "numpy": {
@@ -70,10 +69,9 @@
     },
     "modelContext": {
       "modelName": "peakutils.peak.index",
-      "contributors": {
-        "username": "Lucas Hermann Negri",
-        "affiliation": null,
-        "contactInfo": "lucashnegri@gmail.com"
+      "contributor": {
+        "username": "PeakUtils",
+        "userID": {"$oid": "62b470340c23a318cde6adef"}
       },
       "modelDate": "01/23/2020",
       "modelVersion": "1.3.3",
@@ -98,14 +96,14 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b337b08592578a81c5dd"},
+    "_id": {"$oid": "62b4713ce26b85cd187e4ea9"},
     "caveatsAndRecommendations": null,
     "dependencies": {
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -116,10 +114,9 @@
     },
     "modelContext": {
       "modelName": "Jade",
-      "contributors": {
+      "contributor": {
         "username": null,
-        "affiliation": null,
-        "contactInfo": null
+        "userID": null
       },
       "modelDate": null,
       "modelVersion": null,
@@ -144,17 +141,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b338a68398997798f444"},
+    "_id": {"$oid": "62b4713c1e7729b4e73cc274"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -165,10 +162,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_dist150",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -192,17 +188,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b3392a04eb7edc15e5ef"},
+    "_id": {"$oid": "62b4713d207ce3e03f606ccd"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b3b3371c727ff6e53f18b3"}
+        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -213,10 +209,9 @@
     },
     "modelContext": {
       "modelName": "pf_peakutils_dist150",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -240,17 +235,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b3397fb98c311ebc1496"},
+    "_id": {"$oid": "62b4713e549bb3304bdbff73"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -261,10 +256,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_dist200",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -288,17 +282,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33af046ef99566a5da7"},
+    "_id": {"$oid": "62b4713eb1eeaa6790e6c410"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b3b3371c727ff6e53f18b3"}
+        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -309,10 +303,9 @@
     },
     "modelContext": {
       "modelName": "pf_peakutils_dist200",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -336,17 +329,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33bd16d63677a2dd6da"},
+    "_id": {"$oid": "62b4713fb17fd2c60c408e1e"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -357,10 +350,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_dist250",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -384,17 +376,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33bf1954cb06f802af1"},
+    "_id": {"$oid": "62b4714002d73e6944874563"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b3b3371c727ff6e53f18b3"}
+        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -405,10 +397,9 @@
     },
     "modelContext": {
       "modelName": "pf_peakutils_dist250",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -432,17 +423,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33cf9027ef23cd9531c"},
+    "_id": {"$oid": "62b471406686637d4dd01d53"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -453,10 +444,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_dist300",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -480,17 +470,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33c210add70b3248ade"},
+    "_id": {"$oid": "62b47141a949e03638c27d0b"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b3b3371c727ff6e53f18b3"}
+        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -501,10 +491,9 @@
     },
     "modelContext": {
       "modelName": "pf_peakutils_dist300",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -528,17 +517,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33d7c3e8c23998e7415"},
+    "_id": {"$oid": "62b47141c8c49acb2fe182da"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -549,10 +538,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom20",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -576,17 +564,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33ed84d413de5d8a4d1"},
+    "_id": {"$oid": "62b471423217474494ea26aa"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -597,10 +585,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom30",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -624,17 +611,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33e1b43d80094295508"},
+    "_id": {"$oid": "62b47143136edca2d014ad62"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -645,10 +632,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom40",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -672,17 +658,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b33f66d6a015fc5d5242"},
+    "_id": {"$oid": "62b471431582b9616bb5a4ef"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -693,10 +679,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom200",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -720,17 +705,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b3403d4cf946c617b21c"},
+    "_id": {"$oid": "62b47144186ae673a7bed96a"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -741,10 +726,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom300",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -768,17 +752,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b340ae510de4111625b2"},
+    "_id": {"$oid": "62b471458e9cc39f1a6fd3aa"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -789,10 +773,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom400",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,
@@ -816,17 +799,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b3b3418583624026a5c1c8"},
+    "_id": {"$oid": "62b47145d75e3cfc7b3e2ae6"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b3b33606689237b0abcdb2"}
+        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b3b335a1f116500af772d6"},
+        "taskID": {"$oid": "62b47037763f12303f754d1e"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -837,10 +820,9 @@
     },
     "modelContext": {
       "modelName": "pf_scipy_prom1000",
-      "contributors": {
-        "username": null,
-        "affiliation": null,
-        "contactInfo": null
+      "contributor": {
+        "username": "Mengying Wang",
+        "userID": {"$oid": "62b4703405b920308c0b5331"}
       },
       "modelDate": null,
       "modelVersion": null,

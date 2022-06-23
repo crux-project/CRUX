@@ -106,9 +106,9 @@ def jaccard_similarity(p, pp, tp):
 
 def get_pred_gt(testcard):
     """
-             ｜-predict_peakID-predict(peaklist)-----------------｜
-    testcard-｜                                                  ｜
-             ｜-dataID-sampleID-sampleName-gt_modelID            ｜
+             ｜-predict_peakID-predict(peaklist)-----------------------｜
+    testcard-｜                                                        ｜-performance
+             ｜-dataID-sampleID-sampleName-gt_modelID                  ｜
                   ｜----------------------------｜-gt_testID-gt_peakID-gt
     """
     predictID = testcard["output"]["peaklist"]

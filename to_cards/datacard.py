@@ -47,7 +47,7 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     content["sampleID"] = sample["_id"]
 
     # Get contributor's information
-    contributor = context["contributors"]
+    contributor = context["contributor"]
     user = db.user.find_one({"affiliation": {"$in": [center["_id"]]}})
     contributor["username"] = user["username"]
     contributor["userID"] = user["_id"]
@@ -60,8 +60,8 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     content["sampleOffset"] = xrd.get("sampleOffset")
     content["usedWavelength"] = xrd.get("usedWavelength")
 
-    # if content["header"]["source"].get("instrumentID"):
-    #     del content["header"]["source"]["instrumentID"]
+    if content["header"]["source"].get("instrumentID"):
+        del content["header"]["source"]["instrumentID"]
 
     return card
 

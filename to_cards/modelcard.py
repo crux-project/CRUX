@@ -34,6 +34,12 @@ def model_card(schema):
             path = paths[i]
             utils.dict_set(card, path, items[key])
 
+    if items["username"]:
+        # Get contributor's information
+        contributor = card["modelContext"]["contributor"]
+        user = db.user.find_one({'username': contributor["username"]})
+        contributor["userID"] = user["_id"]
+
     return card
 
 

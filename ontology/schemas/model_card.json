@@ -1,10 +1,9 @@
 {
     "modelContext": {
         "modelName": null,
-        "contributors": {
+        "contributor": {
             "username": null,
-            "affiliation": null,
-            "contactInfo": null
+            "userID": null
         },
         "modelDate": null,
         "modelVersion": null,

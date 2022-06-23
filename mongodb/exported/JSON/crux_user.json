@@ -1,9 +1,9 @@
 [
   {
-    "_id": {"$oid": "62b39c3f102d2473c848cab3"},
+    "_id": {"$oid": "62b47031c5a7cf88cc720e04"},
     "address": "3072B Engineering Building I, Raleigh, NC",
     "affiliation": [
-      {"$oid": "62b39c3f79d5ba078a47f79a"}
+      {"$oid": "62b4703124b62f2d41fa9d46"}
     ],
     "contact": {
       "email": "jacobjones@ncsu.edu",
@@ -15,10 +15,10 @@
     "website": null
   },
   {
-    "_id": {"$oid": "62b39c3f8bf9cdda4401d047"},
+    "_id": {"$oid": "62b47031c32bc8c6fb6b1b0a"},
     "address": "104 S. Goodwin Avenue – Urbana IL 61801",
     "affiliation": [
-      {"$oid": "62b39c3f79d5ba078a47f7a6"}
+      {"$oid": "62b4703124b62f2d41fa9d52"}
     ],
     "contact": {
       "email": "sardela@illinois.edu",
@@ -30,10 +30,10 @@
     "website": "www.mrl.illinois.edu"
   },
   {
-    "_id": {"$oid": "62b39c40b9ca37f610b02a2f"},
+    "_id": {"$oid": "62b47032195db7c0a55fcff3"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b39c4079d5ba078a47f7b2"}
+      {"$oid": "62b4703224b62f2d41fa9d5e"}
     ],
     "contact": {
       "email": "benjamin.kowalski@nasa.gov",
@@ -45,10 +45,10 @@
     "website": null
   },
   {
-    "_id": {"$oid": "62b39c41225e258113b8cb4a"},
+    "_id": {"$oid": "62b47032d0cf1ec1b7c2f123"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b39c4179d5ba078a47f7be"}
+      {"$oid": "62b4703224b62f2d41fa9d6a"}
     ],
     "contact": {
       "email": null,
@@ -58,5 +58,50 @@
     "positions": [],
     "username": "Anonymous",
     "website": null
+  },
+  {
+    "_id": {"$oid": "62b470335e467cec0623d5c1"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b4703324b62f2d41fa9d76"}
+    ],
+    "contact": {
+      "email": "scipy-dev@python.org",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "SciPy",
+    "website": "https://scipy.org"
+  },
+  {
+    "_id": {"$oid": "62b470340c23a318cde6adef"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b4703424b62f2d41fa9d82"}
+    ],
+    "contact": {
+      "email": "lucashnegri@gmail.com",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "PeakUtils",
+    "website": "https://peakutils.readthedocs.io"
+  },
+  {
+    "_id": {"$oid": "62b4703405b920308c0b5331"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b4703424b62f2d41fa9d8f"}
+    ],
+    "contact": {
+      "email": "mxw767@case.edu",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "Mengying Wang",
+    "website": "wangmengying.me"
   }
 ]

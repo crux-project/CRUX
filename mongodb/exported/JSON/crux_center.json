@@ -1,18 +1,30 @@
 [
   {
-    "_id": {"$oid": "62b39c3f79d5ba078a47f79a"},
+    "_id": {"$oid": "62b4703124b62f2d41fa9d46"},
     "centerName": "NC-State"
   },
   {
-    "_id": {"$oid": "62b39c3f79d5ba078a47f7a6"},
+    "_id": {"$oid": "62b4703124b62f2d41fa9d52"},
     "centerName": "UIUC"
   },
   {
-    "_id": {"$oid": "62b39c4079d5ba078a47f7b2"},
+    "_id": {"$oid": "62b4703224b62f2d41fa9d5e"},
     "centerName": "NASA"
   },
   {
-    "_id": {"$oid": "62b39c4179d5ba078a47f7be"},
+    "_id": {"$oid": "62b4703224b62f2d41fa9d6a"},
     "centerName": "UNSW"
+  },
+  {
+    "_id": {"$oid": "62b4703324b62f2d41fa9d76"},
+    "centerName": "The SciPy community"
+  },
+  {
+    "_id": {"$oid": "62b4703424b62f2d41fa9d82"},
+    "centerName": "The PeakUtils community"
+  },
+  {
+    "_id": {"$oid": "62b4703424b62f2d41fa9d8f"},
+    "centerName": "CWRU"
   }
 ]
