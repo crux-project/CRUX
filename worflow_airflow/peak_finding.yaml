@@ -1,0 +1,75 @@
+# -*- codingL utf-8 -*-
+# @Time : 6/8/22 10:05 PM
+# @Author : YIYANG BIAN
+# @File : generate_source.py
+
+piVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: workflow-template-dag-diamond-
+spec:
+  entrypoint: diamond
+  templates:
+  - name: diamond
+    dag:
+      tasks:
+      - name: generate_source_infomation
+        id: ID0000001
+        arguments:
+          parameters:
+          - name: message
+            value: task1
+          - input: source_data
+      - name: generate_data_cards
+        id: ID0000002
+        depends: "task1"
+        arguments:
+          parameters:
+          - name: message
+            value: task2
+          - input: rawdata
+      - name: generate_task_cards
+        id: ID0000003
+        depends: "task2"
+        arguments:
+          parameters:
+            - name: message
+              value: task3
+            - input: positions_intensities
+            - output: peaklist
+      - name: generate_model_cards
+          id: ID0000004
+          depends: "task3"
+          arguments:
+            parameters:
+              - name: message
+                value: task4
+              - input: x height threshold distance prominence width wlen rel_height plateau_size
+              - output: peaks_properties
+      - name: generate_scipy_model_cards
+          id: ID0000005
+          depends: "task1 && task2 && task3"
+          arguments:
+            parameters:
+              - name: message
+                value: task5
+              - input: positions_intensities
+              - output: peaklist
+      - name: generate_test_cards
+          id: ID0000006
+          depends: "task5"
+          arguments:
+            parameters:
+              - name: message
+                value: task6
+              - input: peaklist
+              - output:test_result
+      - name: generate_performance_cards
+          id: ID0000007
+          depends: "task6"
+          arguments:
+            parameters:
+              - name: message
+                value: task7
+              - input: test_result
+              - output: model_performance
