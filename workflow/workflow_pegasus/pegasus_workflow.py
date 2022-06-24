@@ -30,35 +30,35 @@ generate_datacard = Transformation(
 generate_taskcard = Transformation(
     name="generate_taskcard",
     site="local",
-    pfn=Path("").resolve() / "CRUX/to_cards/taskcard.py",
+    pfn=Path("").resolve() / "CRUX/crux_kb/taskcard.py",
     is_stageable=True,
 )
 
 generate_modelcard = Transformation(
     name="modelcard.py",
     site="local",
-    pfn=Path("").resolve() / "CRUX/to_cards/modelcard.py",
+    pfn=Path("").resolve() / "CRUX/crux_kb/modelcard.py",
     is_stageable=True,
 )
 
 generate_testcard = Transformation(
     name="testcard.py",
     site="local",
-    pfn=Path("").resolve() / "CRUX/to_cards/testcard.py",
+    pfn=Path("").resolve() / "CRUX/crux_kb/testcard.py",
     is_stageable=True,
 )
 
 generate_performancecard = Transformation(
     name="performance.py",
     site="local",
-    pfn=Path("").resolve() / "CRUX/to_cards/performance.py",
+    pfn=Path("").resolve() / "CRUX/crux_kb/performance.py",
     is_stageable=True,
 )
 
 generate_ranking = Transformation(
     name="ranking.py",
     site="local",
-    pfn=Path("").resolve() / "CRUX/to_cards/ranking.py",
+    pfn=Path("").resolve() / "CRUX/crux_kb/ranking.py",
     is_stageable=True,
 )
 

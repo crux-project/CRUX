@@ -4,7 +4,7 @@ from scipy.signal import find_peaks
 import sys
 
 sys.path.append('..')
-import to_cards.performance as performance
+import crux_kb.performance as performance
 
 
 def peak_finding(input, dist, prom):

@@ -30,7 +30,7 @@ dag = DAG(
 
 task1 = BashOperator(
     task_id='source_infomation',
-    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 generate_source.py --name 'Jacob L. Jones'\
+    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 generate_source.py --name 'Jacob L. Jones'\
                   --affiliation 'North Carolina State University'\
                   --positions 'Kobe Distinguished Professor, Materials Science and Engineering'\
                   --positions 'Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center'\
@@ -53,7 +53,7 @@ task1 = BashOperator(
 
 task2 = BashOperator(
     task_id='data_cards',
-    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 datacard.py -file '../content/data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml'",
+    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 datacard.py -file '../content/data/xrdml/NASA/BZnZr - BIn - BSc - PT/2.5Bi(Zn0.5Zr0.5)O3 - 5BiInO3 - 32.5BiScO3 - 60PbTiO3_1100C.xrdml'",
     # python_callable=datacards,
     retries=3,
     dag=dag
@@ -61,7 +61,7 @@ task2 = BashOperator(
 
 task3 = BashOperator(
     task_id='task_cards',
-    bash_command="python3 /Users/bianyiyang/airflow/dags/CRUX/to_cards/taskcard.py peak_finding --input_format xrdml\
+    bash_command="python3 /Users/bianyiyang/airflow/dags/CRUX/crux_kb/taskcard.py peak_finding --input_format xrdml\
                                  --output_format txt\
                                  --input_parameters positions intensities\
                                  --output_parameters peaklist",
@@ -72,7 +72,7 @@ task3 = BashOperator(
 
 task4 = BashOperator(
     task_id='model_cards',
-    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 modelcard.py --modelName scipy.signal.find_peaks\
+    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 modelcard.py --modelName scipy.signal.find_peaks\
                      --affiliation 'The SciPy community'\
                      --contactInfo 'scipy-dev@python.org'\
                      --license 'BSD 3-Clause 'New' or 'Revised' License'\
@@ -105,7 +105,7 @@ task4 = BashOperator(
 
 task5 = BashOperator(
     task_id='scipy_model_cards',
-    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 modelcard.py --modelName pf_scipy_dist200\
+    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 modelcard.py --modelName pf_scipy_dist200\
                      --modelLocation ../content/model/peakfinding/pf_scipy_dist200.py\
                      --dependencies scipy.signal.find_peaks\
                      --inputFormat xrdml\
@@ -121,7 +121,7 @@ task5 = BashOperator(
 
 task6 = BashOperator(
     task_id='test_cards',
-    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 testcard.py peak_finding",
+    bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 testcard.py peak_finding",
     # python_callable=x2,
     retries=3,
     dag=dag
@@ -129,7 +129,7 @@ task6 = BashOperator(
 
 task7 = BashOperator(
     task_id='performance_cards',
-    bash_command="python3 /Users/bianyiyang/airflow/dags/CRUX/to_cards/performance.py 0.01",
+    bash_command="python3 /Users/bianyiyang/airflow/dags/CRUX/crux_kb/performance.py 0.01",
     retries=3,
     dag=dag
 )

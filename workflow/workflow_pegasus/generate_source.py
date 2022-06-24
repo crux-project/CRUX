@@ -4,7 +4,7 @@
 # @File : generate_source.py
 
 import os
-cmd = "cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 source.py --name 'Jacob L. Jones'\
+cmd = "cd /Users/bianyiyang/airflow/dags/CRUX/crux_kb/ && python3 source.py --name 'Jacob L. Jones'\
                   --affiliation 'North Carolina State University'\
                   --positions 'Kobe Distinguished Professor, Materials Science and Engineering'\
                   --positions 'Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center'\

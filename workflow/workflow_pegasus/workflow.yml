@@ -19,27 +19,27 @@ transformationCatalog:
   - name: generate_taskcard
     sites:
     - name: local
-      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/to_cards/taskcard.py
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/crux_kb/taskcard.py
       type: stageable
   - name: modelcard.py
     sites:
     - name: local
-      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/to_cards/modelcard.py
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/crux_kb/modelcard.py
       type: stageable
   - name: testcard.py
     sites:
     - name: local
-      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/to_cards/testcard.py
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/crux_kb/testcard.py
       type: stageable
   - name: performance.py
     sites:
     - name: local
-      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/to_cards/performance.py
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/crux_kb/performance.py
       type: stageable
   - name: ranking.py
     sites:
     - name: local
-      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/to_cards/ranking.py
+      pfn: /Users/bianyiyang/airflow/dags/CRUX/workflow_pegasus/CRUX/crux_kb/ranking.py
       type: stageable
 jobs:
 - type: job
