@@ -1,9 +1,9 @@
 [
   {
-    "_id": {"$oid": "62b47031c5a7cf88cc720e04"},
+    "_id": {"$oid": "62b50e75f241b3f609bb67b7"},
     "address": "3072B Engineering Building I, Raleigh, NC",
     "affiliation": [
-      {"$oid": "62b4703124b62f2d41fa9d46"}
+      {"$oid": "62b50e7524b62f2d41fc4dd1"}
     ],
     "contact": {
       "email": "jacobjones@ncsu.edu",
@@ -15,10 +15,10 @@
     "website": null
   },
   {
-    "_id": {"$oid": "62b47031c32bc8c6fb6b1b0a"},
+    "_id": {"$oid": "62b50e752dc4255800ee4068"},
     "address": "104 S. Goodwin Avenue – Urbana IL 61801",
     "affiliation": [
-      {"$oid": "62b4703124b62f2d41fa9d52"}
+      {"$oid": "62b50e7524b62f2d41fc4ddd"}
     ],
     "contact": {
       "email": "sardela@illinois.edu",
@@ -30,10 +30,10 @@
     "website": "www.mrl.illinois.edu"
   },
   {
-    "_id": {"$oid": "62b47032195db7c0a55fcff3"},
+    "_id": {"$oid": "62b50e762fd00a525784cc87"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b4703224b62f2d41fa9d5e"}
+      {"$oid": "62b50e7624b62f2d41fc4de9"}
     ],
     "contact": {
       "email": "benjamin.kowalski@nasa.gov",
@@ -45,10 +45,10 @@
     "website": null
   },
   {
-    "_id": {"$oid": "62b47032d0cf1ec1b7c2f123"},
+    "_id": {"$oid": "62b50e773610a70c53568b48"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b4703224b62f2d41fa9d6a"}
+      {"$oid": "62b50e7724b62f2d41fc4df5"}
     ],
     "contact": {
       "email": null,
@@ -60,10 +60,10 @@
     "website": null
   },
   {
-    "_id": {"$oid": "62b470335e467cec0623d5c1"},
+    "_id": {"$oid": "62b50e77c7ec88c625d2a60d"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b4703324b62f2d41fa9d76"}
+      {"$oid": "62b50e7724b62f2d41fc4e01"}
     ],
     "contact": {
       "email": "scipy-dev@python.org",
@@ -75,10 +75,10 @@
     "website": "https://scipy.org"
   },
   {
-    "_id": {"$oid": "62b470340c23a318cde6adef"},
+    "_id": {"$oid": "62b50e78bb61e8f16b32bc8f"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b4703424b62f2d41fa9d82"}
+      {"$oid": "62b50e7824b62f2d41fc4e0e"}
     ],
     "contact": {
       "email": "lucashnegri@gmail.com",
@@ -90,10 +90,10 @@
     "website": "https://peakutils.readthedocs.io"
   },
   {
-    "_id": {"$oid": "62b4703405b920308c0b5331"},
+    "_id": {"$oid": "62b50e79a4e6d5da7c6ed8b9"},
     "address": null,
     "affiliation": [
-      {"$oid": "62b4703424b62f2d41fa9d8f"}
+      {"$oid": "62b50e7924b62f2d41fc4e1a"}
     ],
     "contact": {
       "email": "mxw767@case.edu",

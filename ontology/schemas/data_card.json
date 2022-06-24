@@ -1,6 +1,11 @@
 {
     "dataContext": {
-        "uploadTime": null,
+        "uploadTime": {
+            "uploadYear": null,
+            "uploadMonth": null,
+            "uploadDay": null,
+            "uploadTime": null
+        },
         "contributor": {
             "username": null,
             "userID": null

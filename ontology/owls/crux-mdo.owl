@@ -150,6 +150,14 @@
     
 
 
+    <!-- https://w3id.org/mdo/full/UploadTime -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/UploadTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/mdo/full/User -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/User"/>
@@ -519,6 +527,14 @@
     
 
 
+    <!-- https://w3id.org/mdo/full/modelDay -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/mdo/full/modelDescription -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/modelDescription">
@@ -546,6 +562,14 @@
     
 
 
+    <!-- https://w3id.org/mdo/full/modelMonth -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelMonth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/mdo/full/modelName -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/modelName">
@@ -567,6 +591,14 @@
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/modelVersion">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelYear -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelYear">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
     </owl:Class>
     
 
@@ -809,6 +841,15 @@
     
 
 
+    <!-- https://w3id.org/mdo/full/testID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/testID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/mdo/full/trainingData -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/trainingData">
@@ -825,10 +866,34 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/uploadTime -->
+    <!-- https://w3id.org/mdo/full/uploadDate -->
 
-    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadTime">
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadDay -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadMonth -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadMonth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadYear -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadYear">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
     </owl:Class>
     
 
@@ -968,6 +1033,15 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/UploadTime"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadDay"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadMonth"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadYear"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/mdo/full/address"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/affiliation"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/contact"/>
@@ -975,6 +1049,19 @@
             <rdf:Description rdf:about="https://w3id.org/mdo/full/userID"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/username"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/website"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/allowedError"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/groundtruth"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/output"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/performance"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/taskID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/testID"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1022,7 +1109,7 @@
             <rdf:Description rdf:about="https://w3id.org/mdo/full/center"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/contributor"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/dataLocation"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadTime"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadDate"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1113,6 +1200,24 @@
             <rdf:Description rdf:about="https://w3id.org/mdo/full/intendedTasks"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/intendedUsers"/>
             <rdf:Description rdf:about="https://w3id.org/mdo/full/outOfScopeUses"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelDay"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelMonth"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelYear"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/peaklistID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/testID"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/x"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/y"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

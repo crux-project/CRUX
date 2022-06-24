@@ -619,6 +619,9 @@
         <Class IRI="#UV_Curing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UploadTime"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#User"/>
     </Declaration>
     <Declaration>
@@ -781,6 +784,9 @@
         <Class IRI="#modelDate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#modelDay"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#modelDescription"/>
     </Declaration>
     <Declaration>
@@ -790,6 +796,9 @@
         <Class IRI="#modelLocation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#modelMonth"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#modelName"/>
     </Declaration>
     <Declaration>
@@ -797,6 +806,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#modelVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#modelYear"/>
     </Declaration>
     <Declaration>
         <Class IRI="#name"/>
@@ -892,7 +904,16 @@
         <Class IRI="#units"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#uploadDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uploadDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uploadMonth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uploadYear"/>
     </Declaration>
     <Declaration>
         <Class IRI="#usedWavelength"/>
@@ -2544,6 +2565,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UploadTime"/>
+        <Class IRI="#uploadDate"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vaccum_Level"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
@@ -2862,6 +2887,10 @@
         <Class IRI="#modelContext"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#modelDay"/>
+        <Class IRI="#modelDate"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#modelDescription"/>
         <Class IRI="#ModelCard"/>
     </SubClassOf>
@@ -2882,6 +2911,10 @@
         <Class IRI="#modelContext"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#modelMonth"/>
+        <Class IRI="#modelDate"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#modelName"/>
         <Class IRI="#dependencies"/>
     </SubClassOf>
@@ -2896,6 +2929,10 @@
     <SubClassOf>
         <Class IRI="#modelVersion"/>
         <Class IRI="#modelContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#modelYear"/>
+        <Class IRI="#modelDate"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#name"/>
@@ -3070,8 +3107,20 @@
         <Class IRI="#processingParameter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#uploadDate"/>
         <Class IRI="#dataContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uploadDay"/>
+        <Class IRI="#uploadDate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uploadMonth"/>
+        <Class IRI="#uploadDate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uploadYear"/>
+        <Class IRI="#uploadDate"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#usedWavelength"/>
@@ -3145,6 +3194,12 @@
         <Class IRI="#runningTime(s)"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#UploadTime"/>
+        <Class IRI="#uploadDay"/>
+        <Class IRI="#uploadMonth"/>
+        <Class IRI="#uploadYear"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#address"/>
         <Class IRI="#affiliation"/>
         <Class IRI="#contact"/>
@@ -3198,7 +3253,7 @@
         <Class IRI="#center"/>
         <Class IRI="#contributor"/>
         <Class IRI="#dataLocation"/>
-        <Class IRI="#uploadTime"/>
+        <Class IRI="#uploadDate"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#centerID"/>
@@ -3266,6 +3321,11 @@
         <Class IRI="#intendedTasks"/>
         <Class IRI="#intendedUsers"/>
         <Class IRI="#outOfScopeUses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#modelDay"/>
+        <Class IRI="#modelMonth"/>
+        <Class IRI="#modelYear"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#modelID"/>

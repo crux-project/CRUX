@@ -1,6 +1,6 @@
 [
   {
-    "_id": {"$oid": "62b4713a267bc2bcc3b7b4e3"},
+    "_id": {"$oid": "62b50e7c54035feb486fd547"},
     "caveatsAndRecommendations": null,
     "dependencies": {
     },
@@ -20,9 +20,13 @@
       "modelName": "scipy.signal.find_peaks",
       "contributor": {
         "username": "SciPy",
-        "userID": {"$oid": "62b470335e467cec0623d5c1"}
+        "userID": {"$oid": "62b50e77c7ec88c625d2a60d"}
       },
-      "modelDate": "02/05/2022",
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Feb",
+        "modelDay": "5"
+      },
       "modelVersion": "1.8.0",
       "modelType": "Find peaks inside a signal based on peak properties.",
       "paperOrResource": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html",
@@ -45,7 +49,7 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713bd07724acd5318fa6"},
+    "_id": {"$oid": "62b50e7c9874cf8ff2df57fe"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "numpy": {
@@ -71,9 +75,13 @@
       "modelName": "peakutils.peak.index",
       "contributor": {
         "username": "PeakUtils",
-        "userID": {"$oid": "62b470340c23a318cde6adef"}
+        "userID": {"$oid": "62b50e78bb61e8f16b32bc8f"}
       },
-      "modelDate": "01/23/2020",
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Jan",
+        "modelDay": "23"
+      },
       "modelVersion": "1.3.3",
       "modelType": "Peak detection routine.",
       "paperOrResource": "https://peakutils.readthedocs.io/en/latest/reference.html#module-peakutils.peak",
@@ -96,14 +104,14 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713ce26b85cd187e4ea9"},
+    "_id": {"$oid": "62b50e7d2a6db0778f6272e5"},
     "caveatsAndRecommendations": null,
     "dependencies": {
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -118,7 +126,11 @@
         "username": null,
         "userID": null
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": null,
+        "modelMonth": null,
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -141,17 +153,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713c1e7729b4e73cc274"},
+    "_id": {"$oid": "62b50e7e5bb3ae132c49b6f1"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -164,9 +176,13 @@
       "modelName": "pf_scipy_dist150",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -188,17 +204,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713d207ce3e03f606ccd"},
+    "_id": {"$oid": "62b50e7e30a02d1b11a9bd28"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
+        "modelID": {"$oid": "62b50e7c9874cf8ff2df57fe"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -211,9 +227,13 @@
       "modelName": "pf_peakutils_dist150",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -235,17 +255,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713e549bb3304bdbff73"},
+    "_id": {"$oid": "62b50e7f16e2364c10b9a2ce"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -258,9 +278,13 @@
       "modelName": "pf_scipy_dist200",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -282,17 +306,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713eb1eeaa6790e6c410"},
+    "_id": {"$oid": "62b50e802b0360c01d2181c6"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
+        "modelID": {"$oid": "62b50e7c9874cf8ff2df57fe"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -305,9 +329,13 @@
       "modelName": "pf_peakutils_dist200",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -329,17 +357,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4713fb17fd2c60c408e1e"},
+    "_id": {"$oid": "62b50e804c811efd85932e93"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -352,9 +380,13 @@
       "modelName": "pf_scipy_dist250",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -376,17 +408,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b4714002d73e6944874563"},
+    "_id": {"$oid": "62b50e8171bebe43c5fd46ac"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
+        "modelID": {"$oid": "62b50e7c9874cf8ff2df57fe"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -399,9 +431,13 @@
       "modelName": "pf_peakutils_dist250",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -423,17 +459,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b471406686637d4dd01d53"},
+    "_id": {"$oid": "62b50e8242baea3a7ae252e3"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -446,9 +482,13 @@
       "modelName": "pf_scipy_dist300",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -470,17 +510,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b47141a949e03638c27d0b"},
+    "_id": {"$oid": "62b50e825d73a5655d43b22a"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "peakutils.peak.index": {
-        "modelID": {"$oid": "62b4713bd07724acd5318fa6"}
+        "modelID": {"$oid": "62b50e7c9874cf8ff2df57fe"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -493,9 +533,13 @@
       "modelName": "pf_peakutils_dist300",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Mar",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -517,17 +561,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b47141c8c49acb2fe182da"},
+    "_id": {"$oid": "62b50e839136ca04c04fefe9"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -540,9 +584,13 @@
       "modelName": "pf_scipy_prom20",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -564,17 +612,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b471423217474494ea26aa"},
+    "_id": {"$oid": "62b50e84f4d7ae96b1d1a488"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -587,9 +635,13 @@
       "modelName": "pf_scipy_prom30",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -611,17 +663,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b47143136edca2d014ad62"},
+    "_id": {"$oid": "62b50e8413807bf18ec5a922"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -634,9 +686,13 @@
       "modelName": "pf_scipy_prom40",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -658,17 +714,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b471431582b9616bb5a4ef"},
+    "_id": {"$oid": "62b50e85c67d0eb45e479c64"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -681,9 +737,13 @@
       "modelName": "pf_scipy_prom200",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -705,17 +765,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b47144186ae673a7bed96a"},
+    "_id": {"$oid": "62b50e86e330947e52bbb227"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -728,9 +788,13 @@
       "modelName": "pf_scipy_prom300",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -752,17 +816,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b471458e9cc39f1a6fd3aa"},
+    "_id": {"$oid": "62b50e879bc8c22cf8be7083"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -775,9 +839,13 @@
       "modelName": "pf_scipy_prom400",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
@@ -799,17 +867,17 @@
     }
   },
   {
-    "_id": {"$oid": "62b47145d75e3cfc7b3e2ae6"},
+    "_id": {"$oid": "62b50e8733ac82826e13a63a"},
     "caveatsAndRecommendations": null,
     "dependencies": {
       "scipy.signal.find_peaks": {
-        "modelID": {"$oid": "62b4713a267bc2bcc3b7b4e3"}
+        "modelID": {"$oid": "62b50e7c54035feb486fd547"}
       }
     },
     "ethicalConsiderations": null,
     "intendedUse": {
       "intendedTasks": {
-        "taskID": {"$oid": "62b47037763f12303f754d1e"},
+        "taskID": {"$oid": "62b50e7b2763dc7dae050498"},
         "taskName": "peak_finding"
       },
       "intendedUsers": null,
@@ -822,9 +890,13 @@
       "modelName": "pf_scipy_prom1000",
       "contributor": {
         "username": "Mengying Wang",
-        "userID": {"$oid": "62b4703405b920308c0b5331"}
+        "userID": {"$oid": "62b50e79a4e6d5da7c6ed8b9"}
       },
-      "modelDate": null,
+      "modelDate": {
+        "modelYear": "2022",
+        "modelMonth": "Apr",
+        "modelDay": null
+      },
       "modelVersion": null,
       "modelType": null,
       "paperOrResource": null,
