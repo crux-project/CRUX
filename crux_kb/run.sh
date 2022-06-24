@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Step 1 - Generating source infomation (user and center)......"
-python3 source.py --username "Jacob L. Jones"\
+python3 source.py --username "Jac"\
                   --affiliation "NC-State"\
                   --positions "Kobe Distinguished Professor, Materials Science and Engineering"\
                   --positions "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center"\
@@ -9,7 +9,7 @@ python3 source.py --username "Jacob L. Jones"\
                   --phone 919-515-4557\
                   --email jacobjones@ncsu.edu
 
-python3 source.py --username "Mauro Sardela"\
+python3 source.py --username "M S"\
                   --affiliation "UIUC"\
                   --positions "Director, Central Research Facilities, Materials Research Laboratory"\
                   --address "104 S. Goodwin Avenue – Urbana IL 61801"\
@@ -18,7 +18,7 @@ python3 source.py --username "Mauro Sardela"\
                   --email sardela@illinois.edu\
                   --office "#SC2014"
 
-python3 source.py --username "Benjamin A. Kowalski"\
+python3 source.py --username "Ben"\
                   --affiliation "NASA"\
                   --email benjamin.kowalski@nasa.gov
 
@@ -35,7 +35,7 @@ python3 source.py --username "PeakUtils"\
                   --website https://peakutils.readthedocs.io\
                   --email lucashnegri@gmail.com
 
-python3 source.py --username "Mengying Wang"\
+python3 source.py --username "MY"\
                   --affiliation "CWRU"\
                   --website wangmengying.me\
                   --email mxw767@case.edu
@@ -95,7 +95,7 @@ python3 modelcard.py --modelName Jade\
 for distance in 150 200 250 300
 do
 python3 modelcard.py --modelName pf_scipy_dist$distance\
-                     --username "Mengying Wang"\
+                     --username "MY"\
                      --modelLocation ../content/model/peakfinding/pf_scipy_dist$distance.py\
                      --modelYear 2022\
                      --modelMonth Mar\
@@ -108,7 +108,7 @@ python3 modelcard.py --modelName pf_scipy_dist$distance\
                      --taskName peak_finding
 
 python3 modelcard.py --modelName pf_peakutils_dist$distance\
-                     --username "Mengying Wang"\
+                     --username "MY"\
                      --modelLocation ../content/model/peakfinding/pf_peakutils_dist$distance.py\
                      --modelYear 2022\
                      --modelMonth Mar\
@@ -125,7 +125,7 @@ done
 for prominence in 20 30 40 200 300 400 1000
 do
 python3 modelcard.py --modelName pf_scipy_prom$prominence\
-                     --username "Mengying Wang"\
+                     --username "MY"\
                      --modelLocation ../content/model/peakfinding/pf_scipy_prom$prominence.py\
                      --modelYear 2022\
                      --modelMonth Apr\
@@ -150,5 +150,3 @@ python3 performance.py 0.01
 
 echo "Step 7 - Generating ranking lists......"
 python3 ranking.py
-
-

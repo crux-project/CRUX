@@ -200,7 +200,6 @@
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/applicationSoftware">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/source"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
     </owl:Class>
     
 
@@ -244,7 +243,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/affiliation"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/centerName"/>
     </owl:Class>
     
 
@@ -549,7 +547,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dependencies"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/modelName"/>
     </owl:Class>
     
 
@@ -609,7 +606,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/applicationSoftware"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/author"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/version"/>
     </owl:Class>
     
 
@@ -634,7 +630,6 @@
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/outTasks">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/outOfScopeUses"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/outUsers"/>
     </owl:Class>
     
 
@@ -819,7 +814,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/analysis"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedTasks"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/taskName"/>
     </owl:Class>
     
 
@@ -911,7 +905,6 @@
     <owl:Class rdf:about="https://w3id.org/mdo/full/userID">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contributor"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/mdo/full/username"/>
     </owl:Class>
     
 
@@ -971,263 +964,6 @@
     <owl:Class rdf:about="https://w3id.org/mdo/full/runningTime(s)">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-            <rdf:Description rdf:about="http://qudt.org/schema/qudt/Quantity"/>
-            <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityKind"/>
-            <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityValue"/>
-            <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
-            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ComputationalMethod"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ComputationalMethodParameter"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ExchangeCorrelationEnergyFunctional"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/core/Calculation"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/core/Structure"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/Center"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/Datacard"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/ModelCard"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/Peaklist"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/Sample"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/TaskCard"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/TestCard"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/User"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/AngleTriple"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/AxisVectors"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Basis"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Composition"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/CoordinateVector"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Lattice"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/LengthTriple"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Occupancy"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/PointGroup"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Site"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/SpaceGroup"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Species"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/F1_score"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/cosineSimilarity"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/jaccardSimilarity"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/precision"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/recall"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/runningTime(s)"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/UploadTime"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadDay"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadMonth"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadYear"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/address"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/affiliation"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/contact"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/positions"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/userID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/username"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/website"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/allowedError"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/groundtruth"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/output"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/performance"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/taskID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/testID"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/analysis"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataContent"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataContext"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataID"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/atmosphere"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/electricField"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/temperature"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/author"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/endTimeStamp"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/source"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/startTimeStamp"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/caveatsAndRecommendations"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dependencies"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/ethicalConsiderations"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/intendedUse"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelContext"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelDescription"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/trainingData"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/center"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/contributor"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/dataLocation"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/uploadDate"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/centerID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/centerName"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/instrument"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/centerID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleName"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/chemicalElements"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/header"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/processingTechnique"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleMode"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleOffset"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/status"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/usedWavelength"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/citationDetails"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/contributor"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/license"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelDate"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelLocation"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelName"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelType"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelVersion"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/paperOrResource"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/email"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/office"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/phone"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/fairnessConstraints"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/hyperParameters"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/inputFormat"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/inputParameters"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelArchitecture"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/outputFormat"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/outputParameters"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/inputFormat"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/inputParameters"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/outputFormat"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/outputParameters"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/taskID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/taskName"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/instrumentID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/instrumentType"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/measurementCondition"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/intendedTasks"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/intendedUsers"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/outOfScopeUses"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelDay"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelMonth"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/modelYear"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/peaklistID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/sampleID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/testID"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/x"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/y"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/prefix"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/units"/>
-            <rdf:Description rdf:about="https://w3id.org/mdo/full/value"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 

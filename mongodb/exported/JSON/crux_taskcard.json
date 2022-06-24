@@ -1,6 +1,6 @@
 [
   {
-    "_id": {"$oid": "62b50e7b2763dc7dae050498"},
+    "_id": {"$oid": "62b5aa6e0e71cc63b7142d67"},
     "inputFormat": "xrdml",
     "inputParameters": ["positions", "intensities"],
     "outputFormat": "txt",
