@@ -1,3 +1,7 @@
+"""
+This module generates a model card for each model(script of package).
+"""
+
 import utils
 import argparse
 import pymongo
@@ -29,6 +33,12 @@ def model_card(schema):
         if items[key] and key != "dependencies":
             path = paths[i]
             utils.dict_set(card, path, items[key])
+
+    if items["username"]:
+        # Get contributor's information
+        contributor = card["modelContext"]["contributor"]
+        user = db.user.find_one({'username': contributor["username"]})
+        contributor["userID"] = user["_id"]
 
     return card
 

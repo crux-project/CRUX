@@ -1,3 +1,8 @@
+"""
+This module computes and inserts performance(F1_score, precision, recall,
+cosine similarity, and Jaccard similarity) into testcard.
+"""
+
 import math
 import sys
 from collections import Counter
@@ -8,6 +13,13 @@ db = client["crux"]
 
 
 def intersection(l1, l2, err):
+    """
+    Compute the number of the common elements in l1 and l2.
+    :param l1: the 1st list.
+    :param l2: the 2nd list.
+    :param err: allowed error.
+    :return: the number of the common elements.
+    """
     count = 0
     i = 0
     j = 0
@@ -43,13 +55,22 @@ def generate_matric(p, pp, err):
 
 
 def f1_score(tp, p, pp):
-    if p == 0 or pp == 0:
-        recall = None
-        precision = None
-        f1 = None
-    else:
+    """
+    Compute recall, precision and f1-score.
+    :param tp: true positive.
+    :param p: positive labels/items.
+    :param pp: positive predictions.
+    :return: recall, precision and f1-score.
+    """
+    f1, recall, precision = None, None, None
+
+    if p != 0:
         recall = tp / p
+
+    if pp != 0:
         precision = tp / pp
+
+    if p != 0 and pp != 0:
         f1 = 2 * (precision * recall) / (precision + recall)
 
     return recall, precision, f1
@@ -83,7 +104,13 @@ def jaccard_similarity(p, pp, tp):
     return j_similarity
 
 
-def get_pd_gt(testcard):
+def get_pred_gt(testcard):
+    """
+             ｜-predict_peakID-predict(peaklist)-----------------------｜
+    testcard-｜                                                        ｜-performance
+             ｜-dataID-sampleID-sampleName-gt_modelID                  ｜
+                  ｜----------------------------｜-gt_testID-gt_peakID-gt
+    """
     predictID = testcard["output"]["peaklist"]
 
     dataID = testcard["dataID"]
@@ -131,7 +158,7 @@ def insert2testcard(err=0.01):
         if testcard["output"]["peaklist"] == testcard["groundtruth"]:
             continue
 
-        predict, groundtruth = get_pd_gt(testcard)
+        predict, groundtruth = get_pred_gt(testcard)
         matrics = generate_matric(groundtruth, predict, err)
 
         previous = testcard["performance"]

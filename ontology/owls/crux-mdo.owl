@@ -1,0 +1,972 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/mdo/full/"
+     xml:base="https://w3id.org/mdo/full/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:structure="https://w3id.org/mdo/structure/"
+     xmlns:provenance="https://w3id.org/mdo/provenance/"
+     xmlns:calculation="https://w3id.org/mdo/calculation/">
+    <owl:Ontology rdf:about="https://w3id.org/mdo/full/">
+        <owl:versionIRI rdf:resource="https://w3id.org/mdo/full/1.0/"/>
+        <owl:imports rdf:resource="https://w3id.org/mdo/calculation/1.0/"/>
+        <owl:imports rdf:resource="https://w3id.org/mdo/core/1.0/"/>
+        <owl:imports rdf:resource="https://w3id.org/mdo/provenance/1.0/"/>
+        <owl:imports rdf:resource="https://w3id.org/mdo/structure/1.0/"/>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patrick Lambrix</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Armiento</terms:contributor>
+        <terms:created>2019-11-07</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huanyu Li</terms:creator>
+        <terms:license>https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE</terms:license>
+        <terms:title xml:lang="en">Materials Design Ontology - Full</terms:title>
+        <vann:preferredNamespacePrefix>mdo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/full/1.0/</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This is the Materials Design Ontology.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/LiUSemWeb/Materials-Design-Ontology</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/mdo/full/Center -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/Center"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/Datacard -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/Datacard"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/F1_score -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/F1_score">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/ModelCard -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/ModelCard"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/Peaklist -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/Peaklist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/CalculatedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/Sample -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/Sample"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/TaskCard -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/TaskCard"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/TestCard -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/TestCard">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/Calculation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/UploadTime -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/UploadTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/User -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/User"/>
+    
+
+
+    <!-- https://w3id.org/mdo/full/address -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/affiliation -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/affiliation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/allowedError -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/allowedError">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/applicationSoftware -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/applicationSoftware">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/atmosphere -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/atmosphere">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/author -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/author">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/caveatsAndRecommendations -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/caveatsAndRecommendations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/center -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/center">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/centerID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/centerID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Center"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/affiliation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/centerName -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/centerName">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Center"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/chemicalElements -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/chemicalElements">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/citationDetails -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/citationDetails">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/contact -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/contact">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/contributor -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/contributor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/cosineSimilarity -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/cosineSimilarity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/dataContent -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/dataContent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/dataContext -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/dataContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/dataID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/dataID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/trainingData"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/dataLocation -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/dataLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/dependencies -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/dependencies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/electricField -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/electricField">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/email -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/email">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/endTimeStamp -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/endTimeStamp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/ethicalConsiderations -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/ethicalConsiderations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/fairnessConstraints -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/fairnessConstraints">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/groundtruth -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/groundtruth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/header -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/header">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/hyperParameters -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/hyperParameters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/inputFormat -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/inputFormat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/inputParameters -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/inputParameters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/instrument -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/instrument">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/instrumentControlSoftware -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentControlSoftware">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/instrumentID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/instrumentType -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/intendedTasks -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/intendedTasks">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedUse"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/intendedUse -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/intendedUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/intendedUsers -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/intendedUsers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedUse"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/jaccardSimilarity -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/jaccardSimilarity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/license -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/license">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/measurementCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/measurementCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelArchitecture -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelArchitecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelContext -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelDate -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelDate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelDay -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelDescription -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dependencies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelLocation -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelMonth -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelMonth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelName -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelName">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dependencies"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelType -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelVersion -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelVersion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/modelYear -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/modelYear">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/name -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/name">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/applicationSoftware"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/author"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/office -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/office">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/outOfScopeUses -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/outOfScopeUses">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedUse"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/outTasks -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/outTasks">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/outOfScopeUses"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/outUsers -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/outUsers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/outOfScopeUses"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/output -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/output">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/outputFormat -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/outputFormat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/outputParameters -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/outputParameters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/paperOrResource -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/paperOrResource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/peaklistID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/peaklistID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/output"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/performance -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/performance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/phone -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/phone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/positions -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/positions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/precision -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/precision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/prefix -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/prefix">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/processingParameter -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/processingParameter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/processingTechnique -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/processingTechnique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/recall -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/recall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/sampleID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/sampleMode -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleMode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/sampleName -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleName">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/sampleOffset -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleOffset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/source -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/source">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/startTimeStamp -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/startTimeStamp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/status -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/status">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/taskID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/taskID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/analysis"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/taskName -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/taskName">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/temperature -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/temperature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/testID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/testID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/trainingData -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/trainingData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/units -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/units">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadDate -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadDay -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadMonth -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadMonth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/uploadYear -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadYear">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/usedWavelength -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/usedWavelength">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/userID -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/userID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/username -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/username">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/value -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/value">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/version -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/version">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/applicationSoftware"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/website -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/website">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/x -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/x">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/y -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/y">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/full/runningTime(s) -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/full/runningTime(s)">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

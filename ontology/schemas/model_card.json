@@ -1,12 +1,15 @@
 {
     "modelContext": {
         "modelName": null,
-        "contributors": {
+        "contributor": {
             "username": null,
-            "affiliation": null,
-            "contactInfo": null
+            "userID": null
         },
-        "modelDate": null,
+        "modelDate": {
+            "modelYear": null,
+            "modelMonth": null,
+            "modelDay": null
+        },
         "modelVersion": null,
         "modelType": null,
         "paperOrResource": null,

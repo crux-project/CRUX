@@ -1,3 +1,7 @@
+"""
+This module generates the ranking list and outputs it into a txt file.
+"""
+
 import pymongo
 import os
 

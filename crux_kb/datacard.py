@@ -1,3 +1,10 @@
+"""
+This module generates a data card for each dataset and a Center/Sample instance
+if it does not exist. The input can be a file or a folder.
+
+For contributors’ information, we suppose the relation between user and center is 1:1.
+"""
+
 import utils
 import argparse
 import xmltodict
@@ -21,10 +28,31 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     context = card["dataContext"]
     content = card["dataContent"]
     xrd = raw["xrdMeasurements"]["xrdMeasurement"]
+
+    # ToDo: hardcode to get centerName and sampleName
     centerName = input.split('/')[4]
     sampleName = input.split('/')[5]
 
+    # If center existed, get its id, or create one and get its id.
     context["center"]["centerName"] = centerName
+    centerDoc = {"centerName": centerName}
+    db.center.replace_one(centerDoc, centerDoc, upsert=True)
+    center = db.center.find_one({'centerName': centerName})
+    context["center"]["centerID"] = center["_id"]
+
+    # Store information for sample
+    sampleDoc = {"sampleName": sampleName, "centerID": center["_id"]}
+    db.sample.replace_one(sampleDoc, sampleDoc, upsert=True)
+    sample = db.sample.find_one({"sampleName": sampleName})
+    content["sampleID"] = sample["_id"]
+
+    # Get contributor's information
+    contributor = context["contributor"]
+    user = db.user.find_one({"affiliation": {"$in": [center["_id"]]}})
+    contributor["username"] = user["username"]
+    contributor["userID"] = user["_id"]
+
+    # Other information
     context["dataLocation"] = input
     content["header"] = xrd["scan"]["header"]
     content["status"] = xrd.get("@status")
@@ -34,35 +62,6 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
 
     if content["header"]["source"].get("instrumentID"):
         del content["header"]["source"]["instrumentID"]
-
-    contributor = context["contributors"]
-    if centerName == "NC-State":
-        contributor["username"] = "Jacob L. Jones"
-    elif centerName == "UIUC":
-        contributor["username"] = "Mauro Sardela"
-
-    # Store information for center
-    center = db.center.find_one({'centerName': centerName})
-    if center:
-        context["center"]["centerID"] = center["_id"]
-    else:
-        center = db["center"].insert_one({"centerName": centerName})
-        context["center"]["centerID"] = center.inserted_id
-
-    # Store information for sample
-    sample = db.sample.find_one({'sampleName': sampleName})
-    if sample:
-        content["sampleID"] = sample["_id"]
-    else:
-        sample = db["sample"].insert_one({
-            "sampleName": sampleName,
-            "centerID": context["center"]["centerID"]
-        })
-        content["sampleID"] = sample.inserted_id
-
-    user = db.source.find_one({'username': contributor["username"]})
-    if user:
-        contributor["userID"] = user["_id"]
 
     return card
 
@@ -85,6 +84,10 @@ def data_card_batch(inputs, schema="../ontology/schemas/data_card.json"):
 
 
 def get_input():
+    """
+    Get input from a file or a folder.
+    :return: [inputpath, 'file'/'folder']
+    """
     parser = argparse.ArgumentParser(description='Raw data for datacard.')
 
     parser.add_argument("-file", "--input_file",
@@ -99,7 +102,7 @@ def get_input():
 
     if inputs['file']:
         input = [inputs['file'], 'file']
-    else:
+    elif inputs['folder']:
         input = [inputs['folder'], 'folder']
 
     return input
@@ -107,7 +110,6 @@ def get_input():
 
 def main():
     # Generate data cards.
-    # input = "../content/data/xrdml/"
     input = get_input()
 
     if input[1] == "file":
@@ -115,7 +117,7 @@ def main():
     else:
         datacards = data_card_batch(input[0])
 
-    # Import JSON files to MongoDB (Done for 289)
+    # Import JSON files to MongoDB
     collection = "datacard"
     utils.import_to_mongodb(datacards, collection)
 

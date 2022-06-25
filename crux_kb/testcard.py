@@ -1,3 +1,9 @@
+"""
+This module generates a test card for each experiment (without performance)
+and a corresponding instance for the peak list while inserting the task id
+into datacard[“analysis“].
+"""
+
 import pymongo
 import os.path
 import utils
@@ -27,6 +33,9 @@ def test_card(task, datacard, modelcard, schema="../ontology/schemas/test_card.j
 
 
 def peaks(testcard, modelcard, datacard, peak_schema="../ontology/schemas/peaks.json"):
+    """
+    Generate a peaklist instance for the result.
+    """
     input = datacard["dataContext"]["dataLocation"]
     model = modelcard["modelContext"]
     jade_file = input.replace("data", "Jade", 1)[:-6] + ".txt"
@@ -63,11 +72,11 @@ def jade_pos(file):
     return pos
 
 
-def test_card_mp(temp):
-    return test_card(temp[0], temp[1], temp[2])
-
-
 def test_card_task(task):
+    """
+    Generate test cards parallel for each dataset with each available model.
+    :param task: task name.
+    """
     num = 0
     list = []
 
@@ -83,7 +92,18 @@ def test_card_task(task):
     pool.map(test_card_mp, list)
 
 
+def test_card_mp(temp):
+    return test_card(temp[0], temp[1], temp[2])
+
+
 def test_card_model_data(model, data, task):
+    """
+    Generate a test card with a specific model, dataset and task.
+    :param model: modelcard(MongoDB instance).
+    :param data: datacard(MongoDB instance).
+    :param task: task name.
+    :return:
+    """
     datacard = db.datacard.find_one({"dataContext.dataLocation": data})
     modelcard = db.modelcard.find_one({"modelContext.modelName": model})
 

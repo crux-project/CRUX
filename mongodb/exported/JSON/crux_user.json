@@ -1,9 +1,9 @@
 [
   {
-    "_id": {"$oid": "62abe23b489af34c3d523724"},
+    "_id": {"$oid": "62b5aa678451b6b1417ebd33"},
     "address": "3072B Engineering Building I, Raleigh, NC",
     "affiliation": [
-      {"$oid": "629db0c64a75d47d61d33126"}
+      {"$oid": "62b5aa678fdaae8bd86a554d"}
     ],
     "contact": {
       "email": "jacobjones@ncsu.edu",
@@ -11,14 +11,14 @@
       "office": null
     },
     "positions": ["Kobe Distinguished Professor, Materials Science and Engineering", "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center", "Director, Research Triangle Nanotechnology Network"],
-    "username": "Jacob L. Jones",
+    "username": "Jac",
     "website": null
   },
   {
-    "_id": {"$oid": "62abe23cab2945b5a163e72e"},
+    "_id": {"$oid": "62b5aa67241760e2b7814fa9"},
     "address": "104 S. Goodwin Avenue – Urbana IL 61801",
     "affiliation": [
-      {"$oid": "62abe3f5daf941770f8de62b"}
+      {"$oid": "62b5aa678fdaae8bd86a5559"}
     ],
     "contact": {
       "email": "sardela@illinois.edu",
@@ -26,37 +26,82 @@
       "office": "#SC2014"
     },
     "positions": ["Director, Central Research Facilities, Materials Research Laboratory"],
-    "username": "Mauro Sardela",
+    "username": "M S",
     "website": "www.mrl.illinois.edu"
   },
   {
-    "_id": {"$oid": "62abe23d15bd6aa6a169421d"},
+    "_id": {"$oid": "62b5aa68c9a41133e4cd2510"},
     "address": null,
     "affiliation": [
-      {"$oid": "629db0c74a75d47d61d33129"}
+      {"$oid": "62b5aa688fdaae8bd86a5565"}
     ],
     "contact": {
       "email": "benjamin.kowalski@nasa.gov",
       "phone": null,
       "office": null
     },
-    "positions": null,
-    "username": "Benjamin A. Kowalski",
+    "positions": [],
+    "username": "Ben",
     "website": null
   },
   {
-    "_id": {"$oid": "62abe51a5e8ee11177af88cc"},
+    "_id": {"$oid": "62b5aa6984ccb2aa12ddafb9"},
     "address": null,
     "affiliation": [
-      {"$oid": "629db0c64a75d47d61d33124"}
+      {"$oid": "62b5aa698fdaae8bd86a5571"}
     ],
     "contact": {
       "email": null,
       "phone": null,
       "office": null
     },
-    "positions": null,
+    "positions": [],
     "username": "Anonymous",
     "website": null
+  },
+  {
+    "_id": {"$oid": "62b5aa6a72be43b07e63a08e"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b5aa6a8fdaae8bd86a557d"}
+    ],
+    "contact": {
+      "email": "scipy-dev@python.org",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "SciPy",
+    "website": "https://scipy.org"
+  },
+  {
+    "_id": {"$oid": "62b5aa6aa4ae5c515808607d"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b5aa6a8fdaae8bd86a5589"}
+    ],
+    "contact": {
+      "email": "lucashnegri@gmail.com",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "PeakUtils",
+    "website": "https://peakutils.readthedocs.io"
+  },
+  {
+    "_id": {"$oid": "62b5aa6b2163819dc350f04b"},
+    "address": null,
+    "affiliation": [
+      {"$oid": "62b5aa6b8fdaae8bd86a5595"}
+    ],
+    "contact": {
+      "email": "mxw767@case.edu",
+      "phone": null,
+      "office": null
+    },
+    "positions": [],
+    "username": "MY",
+    "website": "wangmengying.me"
   }
 ]
