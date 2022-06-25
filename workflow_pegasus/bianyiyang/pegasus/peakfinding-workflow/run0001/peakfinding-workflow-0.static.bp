@@ -1,0 +1,16 @@
+ts=1970-01-02T08:23:09.161472Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000006" type="1" type_desc="compute" transformation="performance.py" argv="-a generate_performancecard -T 3 -i f.f -o f.g" 
+ts=1970-01-02T08:23:09.161812Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000007" type="1" type_desc="compute" transformation="ranking.py" argv="-a generate_rankingcard -T 3 -i f.g -o f.h" 
+ts=1970-01-02T08:23:09.161953Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000001" type="1" type_desc="compute" transformation="generate_source" argv="-a generate_soucrcecard -T 3 -i f.a -o f.b" 
+ts=1970-01-02T08:23:09.162053Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000003" type="1" type_desc="compute" transformation="generate_taskcard" argv="-a generate_taskcard -T 3 -i f.c -o f.d" 
+ts=1970-01-02T08:23:09.162191Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000004" type="1" type_desc="compute" transformation="modelcard.py" argv="-a generate_modelcard -T 3 -i f.d -o f.e" 
+ts=1970-01-02T08:23:09.162325Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000002" type="1" type_desc="compute" transformation="generate_datacard" argv="-a generate_datacard -T 3 -i f.b -o f.c" 
+ts=1970-01-02T08:23:09.162439Z event=task.info xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb task.id="ID0000005" type="1" type_desc="compute" transformation="testcard.py" argv="-a generate_testcard -T 3 -i f.e -o f.f" 
+ts=1970-01-02T08:23:09.162626Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000006" child.task.id="ID0000007" 
+ts=1970-01-02T08:23:09.162711Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000001" child.task.id="ID0000002" 
+ts=1970-01-02T08:23:09.162824Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000003" child.task.id="ID0000004" 
+ts=1970-01-02T08:23:09.162923Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000004" child.task.id="ID0000005" 
+ts=1970-01-02T08:23:09.162996Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000002" child.task.id="ID0000003" 
+ts=1970-01-02T08:23:09.163096Z event=task.edge xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb parent.task.id="ID0000005" child.task.id="ID0000006" 
+ts=1970-01-02T08:23:09.210161Z event=static.meta.start xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb 
+ts=1970-01-02T08:23:09.210408Z event=xwf.meta xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb key="wf.api" value="python" 
+ts=1970-01-02T08:23:09.210695Z event=static.meta.end xwf.id=0f8c704e-8d12-44a5-b2e5-f3ddbab76cbb 

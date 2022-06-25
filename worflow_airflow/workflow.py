@@ -22,14 +22,14 @@ default_args = {
 }
 
 dag = DAG(
-    'peak_finding',
+    dag_id='peak_finding',
     default_args=default_args,
     description='peakfinding',
     schedule_interval=timedelta(1)
 )
 
 task1 = BashOperator(
-    task_id='source_infomation',
+    task_id='source_information',
     bash_command="cd /Users/bianyiyang/airflow/dags/CRUX/to_cards/ && python3 generate_source.py --name 'Jacob L. Jones'\
                   --affiliation 'North Carolina State University'\
                   --positions 'Kobe Distinguished Professor, Materials Science and Engineering'\
