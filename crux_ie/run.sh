@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Step 1 - Generating source infomation (user and center)......"
-python3 source.py --username "Jac"\
-                  --affiliation "NC-State"\
+python3 source.py --username "Jacob Jones"\
+                  --affiliation "North Carolina State University"\
                   --positions "Kobe Distinguished Professor, Materials Science and Engineering"\
                   --positions "Director, Science and Technologies for Phosphorus Sustainability (STEPS) Center"\
                   --positions "Director, Research Triangle Nanotechnology Network"\
@@ -9,8 +9,8 @@ python3 source.py --username "Jac"\
                   --phone 919-515-4557\
                   --email jacobjones@ncsu.edu
 
-python3 source.py --username "M S"\
-                  --affiliation "UIUC"\
+python3 source.py --username "Mauro Sardela"\
+                  --affiliation "University of Illinois Urbana-Champaign"\
                   --positions "Director, Central Research Facilities, Materials Research Laboratory"\
                   --address "104 S. Goodwin Avenue – Urbana IL 61801"\
                   --website www.mrl.illinois.edu\
@@ -18,12 +18,12 @@ python3 source.py --username "M S"\
                   --email sardela@illinois.edu\
                   --office "#SC2014"
 
-python3 source.py --username "Ben"\
+python3 source.py --username "Benjamin A. Kowalski"\
                   --affiliation "NASA"\
                   --email benjamin.kowalski@nasa.gov
 
 python3 source.py --username "Anonymous"\
-                  --affiliation "UNSW"\
+                  --affiliation "University of New South Wales"\
 
 python3 source.py --username "SciPy"\
                   --affiliation "The SciPy community"\
@@ -35,11 +35,30 @@ python3 source.py --username "PeakUtils"\
                   --website https://peakutils.readthedocs.io\
                   --email lucashnegri@gmail.com
 
-python3 source.py --username "MY"\
-                  --affiliation "CWRU"\
+python3 source.py --username "Mengying Wang"\
+                  --affiliation "Case Western Reserve University"\
                   --website wangmengying.me\
                   --email mxw767@case.edu
 
+python3 source.py --username "Xuerun Li"\
+                  --affiliation "Zenodo"\
+                  --positions "Postdoc Researcher, Laboratory of Construction Materials, Swiss Federal Institute of Technology in Lausanne (EPFL)"\
+                  --address "Station 12, CH-1015 Lausanne, Switzerland"
+
+python3 source.py --username "Deepali Eilidh Sood"\
+                  --affiliation "University of St Andrews"
+
+python3 source.py --username "Léa Lévy"\
+                  --affiliation "Mendeley"\
+                  --positions "Associate senior lecturer, Engineering Geology, Lund University"\
+                  --email lea.levy@tg.lth.se
+
+python3 source.py --username "Amao Abduljamiu"\
+                  --affiliation "Mendeley"\
+                  --positions "Research Scientist, King Fahd University of Petroleum and Minerals"\
+                  --address "Bldg. 78, Rm. 2029, Dhahran, Saudi Arabia"\
+                  --phone +966-013-860-3240\
+                  --email amao@kfupm.edu.sa
 
 echo "Step 2 - Generating data cards......"
 python3 datacard.py -folder "../content/data/xrdml/"
@@ -95,7 +114,7 @@ python3 modelcard.py --modelName Jade\
 for distance in 150 200 250 300
 do
 python3 modelcard.py --modelName pf_scipy_dist$distance\
-                     --username "MY"\
+                     --username "Mengying Wang"\
                      --modelLocation ../content/model/peakfinding/pf_scipy_dist$distance.py\
                      --modelYear 2022\
                      --modelMonth Mar\
@@ -108,7 +127,7 @@ python3 modelcard.py --modelName pf_scipy_dist$distance\
                      --taskName peak_finding
 
 python3 modelcard.py --modelName pf_peakutils_dist$distance\
-                     --username "MY"\
+                     --username "Mengying Wang"\
                      --modelLocation ../content/model/peakfinding/pf_peakutils_dist$distance.py\
                      --modelYear 2022\
                      --modelMonth Mar\
@@ -125,7 +144,7 @@ done
 for prominence in 20 30 40 200 300 400 1000
 do
 python3 modelcard.py --modelName pf_scipy_prom$prominence\
-                     --username "MY"\
+                     --username "Mengying Wang"\
                      --modelLocation ../content/model/peakfinding/pf_scipy_prom$prominence.py\
                      --modelYear 2022\
                      --modelMonth Apr\
