@@ -24,3 +24,14 @@ MATCH (te:Testcard)-[:testedWith]-(d:Datacard)-[:canBeUsedTo]-(ta:Taskcard{taskN
       (ud:User)-[:uploadedBy]-(d),
       (te)-[:calculatedBy]-(p:Peaklist)
 RETURN s, c, d, m, md, ta, te, um, ud, p LIMIT 15
+
+// Generate input for GNN
+MATCH (m:Modelcard)
+RETURN m.id
+
+MATCH (d:Datacard)
+RETURN d.id
+
+MATCH (m:Modelcard)-[r:testedWith]-(d:Datacard)
+WHERE r.f1_score is not null
+RETURN  m.id, d.id, r.runningTimes, r.f1_score, r.precision, r.recall
