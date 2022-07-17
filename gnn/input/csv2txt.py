@@ -4,16 +4,25 @@ import os
 if not os.path.exists('./txt/'):
     os.makedirs('./txt/')
 
-model = pd.read_csv('csv/model.csv')
-data = pd.read_csv('csv/data.csv')
 test = pd.read_csv('csv/test.csv')
 
 # Node: Encode model as 0, data as 1
+models = test['m.id'].unique()
+datasets = test['d.id'].unique()
+
 with open('txt/node.txt', 'a+') as f:
-    for line in model.values:
-        f.write((str(line[0]) + '\t' + str(0) + '\n'))
-    for line in data.values:
-        f.write((str(line[0]) + '\t' + str(1) + '\n'))
+    for m in models:
+        f.write(m + '\t' + str(0) + '\n')
+    for d in datasets:
+        f.write(d + '\t' + str(1) + '\n')
+
+# model = pd.read_csv('csv/model.csv')
+# data = pd.read_csv('csv/data.csv')
+# with open('txt/node.txt', 'a+') as f:
+#     for line in model.values:
+#         f.write((str(line[0]) + '\t' + str(0) + '\n'))
+#     for line in data.values:
+#         f.write((str(line[0]) + '\t' + str(1) + '\n'))
 
 
 # Test: (model, data) [runningTimes, f1_score, precision, recall]
