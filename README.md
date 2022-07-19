@@ -18,7 +18,7 @@ Visualized by Neo4J.
 
 **Query:**
  
-> "Find the <font color=#d9c8ae>*datasets*</font> for sample **'CaCO3-TiO2'** provided by **'NC-State'**, a <font color=#569480>*task*</font> with the name **'peak_finding'**, and the <font color=#8dcc93>*models*</font> implemented with the library **'peakutils'**."
+> "Find the <font color=#bd964a>***datasets***</font> for sample **'CaCO3-TiO2'** provided by **'NC-State'**, a <font color=#387348>***task***</font> with the name **'peak_finding'**, and the <font color=#54c772>***models***</font> implemented with the library **'peakutils'**."
 
 **Visualized Result (fraction):**
 
@@ -26,4 +26,4 @@ Visualized by Neo4J.
 
 ## Acknowledgments
 
-These resources are contributed by a group of CRUX community of 4 collaborative institutions: NASA, NC-State, UIUC and UNSW. CRUX community also includes International Centre for Diffraction Data (ICDD) and JADE database (with active users from 53 countries). 
+These resources are contributed by a group of CRUX community of 4 collaborative institutions: NASA, NC-State, UIUC and UNSW. CRUX community also includes International Centre for Diffraction Data (ICDD) and JADE database (with active users from 53 countries). ››
