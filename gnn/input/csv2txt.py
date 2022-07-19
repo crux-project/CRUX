@@ -42,7 +42,7 @@ def get_vec_min(info):
     return vec_min
 
 
-# Parse information for thr node with type "model"
+# Parse information for the node with type "model"
 for m in models:
     model = db.modelcard.find_one({"_id": ObjectId(m)})
     context = model["modelContext"]
@@ -58,7 +58,7 @@ for m in models:
     content.append(model_info)
 
 
-# Parse information for thr node with type "data"
+# Parse information for the node with type "data"
 for d in datas:
     data = db.datacard.find_one({"_id": ObjectId(d)})
 
