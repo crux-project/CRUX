@@ -18,8 +18,8 @@ content = []
 
 
 # Overall performance function
-def perform(a, b, c, d):
-    return 0.4 * b + 0.1 * c + 0.1 * d - 0.01 * a
+def perform(a, b):
+    return a - 0.1 * b
 
 
 def break_list(minfo, in_list):
@@ -84,7 +84,7 @@ with open('txt/node.txt', 'a+') as f:
         f.write(m + '\t' + str(0) + '\t' + str(get_vec_min(content[n])) + '\n')
         n += 1
     for d in datas:
-        f.write(d + '\t' + str(1) + '\t' + str(get_vec_min(content[n])) + '\n')
+        f.write(d + '\t' + str(1) + '\t' + '\n')
         n += 1
 
 
@@ -97,8 +97,7 @@ with open('txt/edge.txt', 'a+') as f:
 
 
 # Top5: (model, data) [runningTimes, f1_score, precision, recall]
-test['performance'] = test.apply(lambda test: perform(
-    test['r.runningTimes'], test['r.f1_score'], test['r.precision'], test['r.recall']), axis=1)
+test['performance'] = test.apply(lambda test: perform(test['r.precision'], test['r.f1_score']), axis=1)
 test['rank'] = test['performance'].groupby(test['d.id']).rank(ascending=False, method='first').astype(int)
 
 test.to_csv('csv/test_rank.csv')
