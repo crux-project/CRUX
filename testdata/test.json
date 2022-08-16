@@ -1,17 +1,19 @@
 {
     "dataContext": {
-        "dataID": null,
-        "uploadTime": null,
-        "contributors": {
-            "username": null,
-            "affiliation": null,
-            "contactInfo": null,
-            "dataLocation": "../data/xrdml/UNSW/A Basic Calibration BBHD Program-3_1.xrdml"
+        "uploadTime": {
+            "uploadYear": null,
+            "uploadMonth": null,
+            "uploadDay": null,
+            "uploadTime": null
         },
-        "dataLocation": null,
+        "contributor": {
+            "username": null,
+            "userID": null
+        },
+        "dataLocation": "../content/data/xrdml/North Carolina State University/CaCO3-TiO2/Single scan HTK1200_1100\u9ce6_121.XRDML",
         "center": {
             "centerID": null,
-            "centerName": "UNSW",
+            "centerName": null,
             "instrument": {
                 "instrumentID": null,
                 "instrumentType": null,
@@ -25,53 +27,36 @@
     },
     "dataContent": {
         "header": {
-            "startTimeStamp": "2022-01-21T12:56:01+11:00",
-            "endTimeStamp": "2022-01-21T13:02:04+11:00",
+            "startTimeStamp": "2022-02-22T08:22:23--05:00",
             "author": {
-                "name": "MPD"
+                "name": "NCSU-XRD"
             },
             "source": {
                 "applicationSoftware": {
-                    "@version": "2.2d",
-                    "#text": "X'Pert Data Collector"
-                },
-                "instrumentControlSoftware": {
-                    "@version": "2.2 ",
-                    "#text": "XPERT-PRO"
+                    "@version": "4.7.0",
+                    "#text": "HighScore Plus"
                 }
             }
         },
         "status": "Completed",
+        "sampleID": null,
         "sampleMode": "Reflection",
-        "sampleOffset": {
-            "position": [
-                {
-                    "@axis": "2Theta",
-                    "@unit": "deg",
-                    "#text": "0.000"
-                },
-                {
-                    "@axis": "Omega",
-                    "@unit": "deg",
-                    "#text": "0.000"
-                }
-            ]
-        },
+        "sampleOffset": null,
         "usedWavelength": {
-            "@intended": "K-Alpha",
+            "@intended": "K-Alpha 1",
             "kAlpha1": {
                 "@unit": "Angstrom",
-                "#text": "1.5405980"
+                "#text": "1.540598"
             },
             "kAlpha2": {
                 "@unit": "Angstrom",
-                "#text": "1.5444260"
+                "#text": "1.544426"
             },
             "kBeta": {
                 "@unit": "Angstrom",
-                "#text": "1.3922500"
+                "#text": "1.392250"
             },
-            "ratioKAlpha2KAlpha1": "0.5000"
+            "ratioKAlpha2KAlpha1": "0.500000"
         },
         "processingTechnique": {
             "processingParameter": {
@@ -82,9 +67,5 @@
         },
         "chemicalElements": null
     },
-    "analysis": {
-        "task_1": {
-            "taskID": null
-        }
-    }
+    "analysis": []
 }

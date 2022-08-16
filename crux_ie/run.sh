@@ -62,7 +62,7 @@ python3 source.py --username "Amao Abduljamiu"\
 
 echo "Step 2 - Generating data cards......"
 python3 datacard.py -folder "../content/data/xrdml/"
-# python3 datacard.py -file "../content/data/xrdml/NC-State/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
+# python3 datacard.py -file "../content/data/xrdml/North Carolina State University/CaCO3-TiO2/Single scan HTK1200_1100鳦_121.XRDML"
 
 
 echo "Step 3 - Generating task cards......"
