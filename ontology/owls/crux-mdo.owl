@@ -85,15 +85,482 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/Center -->
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center -->
 
-    <owl:Class rdf:about="https://w3id.org/mdo/full/Center"/>
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center"/>
     
 
 
-    <!-- https://w3id.org/mdo/full/Datacard -->
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard -->
 
-    <owl:Class rdf:about="https://w3id.org/mdo/full/Datacard"/>
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#UploadTime -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#UploadTime">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#User -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#X-raySource -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#X-raySource">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#address -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#address">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#affiliation -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#affiliation">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#analysis -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#analysis">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#applicationSoftware -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#applicationSoftware">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#source"/>
+        <owl:disjointWith rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentControlSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#atmosphere -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#atmosphere">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#author -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#author">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#center -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#center">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#affiliation"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#center"/>
+        <owl:disjointWith rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerName"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerName -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerName">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#center"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#chemicalElements -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#chemicalElements">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#contributor -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contributor">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataLocation -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataLocation">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#electricField -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#electricField">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#email -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#email">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#endTimeStamp -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#endTimeStamp">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#header -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentControlSoftware -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentControlSoftware">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#name -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#name">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#applicationSoftware"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#author"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentControlSoftware"/>
+        <owl:disjointWith rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#version"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#office -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#office">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#others -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#others">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#password -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#password">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#phone -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#phone">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#positions -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#positions">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#prefix -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#prefix">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingParameter -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingParameter">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingTechnique -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingTechnique">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#role -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#role">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleMode -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleMode">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleOffset -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleOffset">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleType -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleType">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#source -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#source">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#startTimeStamp -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#startTimeStamp">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#status -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#status">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#taskID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#taskID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#temperature -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#temperature">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#units -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#units">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDay -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDay">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadMonth -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadMonth">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadYear -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadYear">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#usedWavelength -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#usedWavelength">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#userID -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#userID">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contributor"/>
+        <owl:disjointWith rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#username"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#username -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#username">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contributor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#value -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#value">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#version -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#version">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#applicationSoftware"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentControlSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/crux-project/CRUX/tree/main/ontology/owls#website -->
+
+    <owl:Class rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#website">
+        <rdfs:subClassOf rdf:resource="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+    </owl:Class>
     
 
 
@@ -139,72 +606,10 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/UploadTime -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/UploadTime">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/User -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/User"/>
-    
-
-
-    <!-- https://w3id.org/mdo/full/address -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/address">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/affiliation -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/affiliation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/allowedError -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/allowedError">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/analysis -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/analysis">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/applicationSoftware -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/applicationSoftware">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/source"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/atmosphere -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/atmosphere">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/author -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/author">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
     </owl:Class>
     
 
@@ -217,62 +622,9 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/center -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/center">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/centerID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/centerID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Center"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/affiliation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/centerName -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/centerName">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Center"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/chemicalElements -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/chemicalElements">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/citationDetails -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/citationDetails">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/contact -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/contact">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/contributor -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/contributor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
     </owl:Class>
     
@@ -286,68 +638,10 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/dataContent -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/dataContent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/dataContext -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/dataContext">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/dataID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/dataID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Datacard"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/trainingData"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/dataLocation -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/dataLocation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/dependencies -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/dependencies">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/electricField -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/electricField">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/email -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/email">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/endTimeStamp -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/endTimeStamp">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
     </owl:Class>
     
 
@@ -376,14 +670,6 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/header -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/header">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/hyperParameters -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/hyperParameters">
@@ -406,38 +692,6 @@
     <owl:Class rdf:about="https://w3id.org/mdo/full/inputParameters">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelDescription"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/instrument -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/instrument">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/center"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/instrumentControlSoftware -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentControlSoftware">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/source"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/instrumentID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/instrumentType -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/instrumentType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
     </owl:Class>
     
 
@@ -478,14 +732,6 @@
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/license">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/modelContext"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/measurementCondition -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/measurementCondition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrument"/>
     </owl:Class>
     
 
@@ -589,24 +835,6 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/name -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/name">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/applicationSoftware"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/author"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/office -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/office">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/outOfScopeUses -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/outOfScopeUses">
@@ -682,50 +910,10 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/phone -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/phone">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contact"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/positions -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/positions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/precision -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/precision">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/prefix -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/prefix">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/processingParameter -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/processingParameter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingTechnique"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/processingTechnique -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/processingTechnique">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
     </owl:Class>
     
 
@@ -738,71 +926,10 @@
     
 
 
-    <!-- https://w3id.org/mdo/full/sampleID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Peaklist"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/sampleMode -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleMode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/mdo/full/sampleName -->
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/sampleName">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/Sample"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/sampleOffset -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/sampleOffset">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/source -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/source">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/startTimeStamp -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/startTimeStamp">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/header"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/status -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/status">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/taskID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/taskID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TestCard"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/analysis"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedTasks"/>
     </owl:Class>
     
 
@@ -812,14 +939,6 @@
     <owl:Class rdf:about="https://w3id.org/mdo/full/taskName">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/TaskCard"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/intendedTasks"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/temperature -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/temperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/measurementCondition"/>
     </owl:Class>
     
 
@@ -837,97 +956,6 @@
 
     <owl:Class rdf:about="https://w3id.org/mdo/full/trainingData">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/ModelCard"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/units -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/units">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/uploadDate -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContext"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/uploadDay -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadDay">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/uploadMonth -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadMonth">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/uploadYear -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/uploadYear">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/uploadDate"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/usedWavelength -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/usedWavelength">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/dataContent"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/userID -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/userID">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contributor"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/username -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/username">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/contributor"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/value -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/value">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/processingParameter"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/version -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/version">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/applicationSoftware"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/instrumentControlSoftware"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/mdo/full/website -->
-
-    <owl:Class rdf:about="https://w3id.org/mdo/full/website">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/User"/>
     </owl:Class>
     
 
@@ -953,6 +981,160 @@
     <owl:Class rdf:about="https://w3id.org/mdo/full/runningTime(s)">
         <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/full/performance"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            <rdf:Description rdf:about="http://qudt.org/schema/qudt/Quantity"/>
+            <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityKind"/>
+            <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityValue"/>
+            <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Center"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Datacard"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#Instrument"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#User"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ComputationalMethod"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ComputationalMethodParameter"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/calculation/ExchangeCorrelationEnergyFunctional"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/core/Calculation"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/core/Structure"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/ModelCard"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/Sample"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/full/TaskCard"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/AngleTriple"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/AxisVectors"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Basis"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Composition"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/CoordinateVector"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Lattice"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/LengthTriple"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Occupancy"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/PointGroup"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Site"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/SpaceGroup"/>
+            <rdf:Description rdf:about="https://w3id.org/mdo/structure/Species"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#UploadTime"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDay"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadMonth"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadYear"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#X-raySource"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#measurementCondition"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#address"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#affiliation"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contact"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#password"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#positions"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#role"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#userID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#username"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#website"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#analysis"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContent"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataContext"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataID"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#atmosphere"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#electricField"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#others"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#temperature"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#author"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#endTimeStamp"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#source"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#startTimeStamp"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#center"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#contributor"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#dataLocation"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#uploadDate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#centerName"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#instrumentID"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#chemicalElements"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#header"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#processingTechnique"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleID"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleMode"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#sampleOffset"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#status"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#usedWavelength"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#email"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#office"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#phone"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#prefix"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#units"/>
+            <rdf:Description rdf:about="https://github.com/crux-project/CRUX/tree/main/ontology/owls#value"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

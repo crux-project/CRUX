@@ -14,15 +14,7 @@
         "center": {
             "centerID": null,
             "centerName": null,
-            "instrument": {
-                "instrumentID": null,
-                "instrumentType": null,
-                "measurementCondition": {
-                    "temperature": null,
-                    "atmosphere": null,
-                    "electricField": null
-                }
-            }
+            "instrumentID": null
         }
     },
     "dataContent": {

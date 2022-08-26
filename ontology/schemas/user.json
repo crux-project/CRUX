@@ -1,5 +1,6 @@
 {
     "username": null,
+    "role": null,
     "affiliation": [],
     "positions": [],
     "address": null,
@@ -8,5 +9,7 @@
         "email": null,
         "phone": null,
         "office": null
-    }
+    },
+    "instrumentID": [],
+    "password": null
 }

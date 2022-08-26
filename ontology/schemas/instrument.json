@@ -1,0 +1,11 @@
+{
+  "instrumentType": null,
+  "sampleType": null,
+  "X-raySource": null,
+  "measurementCondition": {
+    "temperature": null,
+    "atmosphere": null,
+    "electricField": null,
+    "others": []
+  }
+}

@@ -451,6 +451,9 @@
         <Class IRI="#Infill"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Laser_Engineered_Net_Shaping"/>
     </Declaration>
     <Declaration>
@@ -652,6 +655,9 @@
         <Class IRI="#Wire_Feed_Speed"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#X-raySource"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#address"/>
     </Declaration>
     <Declaration>
@@ -745,16 +751,10 @@
         <Class IRI="#inputParameters"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#instrument"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#instrumentControlSoftware"/>
     </Declaration>
     <Declaration>
         <Class IRI="#instrumentID"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#instrumentType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#intendedTasks"/>
@@ -817,6 +817,9 @@
         <Class IRI="#office"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#others"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#outOfScopeUses"/>
     </Declaration>
     <Declaration>
@@ -836,6 +839,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#paperOrResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#password"/>
     </Declaration>
     <Declaration>
         <Class IRI="#peaklistID"/>
@@ -865,6 +871,9 @@
         <Class IRI="#recall"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#role"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sampleID"/>
     </Declaration>
     <Declaration>
@@ -875,6 +884,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#sampleOffset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sampleType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#source"/>
@@ -2675,6 +2687,10 @@
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#X-raySource"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#address"/>
         <Class IRI="#User"/>
     </SubClassOf>
@@ -2835,20 +2851,24 @@
         <Class IRI="#modelDescription"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#instrument"/>
-        <Class IRI="#center"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#instrumentControlSoftware"/>
         <Class IRI="#source"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#instrumentID"/>
-        <Class IRI="#instrument"/>
+        <Class IRI="#Center"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#instrumentType"/>
-        <Class IRI="#instrument"/>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#dataContext"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#intendedTasks"/>
@@ -2872,7 +2892,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#measurementCondition"/>
-        <Class IRI="#instrument"/>
+        <Class IRI="#Instrument"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#modelArchitecture"/>
@@ -2951,6 +2971,10 @@
         <Class IRI="#contact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#others"/>
+        <Class IRI="#measurementCondition"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#outOfScopeUses"/>
         <Class IRI="#intendedUse"/>
     </SubClassOf>
@@ -2985,6 +3009,10 @@
     <SubClassOf>
         <Class IRI="#paperOrResource"/>
         <Class IRI="#modelContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#password"/>
+        <Class IRI="#User"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#peaklistID"/>
@@ -3027,6 +3055,10 @@
         <Class IRI="#performance"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#role"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sampleID"/>
         <Class IRI="#Peaklist"/>
     </SubClassOf>
@@ -3049,6 +3081,10 @@
     <SubClassOf>
         <Class IRI="#sampleOffset"/>
         <Class IRI="#dataContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sampleType"/>
+        <Class IRI="#Instrument"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#source"/>
@@ -3174,6 +3210,198 @@
         <Class IRI="#runningTime(s)"/>
         <Class IRI="#performance"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActualKnowledge"/>
+        <Class IRI="#Center"/>
+        <Class IRI="#Datacard"/>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#ModelCard"/>
+        <Class IRI="#Peaklist"/>
+        <Class IRI="#Sample"/>
+        <Class IRI="#TaskCard"/>
+        <Class IRI="#TestCard"/>
+        <Class IRI="#User"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#F1_score"/>
+        <Class IRI="#cosineSimilarity"/>
+        <Class IRI="#jaccardSimilarity"/>
+        <Class IRI="#precision"/>
+        <Class IRI="#recall"/>
+        <Class IRI="#runningTime(s)"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#UploadTime"/>
+        <Class IRI="#uploadDay"/>
+        <Class IRI="#uploadMonth"/>
+        <Class IRI="#uploadYear"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#X-raySource"/>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#measurementCondition"/>
+        <Class IRI="#sampleType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#address"/>
+        <Class IRI="#affiliation"/>
+        <Class IRI="#contact"/>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#password"/>
+        <Class IRI="#positions"/>
+        <Class IRI="#role"/>
+        <Class IRI="#userID"/>
+        <Class IRI="#username"/>
+        <Class IRI="#website"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#allowedError"/>
+        <Class IRI="#dataID"/>
+        <Class IRI="#groundtruth"/>
+        <Class IRI="#modelID"/>
+        <Class IRI="#output"/>
+        <Class IRI="#performance"/>
+        <Class IRI="#taskID"/>
+        <Class IRI="#testID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#analysis"/>
+        <Class IRI="#dataContent"/>
+        <Class IRI="#dataContext"/>
+        <Class IRI="#dataID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#applicationSoftware"/>
+        <Class IRI="#instrumentControlSoftware"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#atmosphere"/>
+        <Class IRI="#electricField"/>
+        <Class IRI="#others"/>
+        <Class IRI="#temperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#author"/>
+        <Class IRI="#endTimeStamp"/>
+        <Class IRI="#source"/>
+        <Class IRI="#startTimeStamp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#caveatsAndRecommendations"/>
+        <Class IRI="#dependencies"/>
+        <Class IRI="#ethicalConsiderations"/>
+        <Class IRI="#intendedUse"/>
+        <Class IRI="#modelContext"/>
+        <Class IRI="#modelDescription"/>
+        <Class IRI="#modelID"/>
+        <Class IRI="#trainingData"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#center"/>
+        <Class IRI="#contributor"/>
+        <Class IRI="#dataLocation"/>
+        <Class IRI="#instrumentID"/>
+        <Class IRI="#uploadDate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#centerID"/>
+        <Class IRI="#centerName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#centerID"/>
+        <Class IRI="#centerName"/>
+        <Class IRI="#instrumentID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#centerID"/>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#sampleName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#chemicalElements"/>
+        <Class IRI="#header"/>
+        <Class IRI="#processingTechnique"/>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#sampleMode"/>
+        <Class IRI="#sampleOffset"/>
+        <Class IRI="#status"/>
+        <Class IRI="#usedWavelength"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#citationDetails"/>
+        <Class IRI="#contributor"/>
+        <Class IRI="#license"/>
+        <Class IRI="#modelDate"/>
+        <Class IRI="#modelLocation"/>
+        <Class IRI="#modelName"/>
+        <Class IRI="#modelType"/>
+        <Class IRI="#modelVersion"/>
+        <Class IRI="#paperOrResource"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#email"/>
+        <Class IRI="#office"/>
+        <Class IRI="#phone"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#fairnessConstraints"/>
+        <Class IRI="#hyperParameters"/>
+        <Class IRI="#inputFormat"/>
+        <Class IRI="#inputParameters"/>
+        <Class IRI="#modelArchitecture"/>
+        <Class IRI="#outputFormat"/>
+        <Class IRI="#outputParameters"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#inputFormat"/>
+        <Class IRI="#inputParameters"/>
+        <Class IRI="#outputFormat"/>
+        <Class IRI="#outputParameters"/>
+        <Class IRI="#taskID"/>
+        <Class IRI="#taskName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#intendedTasks"/>
+        <Class IRI="#intendedUsers"/>
+        <Class IRI="#outOfScopeUses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#modelDay"/>
+        <Class IRI="#modelMonth"/>
+        <Class IRI="#modelYear"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#modelID"/>
+        <Class IRI="#modelName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#name"/>
+        <Class IRI="#version"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#outTasks"/>
+        <Class IRI="#outUsers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#peaklistID"/>
+        <Class IRI="#sampleID"/>
+        <Class IRI="#testID"/>
+        <Class IRI="#x"/>
+        <Class IRI="#y"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#prefix"/>
+        <Class IRI="#units"/>
+        <Class IRI="#value"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#taskID"/>
+        <Class IRI="#taskName"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#userID"/>
+        <Class IRI="#username"/>
+    </DisjointClasses>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasParameter"/>
         <Class IRI="http://webprotege.stanford.edu/RDokPAREIJF2VijqgKsJpsH"/>
