@@ -51,11 +51,20 @@ te.runningTimes = test.performance.`runningTime(s)`,
 te.f1_score = test.performance.`F1_score`,
 te.precision = test.performance.precision,
 te.recall = test.performance.recall,
+te.cosineSimilarity = test.performance.cosineSimilarity,
+te.jaccardSimilarity = test.performance.jaccardSimilarity,
 te.output = test.output.peaklist.`$oid`;
 
 //3/3 - Create relations.
 // model-data
 MATCH (m:Modelcard), (d:Datacard), (te:Testcard)
 WHERE te.modelID = m.id AND te.dataID = d.id
-CREATE (m)-[:testedWith{runningTimes:te.runningTimes, f1_score:te.f1_score, precision:te.precision, recall:te.recall}]->(d);
+CREATE (m)-[:testedWith{
+  runningTimes:te.runningTimes,
+  f1_score:te.f1_score,
+  precision:te.precision,
+  recall:te.recall,
+  cosineSimilarity:te.cosineSimilarity,
+  jaccardSimilarity:te.jaccardSimilarity
+}]->(d);
 

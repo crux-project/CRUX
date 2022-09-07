@@ -33,8 +33,8 @@ MATCH (d:Datacard)
 RETURN d.id
 
 MATCH (m:Modelcard)-[r:testedWith]-(d:Datacard)
-WHERE r.f1_score is not null
-RETURN  m.id, d.id, r.runningTimes, r.f1_score, r.precision, r.recall
+WHERE r.f1_score is not null AND r.runningTimes is not null
+RETURN  m.id, d.id, r.runningTimes, r.f1_score, r.precision, r.recall, r.cosineSimilarity, r.jaccardSimilarity
 
 // Get the count for each node type
 CALL apoc.meta.stats() YIELD labels

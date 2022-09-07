@@ -21,10 +21,13 @@ test = pd.read_csv('csv/test.csv')
 models = test['m.id'].unique()
 datas = test['d.id'].unique()
 
+# print("model: " + str(len(models)))
+# print("data: " + str(len(datas)))
+
 
 # Overall performance function
-def perform(a, b):
-    return a - 0.1 * b
+def perform(a, b, c):
+    return a + b - 0.1 * c
 
 
 # Get the average vector for a node's information.
@@ -88,11 +91,9 @@ for d in datas:
 
     datas_info.append(data_info)
 
-
 # Training Word2Vec model
 w2v_model = Word2Vec(datas_info, vector_size=256, min_count=1, window=3, sg=1, workers=4)
 w2v_model.save('./w2v_model')
-
 
 # Node: Encode model as 0, data as 1
 n = 0
@@ -107,17 +108,16 @@ with open('txt/node.txt', 'a+') as f:
         f.write(d + '\t' + str(1) + '\t' + str(get_vec_mean(datas_info[n], 256)) + '\n')
         n += 1
 
-
-# Test: (model, data) [runningTimes, f1_score, precision, recall]
+# Test: (model, data) [runningTimes, f1_score, precision, recall, cosine similarity, jaccard similarity]
 with open('txt/edge.txt', 'a+') as f:
     for line in test.values:
-        performance = [line[2], line[3], line[4], line[5]]
+        performance = [line[2], line[3], line[4], line[5], line[6], line[7]]
         f.write('(' + (str(line[0]) + ',' + (str(line[1]) + ')'
                                              + '\t' + str(performance) + '\n')))
 
-
-# Top5: (model, data) [runningTimes, f1_score, precision, recall]
-test['performance'] = test.apply(lambda test: perform(test['r.precision'], test['r.f1_score']), axis=1)
+# Top5: (model, data) [runningTimes, f1_score, precision, recall, cosine similarity, jaccard similarity]
+test['performance'] = test.apply(
+    lambda test: perform(test['r.f1_score'], test['r.cosineSimilarity'], test['r.runningTimes']), axis=1)
 test['rank'] = test['performance'].groupby(test['d.id']).rank(ascending=False, method='first').astype(int)
 
 test.to_csv('csv/test_rank.csv')
@@ -127,6 +127,6 @@ with open('txt/top5.txt', 'a+') as f:
         if line[-1] > 5:
             continue
 
-        performance = [line[2], line[3], line[4], line[5]]
+        performance = [line[2], line[3], line[4], line[5], line[6], line[7]]
         f.write('(' + (str(line[0]) + ',' + (str(line[1]) + ')'
                                              + '\t' + str(performance) + '\n')))
