@@ -52,6 +52,13 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
     contributor["username"] = user["username"]
     contributor["userID"] = user["_id"]
 
+    # Store instrument information
+    # ToDo: hardcode to assign instrument information
+    if centerName == "North Carolina State University":
+        context["instrument"]["instrumentName"] = "NC_Empyrean"
+        instrument = db.instrument.find_one({'instrumentName': "NC_Empyrean"})
+        context["instrument"]["instrumentID"] = instrument["_id"]
+
     # Other information
     context["dataLocation"] = input
     content["header"] = xrd["scan"]["header"]

@@ -70,7 +70,7 @@ def f1_score(tp, p, pp):
     if pp != 0:
         precision = tp / pp
 
-    if p != 0 and pp != 0:
+    if p != 0 and pp != 0 and (precision + recall) > 0:
         f1 = 2 * (precision * recall) / (precision + recall)
 
     return recall, precision, f1
@@ -145,11 +145,9 @@ def get_pred_gt(testcard):
     pd_peaklist = db.peaklist.find_one({"_id": predictID})
     predict = pd_peaklist["x"]
 
-    db.testcard.update_one(testcard, {
-        "$set": {"groundtruth": gt_peaklist['_id']}
-    })
+    gt_id = gt_peaklist['_id']
 
-    return predict, groundtruth
+    return predict, groundtruth, gt_id
 
 
 def insert2testcard(err=0.01):
@@ -158,7 +156,7 @@ def insert2testcard(err=0.01):
         if testcard["output"]["peaklist"] == testcard["groundtruth"]:
             continue
 
-        predict, groundtruth = get_pred_gt(testcard)
+        predict, groundtruth, gt_id = get_pred_gt(testcard)
         matrics = generate_matric(groundtruth, predict, err)
 
         previous = testcard["performance"]
@@ -166,7 +164,8 @@ def insert2testcard(err=0.01):
 
         db.testcard.update_one(testcard, {
             "$set": {"performance": current,
-                     "allowedError": err}
+                     "allowedError": err,
+                     "groundtruth": gt_id}
         })
 
 

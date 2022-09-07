@@ -23,6 +23,10 @@ def user_info(schema):
             path = paths[i]
             utils.dict_set(card, path, items[key])
 
+    # Replace instrumentName with instrumentID in the user's information.
+    if card["instrument"]:
+        card["instrument"] = [instrument_id(i) for i in card["instrument"]]
+
     if not card["affiliation"]:
         return card
 
@@ -42,15 +46,23 @@ def centerid(center_name):
     return center["_id"]
 
 
+def instrument_id(instrument_name):
+    instrument = db.instrument.find_one({'instrumentName': instrument_name})
+    return instrument["_id"]
+
+
 def set_para(keys):
     parser = argparse.ArgumentParser(description='Generate Source Information for an author.')
 
     argus = {}
     for key in keys:
         item = "--" + key
-        # There can be more than one position or affiliation.
-        if key in ["positions", "affiliation"]:
+        # There may be more than one position or affiliation.
+        if key in ["positions", "affiliation", "instrument"]:
             argus[key] = parser.add_argument(item, action='append')
+        # Required item(s)
+        elif key == "username":
+            argus[key] = parser.add_argument(key)
         else:
             argus[key] = parser.add_argument(item)
 

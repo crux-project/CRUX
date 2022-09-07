@@ -18,7 +18,7 @@ RETURN s, c, d, m, md, ta, te, um, ud, p
 
 //Example 2
 MATCH (te:Testcard)-[:testedWith]-(d:Datacard)-[:canBeUsedTo]-(ta:Taskcard{taskName: "peak_finding"}),
-      (s:Sample{sampleName: "CaCO3-TiO2"})-[:extractedFrom]-(d)-[:ownedBy]-(c:Center{centerName: "NC-State"}),
+      (s:Sample{sampleName: "CaCO3-TiO2"})-[:extractedFrom]-(d)-[:ownedBy]-(c:Center{centerName: "North Carolina State University"}),
       (um:User)-[:createdBy]-(m:Modelcard),
       (ta)-[:usedFor]-(te)-[:invoke]-(m)-[:dependOn]->(md:Modelcard{modelName: "peakutils.peak.index"}),
       (ud:User)-[:uploadedBy]-(d),

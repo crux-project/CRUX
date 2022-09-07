@@ -14,7 +14,12 @@
         "center": {
             "centerID": null,
             "centerName": null,
-            "instrumentID": null
+            "instrumentID": null,
+            "instrumentName": null
+        },
+        "instrument": {
+            "instrumentID": null,
+            "instrumentName": null
         }
     },
     "dataContent": {

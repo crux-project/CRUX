@@ -1,7 +1,11 @@
 
 # CRUX
 
+Project Website: https://crux-project.github.io
+
 Demo Link: https://CRUX.hcma.repl.co
+
+Documentation: https://crux-project.github.io/crux-doc/
 
 ## CRUX-Onto
 ![crux_onto](./images/crux_onto/crux_mdo_onto.png)

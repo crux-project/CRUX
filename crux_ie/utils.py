@@ -135,22 +135,9 @@ def get_path(folder):
 
 
 # def main():
-    # Output specified item(s) in xrdml file
-    # find_in_xml(xrdml_file, ["commonPosition", "intensities"])
-
-    # Transfer XRDML to JSON
-    # json_file = xml2json(xrdml_file)
-
-    # # Get peak list
-    # json_dic = json2dic(json_file)
-    # peak_pos_sp, peak_int_sp = peaklist.auto_finding(json_dic, output)
-
-    # # Add peak list to JSON
-    # add_peak(peak_pos_sp, peak_int_sp, json_dic)
-
-    # # Validate peaks with GSAS-II
-    # peaklist.val_with_gsas2(p_gsas2, peak_pos_sp, peak_int_sp)
-
-
+#     data = "/Users/mandy/Desktop/Data/JSON/crux_testcard.json"
+#     import_to_mongodb(data, "testcard")
+#
+#
 # if __name__ == "__main__":
 #     main()
