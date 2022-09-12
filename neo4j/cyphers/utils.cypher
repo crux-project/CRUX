@@ -22,8 +22,9 @@ MATCH (te:Testcard)-[:testedWith]-(d:Datacard)-[:canBeUsedTo]-(ta:Taskcard{taskN
       (um:User)-[:createdBy]-(m:Modelcard),
       (ta)-[:usedFor]-(te)-[:invoke]-(m)-[:dependOn]->(md:Modelcard{modelName: "peakutils.peak.index"}),
       (ud:User)-[:uploadedBy]-(d),
-      (te)-[:calculatedBy]-(p:Peaklist)
-RETURN s, c, d, m, md, ta, te, um, ud, p LIMIT 15
+      (te)-[:calculatedBy]-(p:Peaklist),
+      (ins)-[:appliedTo]->(d)
+RETURN s, c, d, m, md, ta, te, um, ud, p, ins LIMIT 15
 
 // Generate input for GNN
 MATCH (m:Modelcard)
