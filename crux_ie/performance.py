@@ -151,9 +151,18 @@ def get_pred_gt(testcard):
 
 
 def insert2testcard(err=0.01):
-    for testcard in db.testcard.find():
+    # TODO: use an explicit session to avoid timeout error.
+    cursor = db.testcard.find(
+        {},
+        no_cursor_timeout=True
+    )
+
+    for testcard in cursor:
         # No performance if the groundtruth is the result itself.
         if testcard["output"]["peaklist"] == testcard["groundtruth"]:
+            continue
+
+        if testcard["allowedError"] is not None:
             continue
 
         predict, groundtruth, gt_id = get_pred_gt(testcard)
@@ -167,6 +176,8 @@ def insert2testcard(err=0.01):
                      "allowedError": err,
                      "groundtruth": gt_id}
         })
+
+    cursor.close()
 
 
 def main():

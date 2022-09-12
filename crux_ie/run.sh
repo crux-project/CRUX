@@ -35,8 +35,18 @@ python3 source.py "Benjamin A. Kowalski"\
 
 python3 source.py "Anonymous"\
                   --password "1234567"\
-                  --role "regular user"\
+                  --role "super user"\
                   --affiliation "University of New South Wales"\
+
+python3 source.py "Anonymous"\
+                  --password "1234567"\
+                  --role "super user"\
+                  --affiliation "University of Iceland"\
+
+python3 source.py "Anonymous"\
+                  --password "1234567"\
+                  --role "super user"\
+                  --affiliation "King Fahd University of Petroleum and Minerals"\
 
 python3 source.py "SciPy"\
                   --password "1234567"\

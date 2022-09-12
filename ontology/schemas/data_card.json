@@ -13,9 +13,7 @@
         "dataLocation": null,
         "center": {
             "centerID": null,
-            "centerName": null,
-            "instrumentID": null,
-            "instrumentName": null
+            "centerName": null
         },
         "instrument": {
             "instrumentID": null,

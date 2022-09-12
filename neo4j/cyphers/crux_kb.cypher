@@ -7,6 +7,7 @@ CREATE INDEX ON :Sample(id);
 CREATE INDEX ON :User(id);
 CREATE INDEX ON :Center(id);
 CREATE INDEX ON :Peaklist(id);
+CREATE INDEX ON :Instrument(id);
 
 
 //2/3 - Load from JSON files and set properties.
@@ -18,6 +19,7 @@ SET
 d.dataLocation = data.dataContext.dataLocation,
 d.centerName = data.dataContext.center.centerName,
 d.contributorID = data.dataContext.contributor.userID.`$oid`,
+d.instrumentID = data.dataContext.instrument.instrumentID.`$oid`,
 d.centerID = data.dataContext.center.centerID.`$oid`,
 d.sampleID = data.dataContent.sampleID.`$oid`,
 d.tasks = [];
@@ -81,12 +83,22 @@ CALL apoc.load.json(url) YIELD value AS user
 UNWIND user.affiliation AS center
 MERGE (u:User {id:user._id.`$oid`})
 SET u.centerID = u.centerID + center.`$oid`;
+WITH "file:/JSON/crux_user.json" AS url
+CALL apoc.load.json(url) YIELD value AS user
+UNWIND user.instrument AS instrument
+MERGE (u:User {id:user._id.`$oid`})
+SET u.instrumentID = u.instrumentID + instrument.`$oid`;
 
 // Center
 WITH "file:/JSON/crux_center.json" AS url
 CALL apoc.load.json(url) YIELD value as center
 MERGE (c:Center {id:center._id.`$oid`})
 SET c.centerName = center.centerName;
+WITH "file:/JSON/crux_center.json" AS url
+CALL apoc.load.json(url) YIELD value as center
+UNWIND center.instrument AS instrument
+MERGE (c:Center {id:center._id.`$oid`})
+SET c.instrumentID = c.instrumentID + instrument.`$oid`;
 
 // Peaklist
 WITH "file:/JSON/crux_peaklist.json" AS url
@@ -95,6 +107,13 @@ MERGE (p:Peaklist {id:peaklist._id.`$oid`})
 SET
 p.testID = peaklist.testID.`$oid`,
 p.sampleID = peaklist.sampleID.`$oid`;
+
+// Instrument
+WITH "file:/JSON/crux_instrument.json" AS url
+CALL apoc.load.json(url) YIELD value as instrument
+MERGE (i:Instrument {id:instrument._id.`$oid`})
+SET
+i.instrumentName = instrument.instrumentName;
 
 
 //3/3 - Create relations.
@@ -172,3 +191,18 @@ CREATE (s)-[:ownedBy]->(c);
 MATCH (p:Peaklist), (s:Sample)
 WHERE p.sampleID = s.id
 CREATE (p)-[:isPropertyOf]->(s);
+
+// instrument-user
+MATCH (i:Instrument), (u:User)
+WHERE i.id in u.instrumentID
+CREATE (i)-[:UsedBy]->(u);
+
+// instrument-data
+MATCH (i:Instrument), (d:Datacard)
+WHERE d.instrumentID = i.id
+CREATE (i)-[:appliedTo]->(d);
+
+// instrument-center
+MATCH (i:Instrument), (c:Center)
+WHERE i.id in c.instrumentID
+CREATE (i)-[:UsedBy]->(c);

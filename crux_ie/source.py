@@ -32,7 +32,7 @@ def user_info(schema):
 
     # Generate a Center instance for each affiliation if it does not exist.
     for center in card["affiliation"]:
-        doc = {"centerName": center}
+        doc = {"centerName": center, "instrument": []}
         db.center.replace_one(doc, doc, upsert=True)
 
     # Replace centerName with centerID in the user's information.

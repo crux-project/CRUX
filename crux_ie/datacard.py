@@ -35,7 +35,7 @@ def data_card(input, schema="../ontology/schemas/data_card.json"):
 
     # If center existed, get its id, or create one and get its id.
     context["center"]["centerName"] = centerName
-    centerDoc = {"centerName": centerName}
+    centerDoc = {"centerName": centerName, "instrument": []}
     db.center.replace_one(centerDoc, centerDoc, upsert=True)
     center = db.center.find_one({'centerName': centerName})
     context["center"]["centerID"] = center["_id"]
