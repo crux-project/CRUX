@@ -16,7 +16,7 @@ Edge list:
 * The first column is (model.id,data.id).
 * The second column is the performance list: [runningTime(s), f1_score, precision, recall, Cosine similarity, Jaccard similarity].
 * Only show the edge whose F1 score and runningTime(s) are not null.
- (Including 23/25 models and 2020/2021 datasets.)
+ (Including 23 models and 3823 datasets.)
 
 ### top5.txt
 
