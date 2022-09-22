@@ -138,8 +138,9 @@ with open('txt/node.txt', 'a+') as f:
 
         ast_vec = np.array(ast_to_vec(script))
         info_vec = np.array(get_vec_mean(models_info[n], 256, w2v_model_models))
+        model_vec = (ast_vec + info_vec) / 2
 
-        f.write(m + '\t' + str(0) + '\t' + str((ast_vec + info_vec) / 2) + '\n')
+        f.write(m + '\t' + str(0) + '\t' + str(model_vec.tolist()) + '\n')
         n += 1
 
     n = 0
