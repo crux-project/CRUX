@@ -38,15 +38,15 @@ python3 source.py "Anonymous"\
                   --role "super user"\
                   --affiliation "University of New South Wales"\
 
-python3 source.py "Anonymous"\
-                  --password "1234567"\
-                  --role "super user"\
-                  --affiliation "University of Iceland"\
+#python3 source.py "Anonymous"\
+#                  --password "1234567"\
+#                  --role "super user"\
+#                  --affiliation "University of Iceland"\
 
-python3 source.py "Anonymous"\
-                  --password "1234567"\
-                  --role "super user"\
-                  --affiliation "King Fahd University of Petroleum and Minerals"\
+#python3 source.py "Anonymous"\
+#                  --password "1234567"\
+#                  --role "super user"\
+#                  --affiliation "King Fahd University of Petroleum and Minerals"\
 
 python3 source.py "SciPy"\
                   --password "1234567"\
@@ -69,34 +69,34 @@ python3 source.py "Mengying Wang"\
                   --website wangmengying.me\
                   --email mxw767@case.edu
 
-python3 source.py "Xuerun Li"\
-                  --password "1234567"\
-                  --role "regular user"\
-                  --affiliation "Zenodo"\
-                  --positions "Postdoc Researcher, Laboratory of Construction Materials, Swiss Federal Institute of Technology in Lausanne (EPFL)"\
-                  --address "Station 12, CH-1015 Lausanne, Switzerland"
+#python3 source.py "Xuerun Li"\
+#                  --password "1234567"\
+#                  --role "regular user"\
+#                  --affiliation "Zenodo"\
+#                  --positions "Postdoc Researcher, Laboratory of Construction Materials, Swiss Federal Institute of Technology in Lausanne (EPFL)"\
+#                  --address "Station 12, CH-1015 Lausanne, Switzerland"
+#
+#python3 source.py "Deepali Eilidh Sood"\
+#                  --password "1234567"\
+#                  --role "regular user"\
+#                  --affiliation "University of St Andrews"
 
-python3 source.py "Deepali Eilidh Sood"\
-                  --password "1234567"\
-                  --role "regular user"\
-                  --affiliation "University of St Andrews"
-
-python3 source.py "Léa Lévy"\
-                  --password "1234567"\
-                  --role "regular user"\
-                  --affiliation "Mendeley"\
-                  --positions "Associate senior lecturer, Engineering Geology, Lund University"\
-                  --password "1234567"\
-                  --email lea.levy@tg.lth.se
-
-python3 source.py "Amao Abduljamiu"\
-                  --password "1234567"\
-                  --role "regular user"\
-                  --affiliation "Mendeley"\
-                  --positions "Research Scientist, King Fahd University of Petroleum and Minerals"\
-                  --address "Bldg. 78, Rm. 2029, Dhahran, Saudi Arabia"\
-                  --phone +966-013-860-3240\
-                  --email amao@kfupm.edu.sa
+#python3 source.py "Léa Lévy"\
+#                  --password "1234567"\
+#                  --role "regular user"\
+#                  --affiliation "Mendeley"\
+#                  --positions "Associate senior lecturer, Engineering Geology, Lund University"\
+#                  --password "1234567"\
+#                  --email lea.levy@tg.lth.se
+#
+#python3 source.py "Amao Abduljamiu"\
+#                  --password "1234567"\
+#                  --role "regular user"\
+#                  --affiliation "Mendeley"\
+#                  --positions "Research Scientist, King Fahd University of Petroleum and Minerals"\
+#                  --address "Bldg. 78, Rm. 2029, Dhahran, Saudi Arabia"\
+#                  --phone +966-013-860-3240\
+#                  --email amao@kfupm.edu.sa
 
 echo "Step 3 - Generating data cards......"
 python3 datacard.py -folder "../content/data/xrdml/"

@@ -129,7 +129,6 @@ w2v_model_models = Word2Vec(models_info, vector_size=256, min_count=1, window=3,
 w2v_model_models.save('./w2v_model_models')
 
 # Node: Encode model as 0, data as 1
-
 with open('txt/node.txt', 'a+') as f:
     n = 0
     for m in models:

@@ -74,17 +74,17 @@ def main():
     rawdata = "../testdata/list.txt"
 
     # ptitle = "Peak Results by Peakutils"
-    # pf150 = "../../../test/pf_peakutils_dist150/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # pf200 = "../../../test/pf_peakutils_dist200/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # pf250 = "../../../test/pf_peakutils_dist250/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # pf300 = "../../../test/pf_peakutils_dist300/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
+    # pf150 = "../../../test/pf_peakutils_dist150/xrdml/NASA/BCdT - PT/280.txt"
+    # pf200 = "../../../test/pf_peakutils_dist200/xrdml/NASA/BCdT - PT/280.txt"
+    # pf250 = "../../../test/pf_peakutils_dist250/xrdml/NASA/BCdT - PT/280.txt"
+    # pf300 = "../../../test/pf_peakutils_dist300/xrdml/NASA/BCdT - PT/280.txt"
     # plot(rawdata, pf150, pf200, pf250, pf300, ptitle)
 
     # stitle = "Peak Results by Scipy"
-    # sf150 = "../../../test/pf_scipy_dist150/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # sf200 = "../../../test/pf_scipy_dist200/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # sf250 = "../../../test/pf_scipy_dist250/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
-    # sf300 = "../../../test/pf_scipy_dist300/xrdml/NASA/BCdT - PT/10Bi(Cd0.5Ti0.5)O3 - 90PbTiO3 - 1100C.txt"
+    # sf150 = "../../../test/pf_scipy_dist150/xrdml/NASA/BCdT - PT/280.txt"
+    # sf200 = "../../../test/pf_scipy_dist200/xrdml/NASA/BCdT - PT/280.txt"
+    # sf250 = "../../../test/pf_scipy_dist250/xrdml/NASA/BCdT - PT/280.txt"
+    # sf300 = "../../../test/pf_scipy_dist300/xrdml/NASA/BCdT - PT/280.txt"
     # plot(rawdata, sf150, sf200, sf250, sf300, stitle)
 
     title = "Peak Results"

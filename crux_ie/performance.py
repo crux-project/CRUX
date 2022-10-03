@@ -62,7 +62,8 @@ def f1_score(tp, p, pp):
     :param pp: positive predictions.
     :return: recall, precision and f1-score.
     """
-    f1, recall, precision = None, None, None
+    # f1, recall, precision = None, None, None
+    f1, recall, precision = 0, 0, 0
 
     if p != 0:
         recall = tp / p
@@ -86,7 +87,8 @@ def cosine_similarity(p, pp):
     magB = math.sqrt(sum(c2.get(k, 0) ** 2 for k in terms))
 
     if magA * magB == 0:
-        c_similarity = None
+        # c_similarity = None
+        c_similarity = 0
     else:
         c_similarity = dotprod / (magA * magB)
 
@@ -97,7 +99,8 @@ def jaccard_similarity(p, pp, tp):
     union = list(set(p) | set(pp))
 
     if len(union) == 0:
-        j_similarity = None
+        # j_similarity = None
+        j_similarity = 0
     else:
         j_similarity = tp / len(union)
 

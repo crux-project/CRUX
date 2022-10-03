@@ -130,10 +130,8 @@ dmypy.json
 
 .DS_Store
 .idea/
-content/data/
-content/test/
-content/ranking/
-content/Jade/
+content/*
+*input/
 
 *exported/
 

@@ -134,6 +134,44 @@ def get_path(folder):
     return paths
 
 
+# print x and y to one txt file
+def ptint_xy(x, y, output):
+    index = output.rfind("/") + 1
+    if not os.path.exists(output[:index]):
+        os.makedirs(output[:index])
+
+    f = open(output, 'w')
+
+    f.write("x"+'\n')
+    for i in x:
+        f.write(str(i) + '\n')
+
+    f.write("y")
+    for i in y:
+        f.write('\n' + str(i))
+
+
+# get x and y from one txt file
+def get_xy(file):
+    x = []
+    y = []
+
+    f = open(file, 'r')
+    lines = f.readlines()
+
+    if lines[-1] == "y":
+        length = len(lines) - 1
+        y = []
+    else:
+        length = int(len(lines)/2)
+        for line in lines[length + 1:]:
+            y.append(float(line))
+
+    for line in lines[1:length]:
+        x.append(float(line))
+
+    return x, y
+
 # def main():
 #     data = "/Users/mandy/Desktop/Data/JSON/crux_testcard.json"
 #     import_to_mongodb(data, "testcard")
