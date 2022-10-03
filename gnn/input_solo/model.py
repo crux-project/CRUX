@@ -134,7 +134,7 @@ def main():
                 if sum(list(metrics.values())[1:]) == 0:
                     continue
 
-                print("(" + str(i) + "," + str(data_num) + ") " + str(metrics.values())[12:-1])
+                print("(" + str(i) + "," + str(data_num) + ")" + '\t' + str(metrics.values())[12:-1])
                 i += 1
 
     # Output into node.txt
