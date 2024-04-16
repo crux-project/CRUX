@@ -5,7 +5,7 @@ import peakutils.peak as peakutils_peaks
 from scipy.signal import find_peaks as scipy_peaks
 from sklearn.model_selection import ParameterGrid
 
-sys.path.append('../..')
+sys.path.append('../../..')
 import crux_ie.performance as performance
 import crux_ie.utils as utils
 
@@ -69,7 +69,7 @@ def get_performance(gt, pred, metrics, err):
     metrics["jaccardSimilarity"] = performance.jaccard_similarity(gt, pred, tp)
 
 
-# Execute peak finding algorithm
+# Execute peak_finding algorithm
 def execute(file, model, gt, parameter):
     metrics = {}
 
@@ -120,7 +120,7 @@ def main():
         gt_pos, gt_int = utils.get_xy(gt_path)
         data_num = file.split('/')[-1][:-4]
 
-        i = 289
+        i = 3823
         for model in ["Peakutils", "Scipy"]:
             for parameter in grid_para(model):
                 # Information for model
@@ -138,7 +138,7 @@ def main():
                 i += 1
 
     # Output into node.txt
-    with open('./289/input/node.txt', 'a+') as f:
+    with open('3823/input/node.txt', 'a+') as f:
         for key in models_info.keys():
             f.write(str(key) + '\t' + str(0) + '\t' + str(models_info[key]).replace("'", "") + '\n')
 

@@ -1,6 +1,7 @@
 ## node.txt
 
-289 datasets + 462 models
+**V1** - 289 datasets + 462 models, 
+**V2** - 3,823 datasets + 462 models
 
 * The first column is the node's ID.
 * The second column is the node's type: '0' for 'model' and '1' for 'data'.
@@ -16,7 +17,7 @@
 
 ## edge.txt
 
-98257 edges
+**V1** - 98,257 edges, **V2** - 1,730,796 edges
 
 * The first column is (model.id,data.id).
 * The second column is the performance list: [runningTime(s), f1_score, precision, recall, Cosine similarity, Jaccard similarity].

@@ -28,14 +28,10 @@ __version__ = '0.2.0'
 __maintainer__ = 'Benjamin Paaßen'
 __email__  = 'benjamin.paassen@sydney.edu.au'
 
-from tqdm import tqdm
 import copy
-import torch
-import random
-import tree
 import numpy as np
 from sklearn.svm import SVC
-from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.base import BaseEstimator
 import python_ast_utils
 
 def predict_(classifier, x):

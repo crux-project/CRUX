@@ -4,7 +4,7 @@ import sys
 from statistics import mean
 from gensim.models import Word2Vec
 
-sys.path.append('../..')
+sys.path.append('../../..')
 import crux_ie.utils as utils
 
 datas_info = {}
@@ -97,7 +97,7 @@ def main():
     w2v_data.save('./289/w2v_data')
 
     # Output into node.txt
-    with open('./289/input/node.txt', 'a+') as f:
+    with open('289/input/node.txt', 'a+') as f:
         for key in datas_info:
             w2v_vec = get_vec_mean(datas_info[key][:3], 5, w2v_data)
             datas_info[key] = w2v_vec + datas_info[key][3:]

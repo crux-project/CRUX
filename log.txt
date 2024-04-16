@@ -1,0 +1,9 @@
+Downloading https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD to Electric_Vehicle_Population_Data.csv
+Could not download https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD because [Errno 30] Read-only file system: '/Volumes/YING/Datasets/Feature_Discovery/us_odp/Electric_Vehicle_Population_Data.csv'
+Downloading https://www.fdic.gov/bank/individual/failed/banklist.csv to FDIC_Failed_Bank_List.csv
+Could not download https://www.fdic.gov/bank/individual/failed/banklist.csv because 'utf-8' codec can't decode byte 0xa0 in position 9: invalid start byte
+Downloading https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD to Crime_Data_from_2020_to_Present.csv
+Could not download https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD because [Errno 30] Read-only file system: '/Volumes/YING/Datasets/Feature_Discovery/us_odp/Crime_Data_from_2020_to_Present.csv'
+Downloading https://data.cdc.gov/api/views/9j2v-jamp/rows.csv?accessType=DOWNLOAD to Death_rates_for_suicide_by_sex_race_Hispanic_origin_and_age_United_States.csv
+Could not download https://data.cdc.gov/api/views/9j2v-jamp/rows.csv?accessType=DOWNLOAD because [Errno 30] Read-only file system: '/Volumes/YING/Datasets/Feature_Discovery/us_odp/Death_rates_for_suicide_by_sex_race_Hispanic_origin_and_age_United_States.csv'
+Downloading https://data.cdc.gov/api/views/g4ie-h725/rows.csv?accessType=DOWNLOAD to U.S._Chronic_Disease_Indicators_(CDI).csv

@@ -1,7 +1,7 @@
 import sys
 from scipy.signal import find_peaks
 
-sys.path.append('../..')
+sys.path.append('../../..')
 import crux_ie.utils as utils
 
 

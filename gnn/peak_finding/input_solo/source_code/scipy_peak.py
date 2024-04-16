@@ -104,7 +104,7 @@ def find_peaks(x, height=None, threshold=None, distance=None,
     sample is returned (rounded down in case the number of samples is even).
     For noisy signals the peak locations can be off because the noise might
     change the position of local maxima. In those cases consider smoothing the
-    signal before searching for peaks or use other peak finding and fitting
+    signal before searching for peaks or use other peak_finding and fitting
     methods (like `find_peaks_cwt`).
     Some additional comments on specifying conditions:
     * Almost all conditions (excluding `distance`) can be given as half-open or

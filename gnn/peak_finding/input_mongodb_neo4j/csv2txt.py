@@ -13,8 +13,8 @@ sys.path.append("ast2vec")
 import ast2vec as a2v
 import python_ast_utils
 
-if not os.path.exists('./txt/'):
-    os.makedirs('./txt/')
+if not os.path.exists('txt/'):
+    os.makedirs('txt/')
 
 client = pymongo.MongoClient(host='127.0.0.1')
 db = client["crux"]
@@ -169,3 +169,8 @@ with open('txt/top5.txt', 'a+') as f:
         performance = [line[2], line[3], line[4], line[5], line[6], line[7]]
         f.write('(' + (str(line[0]) + ',' + (str(line[1]) + ')'
                                              + '\t' + str(performance) + '\n')))
+
+for index, row in test.iteritems():
+    new_row = index + 'rank'
+    test[new_row] = test[index].rank()
+test

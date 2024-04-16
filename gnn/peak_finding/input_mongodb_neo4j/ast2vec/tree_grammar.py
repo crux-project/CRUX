@@ -27,7 +27,6 @@ __version__ = '0.2.0'
 __maintainer__ = 'Benjamin Paaßen'
 __email__  = 'benjamin.paassen@sydney.edu.au'
 
-import copy
 import tree
 
 class TreeGrammar:

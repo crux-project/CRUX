@@ -1,4 +1,3 @@
-import ast
 import python_ast_utils
 import ast2vec
 import variable_classifier
