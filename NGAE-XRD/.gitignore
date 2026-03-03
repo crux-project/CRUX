@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs and model outputs
+logs/
+outputs/
+checkpoints/
+*.keras
+*.h5
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

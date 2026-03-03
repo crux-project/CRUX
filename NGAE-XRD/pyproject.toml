@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngae-xrd"
+version = "0.1.0"
+description = "Modular NGAE-XRD workflow package for recurrence-based XRD peak recovery"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "opencv-python>=4.8",
+  "pyts>=0.13",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "tensorflow>=2.12"
+]
+
+[project.scripts]
+ngae-xrd = "ngae_xrd.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,38 @@
+# Example pipeline configuration (edit paths for your dataset)
+
+io:
+  input_mode: "peak_list"          # peak_list | profile
+  input_dir: "./data/input"
+  output_dir: "./outputs"
+
+simulation:
+  wavelength_angstrom: 1.5406
+  two_theta_min: 20.0
+  two_theta_max: 60.0
+  step: 0.01
+  sigma_clean: 0.01
+  sigma_noisy: 0.05
+
+recurrence:
+  threshold: 5
+
+training:
+  enabled: false
+  image_size: [1000, 1000]
+  batch_size: 8
+  epochs: 20
+  validation_split: 0.2
+  learning_rate: 0.001
+  checkpoint_path: "./checkpoints/noise_generator.keras"
+
+inference:
+  enabled: false
+  model_path: "./checkpoints/noise_generator.keras"
+  lsd_threshold: 125
+  pixel_step: 0.01
+  origin_two_theta: 20.0
+  min_segment_len: 1000
+  win_gap: 10
+
+evaluation:
+  tolerance_deg: 0.02
