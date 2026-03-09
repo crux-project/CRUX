@@ -1,6 +1,6 @@
 # NGAE-XRD
 
-Reusable, data-path-agnostic pipeline for the Chapter 6 LAPeX/CRUX XRD workflow.
+Automated hiden peak extraction for XRay Diffraction Data.
 
 This repository refactors the implemented workflow into modular Python functions:
 - CSV ingest for peak lists and intensity profiles
