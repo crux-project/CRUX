@@ -10,9 +10,6 @@ This repository refactors the implemented workflow into modular Python functions
 - LSD-based vertical-segment peak extraction
 - Basic evaluation utilities for matched-fraction analysis
 
-## Why this repo exists
-The manuscript workflow is reproducible, but notebook paths and ad-hoc scripts are hard to reuse. This package keeps the same implemented flow while removing hardcoded data locations.
-
 ## Quick start
 1. Create and activate a virtual environment.
 2. Install dependencies:
